@@ -33,10 +33,12 @@ class Header extends LitElement {
       redirect: 'follow'
     })
       .then(response => {
-        return response.json();
-      })
-      .then(body => {
-        this.notifyLoggedOut();
+        if (response.status === 200) {
+          this.notifyLoggedOut();
+        }
+        else {
+          // TODO show error somehow and somewhere
+        }
       });
   }
 
