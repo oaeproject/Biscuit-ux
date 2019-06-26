@@ -40,13 +40,19 @@ const loadPage = (page) => (dispatch) => {
     case 'view3':
       import('../components/my-view3.js');
       break;
-    case 'view404':
-      page = 'view404';
-      import('../components/my-view404.js');
-    default:
-      page = 'oae';
+    case 'oae':
       import('../components/oae.js');
-  }
+    case 'dashboard':
+      import('../components/dashboard.js');
+    case 'homepage':
+      import('../components/homepage.js');
+    case 'library':
+      import('../components/library.js');
+    case 'discussions':
+      import('../components/discussions.js');
+    case 'groups':
+      import('../components/groups.js');
+    }
 
   dispatch(updatePage(page));
 };

@@ -8,7 +8,7 @@
   "repository": "Polymer/pwa-starter-kit",
   "scripts": {
     "start": "polymer serve",
-    "start:webpack": "webpack-dev-server --host 0.0.0.0 --open --mode development",
+    "start:webpack": "webpack-dev-server --hot --host 0.0.0.0 --open --mode development",
     "build": "polymer build --auto-base-path && gulp prpl-server",
     "build:static": "polymer build",
     "build:webpack": "rm -rf dist && webpack --config webpack.config.js",
