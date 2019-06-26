@@ -1,4 +1,3 @@
-import Cookie from 'universal-cookie';
 import { html, css, LitElement } from 'lit-element';
 
 const USER_TYPE = 'user';
@@ -12,13 +11,8 @@ class Header extends LitElement {
     this.loggedIn = true;
     this.session = body;
 
-    let cookie = new Cookie();
-
-    let allCookies = cookie.getAll();
-    console.dir(allCookies);
-
     // Debug
-    console.log('Just set logged in to ' + this.loggedIn);
+    console.log('Just set loggedin flag to ' + this.loggedIn);
   }
 
   notifyLoggedOut() {
@@ -26,27 +20,25 @@ class Header extends LitElement {
     this.session = null;
 
     // Debug
-    console.log('Just set logged in to ' + this.loggedIn);
+    console.log('Just set loggedin flag to ' + this.loggedIn);
   }
 
   logout(event) {
     event.preventDefault();
-    fetch('http://localhost:2001/api/auth/logout', {
+    fetch('http://guest.oae.com/api/auth/logout', {
       method: 'POST',
-      mode: 'cors',
-      cache: 'no-cache',
+      // mode: 'cors',
       credentials: 'same-origin',
+      cache: 'no-cache',
       redirect: 'follow'
     })
       .then(response => {
-        return response.json();
-      })
-      .then(body => {
-        // Debug
-        console.dir(body, { colors: true });
-        // Console.dir(response.body, { colors: true });
-
-        this.notifyLoggedOut();
+        if (response.status === 200) {
+          this.notifyLoggedOut();
+        }
+        else {
+          // TODO show error somehow and somewhere
+        }
       });
   }
 
@@ -59,9 +51,9 @@ class Header extends LitElement {
     formData = new URLSearchParams(formData);
 
     let data = {};
-    fetch('http://localhost:2001/api/auth/login', {
+    fetch('http://guest.oae.com/api/auth/login', {
       method: 'POST',
-      mode: 'cors',
+      // mode: 'cors',
       cache: 'no-cache',
       credentials: 'same-origin',
       redirect: 'follow',
@@ -72,12 +64,7 @@ class Header extends LitElement {
         return response.json();
       })
       .then(body => {
-        // Debug
-        // console.dir(body, { colors: true });
-
         if (this._isUser(body)) {
-          console.log('cookies:');
-          console.dir(data.response.cookies);
           this.notifyLoggedIn(body, data.response);
         }
       });
