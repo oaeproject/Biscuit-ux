@@ -207,6 +207,11 @@ class MyApp extends connect(store)(LitElement) {
           <a ?selected="${this._page === 'view2'}" href="/view2">View Two</a>
           <a ?selected="${this._page === 'view3'}" href="/view3">View Three</a>
           <a ?selected="${this._page === 'oae'}" href="/oae">OAE</a>
+          <a ?selected="${this._page === 'dashboard'}" href="/dashboard">Dashboard</a>
+          <a ?selected="${this._page === 'homepage'}" href="/homepage">Homepage</a>
+          <a ?selected="${this._page === 'library'}" href="/library">Library</a>
+          <a ?selected="${this._page === 'discussions'}" href="/discussions">Discussions</a>
+          <a ?selected="${this._page === 'groups'}" href="/groups">Groups</a>
         </nav>
       </app-header>
 
@@ -219,6 +224,11 @@ class MyApp extends connect(store)(LitElement) {
           <a ?selected="${this._page === 'view2'}" href="/view2">View Two</a>
           <a ?selected="${this._page === 'view3'}" href="/view3">View Three</a>
           <a ?selected="${this._page === 'oae'}" href="/oae">OAE</a>
+          <a ?selected="${this._page === 'dashboard'}" href="/dashboard">Dashboard</a>
+          <a ?selected="${this._page === 'homepage'}" href="/homepage">Homepage</a>
+          <a ?selected="${this._page === 'library'}" href="/library">Library</a>
+          <a ?selected="${this._page === 'discussions'}" href="/discussions">Discussions</a>
+          <a ?selected="${this._page === 'groups'}" href="/groups">Groups</a>
         </nav>
       </app-drawer>
 
@@ -227,12 +237,16 @@ class MyApp extends connect(store)(LitElement) {
         <my-view1 class="page" ?active="${this._page === 'view1'}"></my-view1>
         <my-view2 class="page" ?active="${this._page === 'view2'}"></my-view2>
         <my-view3 class="page" ?active="${this._page === 'view3'}"></my-view3>
-        <my-view404 class="page" ?active="${this._page === 'view404'}"></my-view404>
-        <apereo-oae class="page" ?active="${this._page === 'oae'}"> </apereo-oae>
+        <apereo-oae class="page" ?active="${this._page === 'oae'}"></apereo-oae>
+        <user-dashboard class="page" ?active="${this._page === 'dashboard'}"></user-dashboard>
+        <oae-landing-page class="page" ?active="${this._page === 'homepage'}"></oae-landing-page>
+        <user-library class="page" ?active="${this._page === 'library'}"></user-library>
+        <user-discussions class="page" ?active="${this._page === 'discussions'}"></user-discussions>
+        <user-groups class="page" ?active="${this._page === 'groups'}"></user-groups>
       </main>
 
       <footer>
-        <p>Made with &hearts; by the Polymer team.</p>
+        <p>Made by the OAE team</p>
       </footer>
 
       <snack-bar ?active="${this._snackbarOpened}">
