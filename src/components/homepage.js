@@ -18,5 +18,5 @@ class OAEHomepage extends PageViewElement {
     `
   }
 }
-window.customElements.define('platform-homepage', OAEHomepage);
+window.customElements.define('oae-landing-page', OAEHomepage);
 

@@ -239,14 +239,14 @@ class MyApp extends connect(store)(LitElement) {
         <my-view3 class="page" ?active="${this._page === 'view3'}"></my-view3>
         <apereo-oae class="page" ?active="${this._page === 'oae'}"></apereo-oae>
         <user-dashboard class="page" ?active="${this._page === 'dashboard'}"></user-dashboard>
-        <platform-homepage class="page" ?active="${this._page === 'homepage'}"></platform-homepage>
+        <oae-landing-page class="page" ?active="${this._page === 'homepage'}"></oae-landing-page>
         <user-library class="page" ?active="${this._page === 'library'}"></user-library>
         <user-discussions class="page" ?active="${this._page === 'discussions'}"></user-discussions>
         <user-groups class="page" ?active="${this._page === 'groups'}"></user-groups>
       </main>
 
       <footer>
-        <p>Made with &hearts; by the Polymer team.</p>
+        <p>Made by the OAE team</p>
       </footer>
 
       <snack-bar ?active="${this._snackbarOpened}">

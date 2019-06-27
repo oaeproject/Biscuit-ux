@@ -25,10 +25,6 @@ class Main extends LitElement {
 			<div>
 				<section>
 					<h2>This is OAE!!</h2>
-					<p>
-						THIS IS A TEST Head back
-						<a href="/">home</a> and try again?
-					</p>
 				</section>
 			</div>
 		`;
