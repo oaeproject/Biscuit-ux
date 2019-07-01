@@ -2,6 +2,16 @@
 
 This is an experimental frontend for Apereo's Open Academic Environment. In time this will implement the new design for OAE and connect to the [backend](https://github.com/oaeproject/Hilary/).
 
+## Status
+
+<!-- standards used in project -->
+
+![code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
+[![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/xojs/xo)
+[![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
+[![Semver](http://img.shields.io/SemVer/2.0.0.png)](http://semver.org/spec/v2.0.0.html)
+[![datree-badge](https://s3.amazonaws.com/catalog.static.datree.io/datree-badge-28px.svg)](https://datree.io/?src=badge)
+
 ## Development
 
 This project is based on the [Polymer project PWA starter kit](https://pwa-starter-kit.polymer-project.org/) so feel free to check its documentation online. With time Biscuit-ux will slowly drop most of the built-in functionality and become its own project.
