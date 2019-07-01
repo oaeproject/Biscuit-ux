@@ -4,6 +4,12 @@ This is an experimental frontend for Apereo's Open Academic Environment. In time
 
 ## Status
 
+<!-- current project status -->
+
+<a href="https://codeclimate.com/github/oaeproject/Biscuit-ux/maintainability"><img src="https://api.codeclimate.com/v1/badges/ef5848ed3cca76108e0b/maintainability" /></a>
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbrecke%2FBiscuit-ux.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbrecke%2FBiscuit-ux?ref=badge_shield)
+[![Known Vulnerabilities](https://snyk.io//test/github/oaeproject/Biscuit-ux/badge.svg?targetFile=package.json)](https://snyk.io//test/github/oaeproject/Biscuit-ux?targetFile=package.json)
+
 <!-- standards used in project -->
 
 ![code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)
