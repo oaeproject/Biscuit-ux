@@ -8,6 +8,8 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
+/* eslint-disable import/no-unassigned-import */
+
 import { LitElement, html, css } from 'lit-element';
 import { setPassiveTouchGestures } from '@polymer/polymer/lib/utils/settings.js';
 import { connect } from 'pwa-helpers/connect-mixin.js';
@@ -20,11 +22,7 @@ import { updateMetadata } from 'pwa-helpers/metadata.js';
 import { store } from '../store.js';
 
 // These are the actions needed by this element.
-import {
-  navigate,
-  updateOffline,
-  updateDrawerState
-} from '../actions/app.js';
+import { navigate, updateOffline, updateDrawerState } from '../actions/app.js';
 
 // These are the elements needed by this element.
 import '@polymer/app-layout/app-drawer/app-drawer.js';
@@ -53,7 +51,7 @@ class MyApp extends connect(store)(LitElement) {
 
           --app-drawer-width: 256px;
 
-          --app-primary-color: #E91E63;
+          --app-primary-color: #e91e63;
           --app-secondary-color: #293237;
           --app-dark-text-color: var(--app-secondary-color);
           --app-light-text-color: white;
@@ -66,7 +64,7 @@ class MyApp extends connect(store)(LitElement) {
 
           --app-drawer-background-color: var(--app-secondary-color);
           --app-drawer-text-color: var(--app-light-text-color);
-          --app-drawer-selected-color: #78909C;
+          --app-drawer-selected-color: #78909c;
         }
 
         app-header {
@@ -216,9 +214,7 @@ class MyApp extends connect(store)(LitElement) {
       </app-header>
 
       <!-- Drawer content -->
-      <app-drawer
-          .opened="${this._drawerOpened}"
-          @opened-changed="${this._drawerOpenedChanged}">
+      <app-drawer .opened="${this._drawerOpened}" @opened-changed="${this._drawerOpenedChanged}">
         <nav class="drawer-list">
           <a ?selected="${this._page === 'view1'}" href="/view1">View One</a>
           <a ?selected="${this._page === 'view2'}" href="/view2">View Two</a>
@@ -263,10 +259,9 @@ class MyApp extends connect(store)(LitElement) {
   }
 
   firstUpdated() {
-    installRouter((location) => store.dispatch(navigate(decodeURIComponent(location.pathname))));
-    installOfflineWatcher((offline) => store.dispatch(updateOffline(offline)));
-    installMediaQueryWatcher(`(min-width: 460px)`,
-        () => store.dispatch(updateDrawerState(false)));
+    installRouter(location => store.dispatch(navigate(decodeURIComponent(location.pathname))));
+    installOfflineWatcher(offline => store.dispatch(updateOffline(offline)));
+    installMediaQueryWatcher(`(min-width: 460px)`, () => store.dispatch(updateDrawerState(false)));
   }
 
   updated(changedProps) {

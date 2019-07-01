@@ -9,10 +9,7 @@
  */
 
 module.exports = {
-  staticFileGlobs: [
-    'manifest.json',
-    'src/**/*',
-  ],
+  staticFileGlobs: ['manifest.json', 'src/**/*'],
   runtimeCaching: [
     {
       urlPattern: /\/@webcomponents\/webcomponentsjs\//,

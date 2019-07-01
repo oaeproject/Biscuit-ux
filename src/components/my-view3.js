@@ -8,8 +8,9 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
+/* eslint-disable import/no-unassigned-import */
+
 import { html, css } from 'lit-element';
-import { PageViewElement } from './page-view-element.js';
 import { connect } from 'pwa-helpers/connect-mixin.js';
 
 // This element is connected to the Redux store.
@@ -20,9 +21,7 @@ import { checkout } from '../actions/shop.js';
 
 // We are lazy loading its reducer.
 import shop, { cartQuantitySelector } from '../reducers/shop.js';
-store.addReducers({
-  shop
-});
+import { PageViewElement } from './page-view-element.js';
 
 // These are the elements needed by this element.
 import './shop-products.js';
@@ -32,6 +31,10 @@ import './shop-cart.js';
 import { SharedStyles } from './shared-styles.js';
 import { ButtonSharedStyles } from './button-shared-styles.js';
 import { addToCartIcon } from './my-icons.js';
+
+store.addReducers({
+  shop
+});
 
 class MyView3 extends connect(store)(PageViewElement) {
   static get properties() {
@@ -81,26 +84,32 @@ class MyView3 extends connect(store)(PageViewElement) {
     return html`
       <section>
         <h2>Redux example: shopping cart</h2>
-        <div class="cart">${addToCartIcon}<div class="circle small">${this._quantity}</div></div>
-        <p>This is a slightly more advanced Redux example, that simulates a
-          shopping cart: getting the products, adding/removing items to the
-          cart, and a checkout action, that can sometimes randomly fail (to
-          simulate where you would add failure handling). </p>
-        <p>This view, as well as its 2 child elements, <code>&lt;shop-products&gt;</code> and
-        <code>&lt;shop-cart&gt;</code> are connected to the Redux store.</p>
+        <div class="cart">
+          ${addToCartIcon}
+          <div class="circle small">${this._quantity}</div>
+        </div>
+        <p>
+          This is a slightly more advanced Redux example, that simulates a shopping cart: getting the products,
+          adding/removing items to the cart, and a checkout action, that can sometimes randomly fail (to simulate where
+          you would add failure handling).
+        </p>
+        <p>
+          This view, as well as its 2 child elements, <code>&lt;shop-products&gt;</code> and
+          <code>&lt;shop-cart&gt;</code> are connected to the Redux store.
+        </p>
       </section>
       <section>
         <h3>Products</h3>
         <shop-products></shop-products>
 
-        <br>
+        <br />
         <h3>Your Cart</h3>
         <shop-cart></shop-cart>
 
         <div>${this._error}</div>
-        <br>
+        <br />
         <p>
-          <button ?hidden="${this._quantity == 0}" @click="${this._checkoutButtonClicked}">
+          <button ?hidden="${this._quantity === 0}" @click="${this._checkoutButtonClicked}">
             Checkout
           </button>
         </p>

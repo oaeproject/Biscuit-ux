@@ -8,20 +8,23 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
-const puppeteer = require('puppeteer');
-const expect = require('chai').expect;
-const {startServer} = require('polyserve');
 const path = require('path');
+const puppeteer = require('puppeteer');
+const { expect } = require('chai');
+const { startServer } = require('polyserve');
+
 const appUrl = 'http://127.0.0.1:4444';
 
 describe('routing tests', function() {
-  let polyserve, browser, page;
+  let polyserve;
+  let browser;
+  let page;
 
   before(async function() {
-    polyserve = await startServer({port:4444, root:path.join(__dirname, '../..'), moduleResolution:'node'});
+    polyserve = await startServer({ port: 4444, root: path.join(__dirname, '../..'), moduleResolution: 'node' });
   });
 
-  after((done) => polyserve.close(done));
+  after(done => polyserve.close(done));
 
   beforeEach(async function() {
     browser = await puppeteer.launch();
@@ -32,7 +35,7 @@ describe('routing tests', function() {
 
   it('the page selector switches pages', async function() {
     await page.goto(`${appUrl}`);
-    await page.waitForSelector('my-app', {visible: true});
+    await page.waitForSelector('my-app', { visible: true });
 
     await testNavigation(page, 'view2', 'View Two');
     await testNavigation(page, 'view3', 'View Three');
@@ -41,7 +44,7 @@ describe('routing tests', function() {
 
   it('the page selector switches pages in a different way', async function() {
     await page.goto(`${appUrl}`);
-    await page.waitForSelector('my-app', {visible: true});
+    await page.waitForSelector('my-app', { visible: true });
 
     // Setup
     await page.evaluate(() => {
@@ -54,8 +57,10 @@ describe('routing tests', function() {
             el = el.shadowRoot;
           }
         }
+
         return el === document ? null : el;
-      }
+      };
+
       console.log(window.deepQuerySelector);
     });
 
@@ -70,6 +75,7 @@ async function testNavigation(page, href, linkText) {
   const getShadowRootChildProp = (el, childSelector, prop) => {
     return el.shadowRoot.querySelector(childSelector)[prop];
   };
+
   const doShadowRootClick = (el, childSelector) => {
     return el.shadowRoot.querySelector(childSelector).click();
   };
@@ -83,18 +89,18 @@ async function testNavigation(page, href, linkText) {
 
   // Does the click take you to the right page?
   await page.evaluate(doShadowRootClick, myApp, selector);
-  const newUrl = await page.evaluate('window.location.href')
+  const newUrl = await page.evaluate('window.location.href');
   expect(newUrl).equal(`${appUrl}/${href}`);
 }
 
 async function testNavigationInADifferentWay(page, href, linkText) {
   const query = `my-app::shadow a[href="/${href}"]`;
 
-  const linkHandle = await page.evaluateHandle((query) => window.deepQuerySelector(query), query);
-  const text = await page.evaluate((el) => el.textContent, linkHandle);
+  const linkHandle = await page.evaluateHandle(query => window.deepQuerySelector(query), query);
+  const text = await page.evaluate(el => el.textContent, linkHandle);
   expect(text).equal(linkText);
 
-  await page.evaluate((el) => el.click(), linkHandle);
-  let newUrl = await page.evaluate('window.location.href')
+  await page.evaluate(el => el.click(), linkHandle);
+  const newUrl = await page.evaluate('window.location.href');
   expect(newUrl).equal(`${appUrl}/${href}`);
 }

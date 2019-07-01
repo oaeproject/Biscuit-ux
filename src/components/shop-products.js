@@ -8,6 +8,8 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
+/* eslint-disable import/no-unassigned-import */
+
 import { LitElement, html, css } from 'lit-element';
 import { connect } from 'pwa-helpers/connect-mixin.js';
 
@@ -46,17 +48,18 @@ class ShopProducts extends connect(store)(LitElement) {
 
   render() {
     return html`
-      ${Object.keys(this._products).map((key) => {
+      ${Object.keys(this._products).map(key => {
         const item = this._products[key];
         return html`
           <div>
             <shop-item name="${item.title}" amount="${item.inventory}" price="${item.price}"></shop-item>
             <button
-                .disabled="${item.inventory === 0}"
-                @click="${this._addButtonClicked}"
-                data-index="${item.id}"
-                title="${item.inventory === 0 ? 'Sold out' : 'Add to cart' }">
-              ${item.inventory === 0 ? 'Sold out': addToCartIcon }
+              .disabled="${item.inventory === 0}"
+              @click="${this._addButtonClicked}"
+              data-index="${item.id}"
+              title="${item.inventory === 0 ? 'Sold out' : 'Add to cart'}"
+            >
+              ${item.inventory === 0 ? 'Sold out' : addToCartIcon}
             </button>
           </div>
         `;
@@ -69,7 +72,7 @@ class ShopProducts extends connect(store)(LitElement) {
   }
 
   _addButtonClicked(e) {
-    store.dispatch(addToCart(e.currentTarget.dataset['index']));
+    store.dispatch(addToCart(e.currentTarget.dataset.index));
   }
 
   // This is called every time something is updated in the store.

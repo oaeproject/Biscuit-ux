@@ -28,16 +28,16 @@ gulp.task('prpl-server:build', () => {
   const pattern = 'node_modules';
   const replacement = 'node_assets';
 
-  return gulp.src('build/**')
-    .pipe(rename(((path) => {
-      path.basename = path.basename.replace(pattern, replacement);
-      path.dirname = path.dirname.replace(pattern, replacement);
-    })))
+  return gulp
+    .src('build/**')
+    .pipe(
+      rename(path => {
+        path.basename = path.basename.replace(pattern, replacement);
+        path.dirname = path.dirname.replace(pattern, replacement);
+      })
+    )
     .pipe(replace(pattern, replacement))
     .pipe(gulp.dest('server/build'));
 });
 
-gulp.task('prpl-server', gulp.series(
-  'prpl-server:clean',
-  'prpl-server:build'
-));
+gulp.task('prpl-server', gulp.series('prpl-server:clean', 'prpl-server:build'));

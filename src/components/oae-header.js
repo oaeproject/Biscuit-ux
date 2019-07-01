@@ -27,19 +27,17 @@ class Header extends LitElement {
     event.preventDefault();
     fetch('http://guest.oae.com/api/auth/logout', {
       method: 'POST',
-      // mode: 'cors',
+      // Mode: 'cors',
       credentials: 'same-origin',
       cache: 'no-cache',
       redirect: 'follow'
-    })
-      .then(response => {
-        if (response.status === 200) {
-          this.notifyLoggedOut();
-        }
-        else {
-          // TODO show error somehow and somewhere
-        }
-      });
+    }).then(response => {
+      if (response.status === 200) {
+        this.notifyLoggedOut();
+      } else {
+        // TODO show error somehow and somewhere
+      }
+    });
   }
 
   login(event) {
@@ -50,10 +48,10 @@ class Header extends LitElement {
 
     formData = new URLSearchParams(formData);
 
-    let data = {};
+    const data = {};
     fetch('http://guest.oae.com/api/auth/login', {
       method: 'POST',
-      // mode: 'cors',
+      // Mode: 'cors',
       cache: 'no-cache',
       credentials: 'same-origin',
       redirect: 'follow',
@@ -103,10 +101,10 @@ class Header extends LitElement {
         <ul>
           <li>Logo</li>
           <li>Search</li>
-          <li ?hidden="${this.loggedIn === true}" >
+          <li ?hidden="${this.loggedIn === true}">
             <a @click="${this.login}" href="#">Login</a>
           </li>
-          <li ?hidden="${this.loggedIn === false}" >
+          <li ?hidden="${this.loggedIn === false}">
             <a @click="${this.logout}" href="#">Logout</a>
           </li>
         </ul>

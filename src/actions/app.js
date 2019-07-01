@@ -14,7 +14,7 @@ export const UPDATE_DRAWER_STATE = 'UPDATE_DRAWER_STATE';
 export const OPEN_SNACKBAR = 'OPEN_SNACKBAR';
 export const CLOSE_SNACKBAR = 'CLOSE_SNACKBAR';
 
-export const navigate = (path) => (dispatch) => {
+export const navigate = path => dispatch => {
   // Extract the page name from path.
   const page = path === '/' ? 'view1' : path.slice(1);
 
@@ -26,10 +26,10 @@ export const navigate = (path) => (dispatch) => {
   dispatch(updateDrawerState(false));
 };
 
-const loadPage = (page) => (dispatch) => {
-  switch(page) {
+const loadPage = page => dispatch => {
+  switch (page) {
     case 'view1':
-      import('../components/my-view1.js').then((module) => {
+      import('../components/my-view1.js').then((module) /* eslint-disable-line no-unused-vars */ => {
         // Put code in here that you want to run every time when
         // navigating to view1 after my-view1.js is loaded.
       });
@@ -42,22 +42,30 @@ const loadPage = (page) => (dispatch) => {
       break;
     case 'oae':
       import('../components/oae.js');
+      break;
     case 'dashboard':
       import('../components/dashboard.js');
+      break;
     case 'homepage':
       import('../components/homepage.js');
+      break;
     case 'library':
       import('../components/library.js');
+      break;
     case 'discussions':
       import('../components/discussions.js');
+      break;
     case 'groups':
       import('../components/groups.js');
-    }
+      break;
+    default:
+      import('../components/homepage.js');
+  }
 
   dispatch(updatePage(page));
 };
 
-const updatePage = (page) => {
+const updatePage = page => {
   return {
     type: UPDATE_PAGE,
     page
@@ -66,27 +74,27 @@ const updatePage = (page) => {
 
 let snackbarTimer;
 
-export const showSnackbar = () => (dispatch) => {
+export const showSnackbar = () => dispatch => {
   dispatch({
     type: OPEN_SNACKBAR
   });
   window.clearTimeout(snackbarTimer);
-  snackbarTimer = window.setTimeout(() =>
-    dispatch({ type: CLOSE_SNACKBAR }), 3000);
+  snackbarTimer = window.setTimeout(() => dispatch({ type: CLOSE_SNACKBAR }), 3000);
 };
 
-export const updateOffline = (offline) => (dispatch, getState) => {
+export const updateOffline = offline => (dispatch, getState) => {
   // Show the snackbar only if offline status changes.
   if (offline !== getState().app.offline) {
     dispatch(showSnackbar());
   }
+
   dispatch({
     type: UPDATE_OFFLINE,
     offline
   });
 };
 
-export const updateDrawerState = (opened) => {
+export const updateDrawerState = opened => {
   return {
     type: UPDATE_DRAWER_STATE,
     opened

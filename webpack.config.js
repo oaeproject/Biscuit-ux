@@ -25,9 +25,7 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: [
-              ['@babel/preset-env', {targets: {ie: '11'}}]
-            ],
+            presets: [['@babel/preset-env', { targets: { ie: '11' } }]],
             plugins: ['@babel/plugin-syntax-dynamic-import']
           }
         }
@@ -35,11 +33,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CopyWebpackPlugin([
-      'images/**',
-      'node_modules/@webcomponents/webcomponentsjs/**',
-      'manifest.json'
-    ]),
+    new CopyWebpackPlugin(['images/**', 'node_modules/@webcomponents/webcomponentsjs/**', 'manifest.json']),
     new HtmlWebpackPlugin({
       chunksSortMode: 'none',
       template: 'index.html'

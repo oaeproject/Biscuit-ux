@@ -8,6 +8,8 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
+/* eslint-disable import/no-unassigned-import */
+
 import { LitElement, html, css } from 'lit-element';
 import { connect } from 'pwa-helpers/connect-mixin.js';
 
@@ -15,7 +17,6 @@ import { connect } from 'pwa-helpers/connect-mixin.js';
 import { store } from '../store.js';
 
 // These are the elements needed by this element.
-import { removeFromCartIcon } from './my-icons.js';
 import './shop-item.js';
 
 // These are the actions needed by this element.
@@ -23,6 +24,7 @@ import { removeFromCart } from '../actions/shop.js';
 
 // These are the reducers needed by this element.
 import { cartItemsSelector, cartTotalSelector } from '../reducers/shop.js';
+import { removeFromCartIcon } from './my-icons.js';
 
 // These are the shared styles needed by this element.
 import { ButtonSharedStyles } from './button-shared-styles.js';
@@ -49,25 +51,23 @@ class ShopCart extends connect(store)(LitElement) {
   render() {
     return html`
       <p ?hidden="${this._items.length !== 0}">Please add some products to cart.</p>
-      ${this._items.map((item) =>
-        html`
-          <div>
-            <shop-item .name="${item.title}" .amount="${item.amount}" .price="${item.price}"></shop-item>
-            <button
-                @click="${this._removeButtonClicked}"
-                data-index="${item.id}"
-                title="Remove from cart">
-              ${removeFromCartIcon}
-            </button>
-          </div>
-        `
+      ${this._items.map(
+        item =>
+          html`
+            <div>
+              <shop-item .name="${item.title}" .amount="${item.amount}" .price="${item.price}"></shop-item>
+              <button @click="${this._removeButtonClicked}" data-index="${item.id}" title="Remove from cart">
+                ${removeFromCartIcon}
+              </button>
+            </div>
+          `
       )}
       <p ?hidden="${!this._items.length}"><b>Total:</b> ${this._total}</p>
     `;
   }
 
   _removeButtonClicked(e) {
-    store.dispatch(removeFromCart(e.currentTarget.dataset['index']));
+    store.dispatch(removeFromCart(e.currentTarget.dataset.index));
   }
 
   // This is called every time something is updated in the store.
