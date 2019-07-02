@@ -47,14 +47,70 @@ module.exports = {
       skipWaiting: true,
       runtimeCaching: [
         {
-          urlPattern: /\/@webcomponents\/webcomponentsjs\//,
-          handler: 'staleWhileRevalidate'
+          test: /\.scss$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: 'bundle.css',
+              },
+            },
+            {loader: 'extract-loader'},
+            {loader: 'css-loader'},
+            {loader: 'sass-loader'},
+          ],
         },
+      ],
+    },
+  },
+  {
+    devServer: {
+      historyApiFallback: true,
+      disableHostCheck: true,
+    },
+    mode: 'production',
+    module: {
+      rules: [
         {
-          urlPattern: /^https:\/\/fonts.gstatic.com\//,
-          handler: 'staleWhileRevalidate'
-        }
-      ]
-    })
-  ]
-};
+          test: /\.js$/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: [['@babel/preset-env', {targets: {ie: '11'}}]],
+              plugins: ['@babel/plugin-syntax-dynamic-import'],
+            },
+          },
+        },
+      ],
+    },
+    plugins: [
+      new CopyWebpackPlugin([
+        'images/**',
+        'node_modules/@webcomponents/webcomponentsjs/**',
+        'manifest.json',
+      ]),
+      new HtmlWebpackPlugin({
+        chunksSortMode: 'none',
+        template: 'index.html',
+      }),
+      new WorkboxWebpackPlugin.GenerateSW({
+        include: ['index.html', 'manifest.json', /\.js$/],
+        exclude: [/\/@webcomponents\/webcomponentsjs\//],
+        navigateFallback: 'index.html',
+        swDest: 'service-worker.js',
+        clientsClaim: true,
+        skipWaiting: true,
+        runtimeCaching: [
+          {
+            urlPattern: /\/@webcomponents\/webcomponentsjs\//,
+            handler: 'staleWhileRevalidate',
+          },
+          {
+            urlPattern: /^https:\/\/fonts.gstatic.com\//,
+            handler: 'staleWhileRevalidate',
+          },
+        ],
+      }),
+    ],
+  },
+];
