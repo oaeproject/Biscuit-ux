@@ -11,9 +11,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 
 module.exports = [
   {
+    devServer: {
+      historyApiFallback: true,
+      disableHostCheck: true,
+    },
     entry: './style/app.scss',
     output: {
       // This is necessary for webpack to compile
@@ -33,7 +38,18 @@ module.exports = [
             },
             { loader: 'extract-loader' },
             { loader: 'css-loader' },
-            { loader: 'sass-loader' }
+            {
+              loader: 'postcss-loader',
+              options: {
+                 plugins: () => [autoprefixer()]
+              }
+            },
+            { 
+              loader: 'sass-loader',
+              options: {
+              includePaths: ['./node_modules'] 
+            }
+            }
           ]
         }
       ]

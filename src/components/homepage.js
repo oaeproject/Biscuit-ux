@@ -11,10 +11,12 @@ class OAEHomepage extends PageViewElement {
 
   render() {
     return html`
-      <section>
-        <h2>This is the homepage</h2>
-        
-      </section>
+    <link rel="stylesheet" href="bundle.css">
+      <body>
+        <button class="foo-button mdc-button">
+        Login
+        </button>
+      </body>
     `
   }
 }
