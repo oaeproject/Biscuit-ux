@@ -12,55 +12,77 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 
-module.exports = {
-  devServer: {
-    historyApiFallback: true,
-    disableHostCheck: true
-  },
-  mode: 'production',
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              ['@babel/preset-env', {targets: {ie: '11'}}]
-            ],
-            plugins: ['@babel/plugin-syntax-dynamic-import']
-          }
-        }
-      }
-    ]
-  },
-  plugins: [
-    new CopyWebpackPlugin([
-      'images/**',
-      'node_modules/@webcomponents/webcomponentsjs/**',
-      'manifest.json'
-    ]),
-    new HtmlWebpackPlugin({
-      chunksSortMode: 'none',
-      template: 'index.html'
-    }),
-    new WorkboxWebpackPlugin.GenerateSW({
-      include: ['index.html', 'manifest.json', /\.js$/],
-      exclude: [/\/@webcomponents\/webcomponentsjs\//],
-      navigateFallback: 'index.html',
-      swDest: 'service-worker.js',
-      clientsClaim: true,
-      skipWaiting: true,
-      runtimeCaching: [
+module.exports = [
+  {
+    entry: './style/app.scss',
+    output: {
+      // This is necessary for webpack to compile
+      // But we never use style-bundle.js
+      filename: './style/style-bundle.js'
+    },
+    module: {
+      rules: [
         {
-          urlPattern: /\/@webcomponents\/webcomponentsjs\//,
-          handler: 'staleWhileRevalidate'
-        },
-        {
-          urlPattern: /^https:\/\/fonts.gstatic.com\//,
-          handler: 'staleWhileRevalidate'
+          test: /\.scss$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: 'bundle.css'
+              }
+            },
+            { loader: 'extract-loader' },
+            { loader: 'css-loader' },
+            { loader: 'sass-loader' }
+          ]
         }
       ]
-    })
-  ]
-};
+    }
+  },
+  {
+    devServer: {
+      historyApiFallback: true,
+      disableHostCheck: true
+    },
+    mode: 'production',
+    module: {
+      rules: [
+        {
+          test: /\.js$/,
+          use: {
+            loader: 'babel-loader',
+            options: {
+              presets: [['@babel/preset-env', { targets: { ie: '11' } }]],
+              plugins: ['@babel/plugin-syntax-dynamic-import']
+            }
+          }
+        }
+      ]
+    },
+    plugins: [
+      new CopyWebpackPlugin(['images/**', 'node_modules/@webcomponents/webcomponentsjs/**', 'manifest.json']),
+      new HtmlWebpackPlugin({
+        chunksSortMode: 'none',
+        template: 'index.html'
+      }),
+      new WorkboxWebpackPlugin.GenerateSW({
+        include: ['index.html', 'manifest.json', /\.js$/],
+        exclude: [/\/@webcomponents\/webcomponentsjs\//],
+        navigateFallback: 'index.html',
+        swDest: 'service-worker.js',
+        clientsClaim: true,
+        skipWaiting: true,
+        runtimeCaching: [
+          {
+            urlPattern: /\/@webcomponents\/webcomponentsjs\//,
+            handler: 'staleWhileRevalidate'
+          },
+          {
+            urlPattern: /^https:\/\/fonts.gstatic.com\//,
+            handler: 'staleWhileRevalidate'
+          }
+        ]
+      })
+    ]
+  }
+];

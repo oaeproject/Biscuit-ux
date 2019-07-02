@@ -25,12 +25,17 @@
     "@polymer/app-layout": "^3.0.0",
     "@polymer/polymer": "^3.1.0",
     "@webcomponents/webcomponentsjs": "^2.0.0",
+    "css-loader": "^3.0.0",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^4.0.0",
     "js-cookie": "^2.2.0",
     "lit-element": "^2.0.0-rc.2",
+    "node-sass": "^4.12.0",
     "pwa-helpers": "^0.9.0",
     "redux": "^4.0.0",
     "redux-thunk": "^2.3.0",
     "reselect": "^4.0.0",
+    "sass-loader": "^7.1.0",
     "universal-cookie": "^4.0.0"
   },
   "devDependencies": {
