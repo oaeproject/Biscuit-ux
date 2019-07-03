@@ -65,7 +65,7 @@
     "postcss-loader": "^3.0.0",
     "prpl-server": "^1.4.0",
     "puppeteer": "^1.5.0",
-    "regenerator-runtime": "latest",
+    "regenerator-runtime": "^0.13.2",
     "sass-loader": "^7.1.0",
     "wct-mocha": "^1.0.0",
     "webpack": "^4.10.2",
