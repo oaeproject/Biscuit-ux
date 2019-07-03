@@ -16,9 +16,7 @@ import { SharedStyles } from './shared-styles.js';
 
 class MyView404 extends PageViewElement {
   static get styles() {
-    return [
-      SharedStyles
-    ];
+    return [SharedStyles];
   }
 
   render() {
@@ -30,7 +28,7 @@ class MyView404 extends PageViewElement {
           <a href="/">home</a> and try again?
         </p>
       </section>
-    `
+    `;
   }
 }
 

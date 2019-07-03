@@ -26,7 +26,7 @@ class CounterElement extends LitElement {
       clicks: { type: Number },
       /* The current value of the counter. */
       value: { type: Number }
-    }
+    };
   }
 
   static get styles() {
@@ -47,8 +47,7 @@ class CounterElement extends LitElement {
     return html`
       <div>
         <p>
-          Clicked: <span>${this.clicks}</span> times.
-          Value is <span>${this.value}</span>.
+          Clicked: <span>${this.clicks}</span> times. Value is <span>${this.value}</span>.
           <button @click="${this._onIncrement}" title="Add 1">${plusIcon}</button>
           <button @click="${this._onDecrement}" title="Minus 1">${minusIcon}</button>
         </p>

@@ -16,6 +16,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
  * features, such as Symbol, which conflicts with '@babel/polyfill'. So
  * instead, we just import the features we know we need.
  */
+/* eslint-disable import/no-unassigned-import */
+
 import 'regenerator-runtime/runtime';
 import '@webcomponents/webcomponentsjs/custom-elements-es5-adapter.js';
 import './components/my-app.js';

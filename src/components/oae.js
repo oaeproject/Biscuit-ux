@@ -8,6 +8,8 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
+/* eslint-disable import/no-unassigned-import */
+
 import { html, css } from 'lit-element';
 import { PageViewElement } from './page-view-element.js';
 import './oae-main.js';

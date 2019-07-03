@@ -8,14 +8,10 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
-import {
-  GET_PRODUCTS,
-  ADD_TO_CART,
-  REMOVE_FROM_CART,
-  CHECKOUT_SUCCESS,
-  CHECKOUT_FAILURE
-} from '../actions/shop.js';
+/* eslint-disable no-case-declarations */
+
 import { createSelector } from 'reselect';
+import { GET_PRODUCTS, ADD_TO_CART, REMOVE_FROM_CART, CHECKOUT_SUCCESS, CHECKOUT_FAILURE } from '../actions/shop.js';
 
 const INITIAL_STATE = {
   products: {},
@@ -54,7 +50,7 @@ const products = (state, action) => {
   switch (action.type) {
     case ADD_TO_CART:
     case REMOVE_FROM_CART:
-      const productId = action.productId;
+      const { productId } = action;
       return {
         ...state,
         [productId]: product(state[productId], action)
@@ -98,12 +94,13 @@ const cart = (state, action) => {
         };
         delete newState[removeId];
         return newState;
-      } else {
-        return {
-          ...state,
-          [removeId]: quantity
-        }
       }
+
+      return {
+        ...state,
+        [removeId]: quantity
+      };
+
     case CHECKOUT_SUCCESS:
       return {};
     default:
@@ -134,7 +131,7 @@ export const cartItemsSelector = createSelector(
   (cart, products) => {
     return Object.keys(cart).map(id => {
       const item = products[id];
-      return {id: item.id, title: item.title, amount: cart[id], price: item.price};
+      return { id: item.id, title: item.title, amount: cart[id], price: item.price };
     });
   }
 );
