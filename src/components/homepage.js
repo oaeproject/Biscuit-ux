@@ -6,16 +6,16 @@ import legacyStyles from '../../style/legacy.css';
 
 class OAEHomepage extends PageViewElement {
   static get styles() {
-    return [homepageStyles /*, sharedStyles */, legacyStyles];
+    return [homepageStyles, legacyStyles];
   }
 
   render() {
     return html`
-      <style include="legacy"></style>
-      <style include="homepage"></style>
       <h1 class="title">
         Bulma
       </h1>
+
+      <h2>Sou provavelmente o maior da minha aldeia em CSS :)</h2>
 
       <p class="subtitle">
         Modern CSS framework based on <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">Flexbox</a>
