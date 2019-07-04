@@ -7,7 +7,7 @@ This is an experimental frontend for Apereo's Open Academic Environment. In time
 <!-- current project status -->
 
 <a href="https://codeclimate.com/github/oaeproject/Biscuit-ux/maintainability"><img src="https://api.codeclimate.com/v1/badges/ef5848ed3cca76108e0b/maintainability" /></a>
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fbrecke%2FBiscuit-ux.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fbrecke%2FBiscuit-ux?ref=badge_shield)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbrecke%2FBiscuit-ux.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbrecke%2FBiscuit-ux?ref=badge_shield)
 [![Known Vulnerabilities](https://snyk.io//test/github/oaeproject/Biscuit-ux/badge.svg?targetFile=package.json)](https://snyk.io//test/github/oaeproject/Biscuit-ux?targetFile=package.json)
 
 <!-- standards used in project -->
@@ -36,6 +36,10 @@ Integration with the backend is still experimental and requires a few changes to
 2. `docker-compose rm -f oae-nginx`
 3. `docker-compose up -d oae-nginx`
 4. `docker-compose logs -f oae-nginx`
+
+## License
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fbrecke%2FBiscuit-ux.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fbrecke%2FBiscuit-ux?ref=badge_large)
 
 ## Help
 
