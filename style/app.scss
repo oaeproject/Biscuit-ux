@@ -1,5 +1,25 @@
-body {
-  color: blue;
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// Import only what you need from Bulma
+@import "bulma/sass/utilities/mixins";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/button.sass";
+@import "../node_modules/bulma/sass/elements/container.sass";
+@import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/navbar.sass";
+@import "../node_modules/bulma/sass/layout/hero.sass";
+@import "../node_modules/bulma/sass/layout/section.sass";
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+
 }
 
 h2 {
@@ -7,4 +27,29 @@ h2 {
   text-decoration-style: dotted;
   text-decoration: underline;
   font-size: 3rem;
+}
+
+.hero-body {
+  margin: 0;
+  padding: 0;
+  background-color:#FAFAFA;
+}
+
+.container.is-fluid{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.column.is-2 {
+  background-color: white;
+}
+
+.menu {
+  padding-left: 50px;
+}
+
+.column.content-base { 
+  background-color: brown;
 }

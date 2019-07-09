@@ -27,6 +27,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     -->
     <base href="/">
 
+
     <link rel="icon" href="images/favicon.ico">
 
     <!-- See https://goo.gl/OOhYW5 -->
@@ -37,12 +38,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
     <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="application-name" content="My App">
+    <meta name="application-name" content="OAE">
 
     <!-- Add to homescreen for Safari on iOS -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="apple-mobile-web-app-title" content="My App">
+    <meta name="apple-mobile-web-app-title" content="OAE">
 
     <!-- Homescreen icons -->
     <link rel="apple-touch-icon" href="images/manifest/icon-48x48.png">
@@ -60,7 +61,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@username">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="my-app">
+    <meta property="og:site_name" content="OAE">
     <meta property="og:image" content="images/manifest/icon-144x144.png" />
 
     <!-- Performance tip: hint to the browser to start the handshake for the fonts site -->
@@ -93,18 +94,21 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         */
         font-display: swap;
       }
-      body {
+      html, body {
         margin: 0;
         /* This is a font-stack that tries to use the system-default sans-serifs first */
         font-family: Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
         line-height: 1.5;
         min-height: 100vh;
         -webkit-font-smoothing: antialiased;
+        background-color:#FAFAFA;
+        height: 100%;
       }
+    
     </style>
   </head>
   <body>
-    <my-app appTitle="my app">
+    <my-app appTitle="OAE">
     </my-app>
     <noscript>
       Please enable JavaScript to view this website.

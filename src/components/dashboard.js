@@ -9,10 +9,14 @@ class OAEDashboard extends PageViewElement {
 
   render() {
     return html`
-      <h2>Sou provavelmente o maior da minha aldeia em CSS :)</h2>
-      <section>
-        <h2>dfghgjgh incomplete dashboard!</h2>
-      </section>
+    <div class="columns is-mobile">
+    <div class="column">1</div>
+    <div class="column">2</div>
+    <div class="column">3</div>
+    <div class="column">4</div>
+  </div>
+
+
     `;
   }
 }

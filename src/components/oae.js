@@ -15,20 +15,15 @@ import { PageViewElement } from './page-view-element.js';
 import './oae-main.js';
 import './oae-header.js';
 import './oae-sidebar.js';
+import homepageStyles from './../../style/homepage.scss';
+import sharedStyles from './../../style/app.scss';
 
 // These are the shared styles needed by this element.
 // import {SharedStyles} from './shared-styles.js';
 
 class OAE extends PageViewElement {
   static get styles() {
-    return [
-      css`
-        :host div#main {
-          display: flex;
-          flex-direction: row;
-        }
-      `
-    ];
+    return [sharedStyles, homepageStyles];
   }
 
   render() {
