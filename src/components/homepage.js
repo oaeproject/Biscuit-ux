@@ -17,14 +17,34 @@ class OAEHomepage extends PageViewElement {
             <div class="column is-2"> 
                 <aside class="menu">
                   <ul class="menu-list">
-                    <li><a>Dashboard</a></li>
-                    <li><a>Library</a></li>
-                    <li><a>Discussions</a></li>
-                    <li><a>User Settings</a></li>
+                    <li><a>
+                    <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/view-dashboard-outline.svg"/>
+                    Dashboard
+                    </a></li>
+                    <li><a>
+                    <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/view-dashboard-outline.svg"/>
+                    Library</a></li>
+                    <li><a>
+                    <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/view-dashboard-outline.svg"/>
+                    Discussions</a></li>
+                    <li><a>
+                    <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/view-dashboard-outline.svg"/>
+                    User Settings</a></li>
                   </ul>
               </aside>
             </div>
             <div class="column content-base">  
+            <div class="column top-nav">
+            <section>
+            <button class="button is-primary is-rounded is-pulled-right">Username</button>
+              </section>
+              <section>
+            <button class="button is-primary is-rounded is-pulled-right">Notifications</button>
+              </section>
+              <section>
+            <button class="button is-primary is-rounded is-pulled-right">Context Change</button>
+              </section>
+            </div>
             </div>
           </div>
         </div>

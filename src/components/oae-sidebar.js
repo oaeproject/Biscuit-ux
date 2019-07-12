@@ -3,6 +3,7 @@ import {PageViewElement} from './page-view-element.js';
 import homepageStyles from './../../style/homepage.scss';
 import sharedStyles from './../../style/app.scss';
 
+
 class Sidebar extends PageViewElement {
   static get styles() {
     return [sharedStyles, homepageStyles];

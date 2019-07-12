@@ -41,15 +41,40 @@ h2 {
   height: 100%;
 }
 
+.columns {
+  height: 100%;
+}
 
 .column.is-2 {
   background-color: white;
+  height: 100%;
+}
+
+.column.top-nav{
+  background-color: aqua;
+}
+
+.aside {
+  height: 100%;
 }
 
 .menu {
   padding-left: 50px;
 }
 
+.menu-list{
+  font-size: 20px;
+}
 .column.content-base { 
   background-color: brown;
+}
+
+img.sidebar {
+  width: 24px;
+  height: 24px;
+  padding-right: 15px;
+}
+
+img.path {
+  fill: red;
 }

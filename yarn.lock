@@ -732,6 +732,11 @@
   dependencies:
     "@material/feature-targeting" "^3.0.0"
 
+"@mdi/svg@^3.7.95":
+  version "3.7.95"
+  resolved "https://registry.yarnpkg.com/@mdi/svg/-/svg-3.7.95.tgz#178207f08cb91dc9111afef7e748aefe41b54019"
+  integrity sha512-5ZStRxq4PFATwurnjN1CgCGCfP8nwJfHuqUozTMaF/qKC7rlSBS0Sm+VQQDmlJBO3JjiG+dQgd7ZdtanI/w/mw==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"
