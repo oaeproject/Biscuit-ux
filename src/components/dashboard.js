@@ -4,7 +4,7 @@ import sharedStyles from './../../style/app.scss';
 import './sidebar.js';
 import './top-nav.js';
 //import './crumbs.js';
-
+import './info-cards.js';
 
 class OAEDashboard extends PageViewElement {
   static get styles() {
@@ -24,8 +24,9 @@ class OAEDashboard extends PageViewElement {
           <div class="column top-nav">
             <top-nav></top-nav>
           </div>
-          
+          <info-cards></info-cards>
          </div>
+          
         </div>
       </div>
     </div>

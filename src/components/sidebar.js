@@ -29,6 +29,7 @@ class Sidebar extends LitElement {
                 <li><a>
                 <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/wan.svg"/>
                 Network</a></li>
+                <hr class="navbar-divider">
                 <li><a>
                 <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/settings-outline.svg"/>
                 User Settings</a></li>
