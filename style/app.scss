@@ -7,13 +7,35 @@
 @import "../node_modules/bulma/sass/grid/_all.sass";
 @import "../node_modules/bulma/sass/utilities/_all.sass";
 @import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+
+
+// Components
+@import "../node_modules/bulma/sass/components/navbar.sass";
+// not working, screws up the page format
+//@import "../node_modules/bulma/sass/components/breadcrumb.sass";
+@import "../node_modules/bulma/sass/components/dropdown.sass";
+@import "../node_modules/bulma/sass/components/modal.sass";
+
+//Elements
+@import "../node_modules/bulma/sass/elements/box.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
-@import "../node_modules/bulma/sass/form/_all.sass";
-@import "../node_modules/bulma/sass/components/navbar.sass";
+
+//Layout
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+
+
+//Should remake the structure in order to include these imports
+//@import "../node_modules/bulma/sass/grid/_all.sass";
+//@import "../node_modules/bulma/sass/utilities/_all.sass";
+//@import "../node_modules/bulma/sass/base/_all.sass";
+//@import "../node_modules/bulma/sass/elements/_all.sass";
+//@import "../node_modules/bulma/sass/form/_all.sass";
+//@import "../node_modules/bulma/sass/components/_all.sass";
+//@import "../node_modules/bulma/sass/layout/_all.sass";
 
 
 html, body {
@@ -45,13 +67,21 @@ h2 {
   height: 100%;
 }
 
-.column.is-2 {
+.column.is-narrow {
   background-color: white;
-  height: 100%;
+  -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow: 5px 5px 6px #d8d3d3;
+  z-index: 1;
+  width: 250px;
 }
 
 .column.top-nav{
-  background-color: aqua;
+  background-color: transparent;
+}
+
+.colums.breadcrumbs {
+  background-color: #2962FF;
 }
 
 .aside {
@@ -62,19 +92,115 @@ h2 {
   padding-left: 50px;
 }
 
-.menu-list{
-  font-size: 20px;
+.menu-list {
+  font-size: 16px;
 }
+
+.menu-list li {
+  margin-top: 20px;
+  &:hover {
+    color: #2962FF;
+    background-color: #E3F2FD;
+  }
+  &:active {
+    color: #2962FF;
+    background-color: #E3F2FD;
+  }
+}
+
+.menu-list a{
+  padding-bottom: 20px;
+  color: #757575;
+}
+
 .column.content-base { 
-  background-color: brown;
+  background-color: #FAFAFA;
 }
 
 img.sidebar {
-  width: 24px;
-  height: 24px;
+  width: 25px;
+  height: 25px;
   padding-right: 15px;
+  vertical-align: middle;
+  color: #757575;
 }
 
-img.path {
-  fill: red;
+img.top-menu {
+  width: 25px;
+  height: 25px;
+  padding-right: 15px;
+  vertical-align: middle;
+  color: #757575;
+}
+
+img.avatar {
+  padding-left: 10px;
+  padding-right: 3px;
+}
+
+img.search_icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.input {
+  color: black;
+  -webkit-appearance: none;
+  border:none;
+  background-color: transparent;
+  box-shadow: none;
+  &:focus {
+    -webkit-appearance: none;
+    border:none;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+  &:focus {
+    -webkit-appearance: none;
+    border:none;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.navbar {
+  background-color: transparent;
+}
+
+.navbar-item.has-dropdown {
+  margin-right: 15px;
+  font-size: 15px;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  height: 45px;
+  &:hover {
+    background-color: white;
+    border-radius: 25px;
+    height: 45px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); 
+  }
+}
+
+.navbar-item.has-dropdown a {
+  margin-right: 15px;
+}
+
+.navbar-link:not(.is-arrowless)::after {
+  border-color: black;
+  margin-top: -.500em;
+  margin-left: 15;
+  right: 0.5em;
+}
+
+.navbar-link.avatar{
+  padding-left: 20px;
 }

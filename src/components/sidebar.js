@@ -18,13 +18,19 @@ class Sidebar extends LitElement {
                 Dashboard
                 </a></li>
                 <li><a>
-                <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/view-dashboard-outline.svg"/>
+                <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/book-open-outline.svg"/>
                 Library</a></li>
                 <li><a>
-                <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/view-dashboard-outline.svg"/>
+                <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/format-list-bulleted-square.svg"/>
                 Discussions</a></li>
                 <li><a>
-                <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/view-dashboard-outline.svg"/>
+                <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/account-group-outline.svg"/>
+                Groups</a></li>
+                <li><a>
+                <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/wan.svg"/>
+                Network</a></li>
+                <li><a>
+                <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/settings-outline.svg"/>
                 User Settings</a></li>
             </ul>
             </aside>
