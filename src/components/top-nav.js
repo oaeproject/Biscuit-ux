@@ -1,5 +1,4 @@
 import { html, LitElement } from 'lit-element';
-//import {PageViewElement} from './page-view-element.js';
 import homepageStyles from './../../style/homepage.scss';
 import sharedStyles from './../../style/app.scss';
 
@@ -24,7 +23,6 @@ class topNav extends LitElement {
                 
               </div>
               <div class="navbar-end is-small">
-                
                 <div class="navbar-item has-dropdown is-hoverable">
                   <a class="navbar-link">
                   <img class="top-menu" src="./../../node_modules/@mdi/svg/svg/bell-outline.svg"/>

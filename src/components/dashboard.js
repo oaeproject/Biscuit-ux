@@ -3,7 +3,6 @@ import { PageViewElement } from './page-view-element.js';
 import sharedStyles from './../../style/app.scss';
 import './sidebar.js';
 import './top-nav.js';
-//import './crumbs.js';
 import './info-cards.js';
 
 class OAEDashboard extends PageViewElement {
