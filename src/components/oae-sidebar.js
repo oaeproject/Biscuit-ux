@@ -1,29 +1,24 @@
-import { html, css, LitElement } from 'lit-element';
+import {html, css} from 'lit-element';
+import {PageViewElement} from './page-view-element.js';
+import homepageStyles from './../../style/homepage.scss';
+import sharedStyles from './../../style/app.scss';
 
-class Sidebar extends LitElement {
+
+class Sidebar extends PageViewElement {
   static get styles() {
-    return [
-      css`
-        :host div {
-          display: block;
-          box-sizing: border-box;
-          border: 1px dashed orange;
-        }
-      `
-    ];
+    return [sharedStyles, homepageStyles];
   }
 
   render() {
     return html`
-      <div>
-        <ul>
-          <li>My dashboard</li>
-          <li>My Library</li>
-          <li>My Groups</li>
-          <li>My Discussions</li>
-          <li>My Network</li>
+      <aside class="menu">
+        <ul class="menu-list">
+          <li><a>Dashboard</a></li>
+          <li><a>Library</a></li>
+          <li><a>Discussions</a></li>
+          <li><a>User Settings</a></li>
         </ul>
-      </div>
+      </aside>
     `;
   }
 }

@@ -241,10 +241,7 @@ class MyApp extends connect(store)(LitElement) {
         <user-groups class="page" ?active="${this._page === 'groups'}"></user-groups>
       </main>
 
-      <footer>
-        <p>Made by the OAE team</p>
-      </footer>
-
+      
       <snack-bar ?active="${this._snackbarOpened}">
         You are now ${this._offline ? 'offline' : 'online'}.
       </snack-bar>
