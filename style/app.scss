@@ -57,6 +57,23 @@ h2 {
 	height: 100%;
 }
 
+.columns.dasboard {
+	margin: 0;
+}
+
+.columns.content-base {
+	background-color: #fafafa;
+	margin: 0;
+}
+
+.columns.main-content {
+	margin: 10px;
+}
+
+.column.content-wrap {
+	padding: 20px;
+}
+
 .column.is-narrow {
 	background-color: white;
 	-moz-box-shadow: 3px 3px 5px 6px #ccc;
@@ -68,6 +85,7 @@ h2 {
 
 .column.top-nav {
 	background-color: transparent;
+	padding: .1rem;
 }
 
 .colums.breadcrumbs {
@@ -101,10 +119,6 @@ h2 {
 .menu-list a {
 	padding-bottom: 20px;
 	color: #757575;
-}
-
-.column.content-base {
-	background-color: #fafafa;
 }
 
 img.sidebar {
@@ -202,4 +216,8 @@ img.search_icon {
 .navbar-item.is-hoverable {
   background-color: white;
 	border-radius: 25px;
+}
+
+.box {
+	margin: 0;
 }
