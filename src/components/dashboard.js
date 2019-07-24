@@ -1,6 +1,9 @@
 import { html } from 'lit-element';
 import { PageViewElement } from './page-view-element.js';
 import sharedStyles from './../../style/app.scss';
+import './sidebar.js';
+import './top-nav.js';
+import './info-cards.js';
 
 class OAEDashboard extends PageViewElement {
   static get styles() {
@@ -9,10 +12,26 @@ class OAEDashboard extends PageViewElement {
 
   render() {
     return html`
-      <h2>Sou provavelmente o maior da minha aldeia em CSS :)</h2>
-      <section>
-        <h2>dfghgjgh incomplete dashboard!</h2>
-      </section>
+    <section class="hero is-link is-fullheight">
+    <div class="hero-body">
+      <div class="container is-fluid is-fullheight is-mobile">
+        <div class="columns test">
+        <div class="column is-narrow"> 
+          <sidebar-nav></sidebar-nav>
+          </div>
+          <div class="column content-base">  
+          <div class="column top-nav">
+            <top-nav></top-nav>
+          </div>
+          <info-cards></info-cards>
+         </div>
+          
+        </div>
+      </div>
+    </div>
+</section>
+
+
     `;
   }
 }
