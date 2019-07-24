@@ -12,3 +12,338 @@ patch:
         patched: '2019-07-04T02:34:26.801Z'
     - babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
         patched: '2019-07-04T02:34:26.801Z'
+    - polyserve > polymer-build > polymer-project-config > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - node-sass > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - '@babel/core > lodash':
+        patched: '2019-07-24T10:42:39.630Z'
+    - '@babel/preset-env > @babel/plugin-transform-block-scoping > lodash':
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > yeoman-generator > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > yeoman-environment > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - xo > eslint > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > http-proxy-middleware > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > inquirer > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - webpack-dev-server > http-proxy-middleware > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - node-sass > sass-graph > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - xo > eslint-plugin-import > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - '@babel/core > @babel/traverse > @babel/types > lodash':
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > wct-sauce > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > http-proxy-middleware > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-analyzer > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-linter > babel-traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-bundler > babel-traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-bundler > babel-generator > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-linter > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-bundler > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > yeoman-generator > yeoman-environment > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - xo > eslint > inquirer > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > @babel/plugin-transform-block-scoping > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - xo > eslint > table > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > yeoman-environment > inquirer > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - node-sass > gaze > globule > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > yeoman-generator > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > @babel/plugin-transform-block-scoping > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > yeoman-environment > grouped-queue > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > wd > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - xo > eslint-plugin-ava > enhance-visitors > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-bundler > babel-traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > @babel/traverse > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > @babel/traverse > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > plylog > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-project-config > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-analyzer > @babel/traverse > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-project-config > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-bundler > babel-generator > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-bundler > babel-traverse > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-linter > polymer-analyzer > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-analyzer > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-analyzer > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-bundler > polymer-analyzer > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-linter > babel-traverse > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - '@babel/preset-env > @babel/plugin-transform-classes > @babel/helper-function-name > @babel/types > lodash':
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-bundler > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-bundler > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-bundler > babel-generator > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-bundler > babel-generator > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-bundler > babel-traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > http-proxy-middleware > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > wct-local > selenium-standalone > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > wct-sauce > sauce-connect-launcher > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > wd > archiver > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > wd > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > yeoman-generator > yeoman-environment > grouped-queue > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > yeoman-generator > yeoman-environment > inquirer > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-bundler > babel-generator > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - '@babel/preset-env > @babel/plugin-transform-classes > @babel/helper-define-map > @babel/helper-function-name > @babel/types > lodash':
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > wd > archiver > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-analyzer > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > wct-sauce > sauce-connect-launcher > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > wct-local > selenium-standalone > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > @babel/core > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-analyzer > @babel/traverse > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > wct-local > launchpad > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-bundler > babel-generator > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > @babel/traverse > @babel/helper-function-name > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-analyzer > @babel/traverse > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > @babel/core > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-linter > polymer-analyzer > @babel/traverse > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-bundler > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-project-config > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-bundler > babel-generator > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-project-config > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - html-webpack-plugin > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-bundler > babel-traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > plylog > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > plylog > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-project-config > plylog > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-project-config > plylog > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-analyzer > @babel/traverse > @babel/helper-function-name > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > wd > archiver > zip-stream > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-bundler > babel-traverse > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-bundler > babel-traverse > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > wd > archiver > archiver-utils > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > @babel/plugin-transform-sticky-regex > @babel/helper-regex > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - '@babel/preset-env > @babel/plugin-transform-classes > @babel/helper-define-map > @babel/helper-function-name > @babel/template > @babel/types > lodash':
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-analyzer > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-analyzer > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-linter > polymer-analyzer > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > wd > archiver > zip-stream > archiver-utils > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-bundler > babel-traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-bundler > babel-generator > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/generator > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/generator > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-analyzer > @babel/traverse > @babel/generator > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-analyzer > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-bundler > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-bundler > babel-traverse > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-bundler > babel-generator > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-project-config > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-analyzer > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-project-config > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > plylog > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-project-config > plylog > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-project-config > plylog > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-project-config > plylog > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - '@babel/preset-env > @babel/plugin-transform-classes > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash':
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > @babel/core > @babel/helpers > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-bundler > babel-generator > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > @babel/plugin-transform-object-super > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-analyzer > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/generator > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-analyzer > @babel/traverse > @babel/generator > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-project-config > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-linter > polymer-analyzer > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-analyzer > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-analyzer > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > plylog > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-project-config > plylog > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-bundler > babel-traverse > babel-types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-project-config > plylog > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > @babel/plugin-proposal-async-generator-functions > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/generator > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > @babel/plugin-transform-classes > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-bundler > polymer-analyzer > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-analyzer > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - '@babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash':
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-analyzer > @babel/traverse > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-project-config > plylog > winston > async > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polyserve > polymer-build > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polymer-build > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-analyzer > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > @babel/core > @babel/helpers > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > polymer-bundler > polymer-analyzer > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > polyserve > polymer-build > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > polyserve > polymer-build > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+  'npm:lodash:20180130':
+    - polymer-cli > web-component-tester > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
+    - polymer-cli > web-component-tester > stacky > lodash:
+        patched: '2019-07-24T10:42:39.630Z'
