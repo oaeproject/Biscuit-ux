@@ -12,21 +12,21 @@
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/components/dropdown.sass";
 @import "../node_modules/bulma/sass/components/modal.sass";
+@import "../node_modules/bulma/sass/components/level.sass";
 
 //Elements
 @import "../node_modules/bulma/sass/elements/box.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
 
 //Layout
-@import "../node_modules/bulma/sass/layout/hero.sass";
-@import "../node_modules/bulma/sass/layout/section.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
 
 //Should remake the structure in order to include these imports
 //@import "../node_modules/bulma/sass/elements/_all.sass";
 //@import "../node_modules/bulma/sass/components/_all.sass";
-//@import "../node_modules/bulma/sass/layout/_all.sass";
 
 html,
 body {
@@ -85,7 +85,7 @@ h2 {
 
 .column.top-nav {
 	background-color: transparent;
-	padding: .1rem;
+	padding: 0.1rem;
 }
 
 .colums.breadcrumbs {
@@ -214,10 +214,61 @@ img.search_icon {
 }
 
 .navbar-item.is-hoverable {
-  background-color: white;
+	background-color: white;
 	border-radius: 25px;
 }
 
 .box {
 	margin: 0;
+}
+
+.box-feed {
+	margin-top: 25px;
+	&:hover {
+		border: 5px solid #2962ff;
+	}
+}
+
+.info-card {
+	margin-left: 50px;
+}
+
+.tags {
+	width: 350px;
+	margin-left: 10px;
+}
+
+.activity-dashboard {
+	height: auto;
+}
+
+.activity-dashboard h3 {
+	color: black;
+	font-weight: bold;
+}
+
+.news-feed {
+	padding: 10px;
+}
+.news-feed-message {
+	margin-left: 65px;
+	width: auto;
+	background-color: #d8dce8;
+	border-radius: 5px;
+	word-wrap: break-word;
+}
+
+.news-feed-message h4 {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.avatar-news-feed {
+	width: 50px;
+	height: 50px;
+	margin-right: 15px;
+}
+
+.bottom-nav-news {
+	margin-left: 65px;
 }
