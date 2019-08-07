@@ -1,6 +1,6 @@
 import { html } from 'lit-element';
-import homepageStyles from "../../style/homepage.scss";
-import sharedStyles from "../../style/app.scss";
+import homepageStyles from '../../style/homepage.scss';
+import sharedStyles from '../../style/app.scss';
 import { PageViewElement } from './page-view-element.js';
 
 class OAEHomepage extends PageViewElement {
