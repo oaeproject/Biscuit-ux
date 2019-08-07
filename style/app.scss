@@ -28,6 +28,51 @@
 //@import "../node_modules/bulma/sass/elements/_all.sass";
 //@import "../node_modules/bulma/sass/components/_all.sass";
 
+//Material Design Icons
+//Default Styles
+.alert.mdi::before,
+.breadcrumb .mdi::before,
+.btn.mdi::before,
+.card-title.mdi::before,
+.card-subtitle.mdi::before,
+.card-link.mdi::before,
+.dropdown-item.mdi::before,
+.list-group-item.mdi::before,
+.nav-link.mdi::before {
+	font-size: 1.25em;
+	line-height: initial;
+	position: relative;
+	top: 0.09rem;
+}
+.alert.mdi::before,
+.breadcrumb .mdi:not(:empty)::before,
+.btn.mdi:not(:empty)::before,
+.card-title.mdi:not(:empty)::before,
+.card-subtitle.mdi:not(:empty)::before,
+.card-link.mdi:not(:empty)::before,
+.dropdown-item.mdi:not(:empty)::before,
+.nav-link.mdi:not(:empty)::before {
+	margin-right: 0.25rem;
+}
+.list-group-item.mdi:not(:empty)::before {
+	margin-right: 0.5rem;
+}
+.dropdown-item.mdi:not(:empty)::before {
+	margin-left: -0.75rem;
+}
+.alert.mdi::before,
+.list-group-item.mdi:not(:empty)::before {
+	margin-left: -0.5rem;
+}
+.modal-title.mdi::before {
+	font-size: 1.5em;
+	line-height: 0.5;
+	position: relative;
+	top: 0.26rem;
+	margin-right: 0.5rem;
+}
+
+//Structure
 html,
 body {
 	margin: 0;
@@ -92,6 +137,7 @@ h2 {
 	background-color: #2962ff;
 }
 
+//Side Menu
 .aside {
 	height: 100%;
 }
@@ -137,6 +183,10 @@ img.top-menu {
 	color: #757575;
 }
 
+img.sidebar.dashboard-icon {
+	color: rgba(0, 0, 0, 0.26);
+}
+
 img.avatar {
 	padding-left: 10px;
 	padding-right: 3px;
@@ -174,6 +224,7 @@ img.search_icon {
 	}
 }
 
+//Navbar
 .navbar {
 	background-color: transparent;
 }
@@ -218,6 +269,7 @@ img.search_icon {
 	border-radius: 25px;
 }
 
+//Cards
 .box {
 	margin: 0;
 }
@@ -247,6 +299,7 @@ img.search_icon {
 	font-weight: bold;
 }
 
+//News Feed - Dashboard
 .news-feed {
 	padding: 10px;
 }
@@ -271,4 +324,29 @@ img.search_icon {
 
 .bottom-nav-news {
 	margin-left: 65px;
+}
+
+//Tags
+
+.tag-button-colors {
+	background-color: #acebd2;
+	border-color: #1b4e3a;
+	color: #1b4e3a;
+	&:hover {
+		background-color: #acebd2;
+		border-color: #acebd2;
+		color: #1b4e3a;
+	}
+}
+
+.tag-buttons {
+	margin-top: 10px;
+}
+
+.tag-icons img {
+	margin-left: 5px;
+}
+
+.tag-label {
+	margin-left: 10px;
 }

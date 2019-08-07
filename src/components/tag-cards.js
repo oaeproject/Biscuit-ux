@@ -10,15 +10,19 @@ class tagCards extends LitElement {
   render() {
     return html`
       <div class="box tags">
-        <article class="media">
-          <div class="media-content">
-            <div class="content info-card">
-              <h3>
-                <strong>TAGS AND LABELS</strong>
-              </h3>
-            </div>
-          </div>
-        </article>
+        <div class="content info-card">
+          <h3>
+            <strong>TAGS AND LABELS</strong>
+          </h3>
+          <p class="buttons tag-buttons">
+            <a class="button is-small is-rounded tag-button-colors">
+              <span class="icon tag-icons">
+                <img src="./../../node_modules/@mdi/svg/svg/tag-text-outline.svg" />
+              </span>
+              <span class="tag-label">class project</span>
+            </a>
+          </p>
+        </div>
       </div>
     `;
   }
