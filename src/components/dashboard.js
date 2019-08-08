@@ -6,6 +6,8 @@ import './top-nav.js';
 import './info-cards.js';
 import './tag-cards.js';
 import './news-feed.js';
+import './quick-settings.js';
+import './tags.js';
 
 class OAEDashboard extends PageViewElement {
   static get styles() {
@@ -33,16 +35,17 @@ class OAEDashboard extends PageViewElement {
                         <tag-cards></tag-cards>
                       </section>
                       <section class="column activity-dashboard">
-                        <h3>RECENT ACTIVITY</h3>
+                        <section class="is-flex">
+                          <span class="icon tag-activity-dashboard">
+                            <img src="./../../node_modules/@mdi/svg/svg/tag-text-outline.svg" />
+                          </span>
+                          <h3>RECENT ACTIVITY</h3>
+                        </section>
                         <news-feed></news-feed>
                       </section>
                     </div>
                     <div class="column">
-                      <info-cards></info-cards>
-                      <info-cards></info-cards>
-                      <info-cards></info-cards>
-                      <info-cards></info-cards>
-                      <info-cards></info-cards>
+                      <quick-settings></quick-settings>
                     </div>
                   </div>
                 </div>
