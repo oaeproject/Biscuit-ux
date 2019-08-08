@@ -28,8 +28,8 @@
 //@import "../node_modules/bulma/sass/elements/_all.sass";
 //@import "../node_modules/bulma/sass/components/_all.sass";
 
-//Material Design Icons
-//Default Styles
+// Material Design Icons
+// Default Styles
 .alert.mdi::before,
 .breadcrumb .mdi::before,
 .btn.mdi::before,
@@ -72,7 +72,7 @@
 	margin-right: 0.5rem;
 }
 
-//Structure
+// Structure
 html,
 body {
 	margin: 0;
@@ -137,7 +137,7 @@ h2 {
 	background-color: #2962ff;
 }
 
-//Side Menu
+// Side Menu
 .aside {
 	height: 100%;
 }
@@ -224,7 +224,7 @@ img.search_icon {
 	}
 }
 
-//Navbar
+// Navbar
 .navbar {
 	background-color: transparent;
 }
@@ -269,7 +269,7 @@ img.search_icon {
 	border-radius: 25px;
 }
 
-//Cards
+// Cards
 .box {
 	margin: 0;
 }
@@ -303,7 +303,7 @@ img.search_icon {
 	font-weight: bold;
 }
 
-//News Feed - Dashboard
+// News Feed - Dashboard
 .tag-activity-dashboard {
 	margin-right: 10px;
 }
@@ -314,7 +314,7 @@ img.search_icon {
 .news-feed-message {
 	margin-left: 65px;
 	width: auto;
-	background-color: #d8dce8;
+	background-color: #fafafa;
 	border-radius: 5px;
 	word-wrap: break-word;
 }
@@ -334,9 +334,9 @@ img.search_icon {
 	margin-left: 65px;
 }
 
-//Tags
+// Tags
 .tag-structure {
-	margin-right: 5px; 
+	margin-right: 5px;
 }
 .tag-buttons {
 	margin-right: 5px;

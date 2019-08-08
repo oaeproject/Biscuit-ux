@@ -2,7 +2,7 @@ import { html, LitElement } from 'lit-element';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
 
-class breadCrumbs extends LitElement {
+class breadCrumb extends LitElement {
   static get styles() {
     return [sharedStyles, homepageStyles];
   }
@@ -21,4 +21,4 @@ class breadCrumbs extends LitElement {
   }
 }
 
-window.customElements.define('breadcrumbs', breadCrumbs);
+window.customElements.define('breadcrumb', breadCrumb);

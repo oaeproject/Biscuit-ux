@@ -3,8 +3,8 @@ import sharedStyles from '../../style/app.scss';
 import { PageViewElement } from './page-view-element.js';
 import './sidebar.js';
 import './top-nav.js';
-import './info-cards.js';
-import './tag-cards.js';
+import './info-card.js';
+import './tag-card.js';
 import './news-feed.js';
 import './quick-settings.js';
 import './tags.js';
@@ -31,8 +31,8 @@ class OAEDashboard extends PageViewElement {
                   <div class=" columns is-flex main-content">
                     <div class="column is-two-thirds">
                       <section class="column is-inline-flex">
-                        <info-cards></info-cards>
-                        <tag-cards></tag-cards>
+                        <info-card></info-card>
+                        <tag-card></tag-card>
                       </section>
                       <section class="column activity-dashboard">
                         <section class="is-flex">

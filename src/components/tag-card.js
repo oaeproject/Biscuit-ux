@@ -3,7 +3,7 @@ import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
 import './tags.js';
 
-class tagCards extends LitElement {
+class tagCard extends LitElement {
   static get styles() {
     return [sharedStyles, homepageStyles];
   }
@@ -26,4 +26,4 @@ class tagCards extends LitElement {
   }
 }
 
-window.customElements.define('tag-cards', tagCards);
+window.customElements.define('tag-card', tagCard);
