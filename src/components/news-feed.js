@@ -1,6 +1,7 @@
 import { html, LitElement } from 'lit-element';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
+import './tags.js';
 
 class newsFeed extends LitElement {
   static get styles() {
@@ -44,6 +45,8 @@ class newsFeed extends LitElement {
             <p>
               Here is the briefing for that group assignment we talked about.
             </p>
+            <tags-button></tags-button>
+            <tags-button></tags-button>
           </section>
           <hr class="news-feed-break" />
           <nav class="level bottom-nav-news">

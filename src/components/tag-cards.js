@@ -1,6 +1,7 @@
 import { html, LitElement } from 'lit-element';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
+import './tags.js';
 
 class tagCards extends LitElement {
   static get styles() {
@@ -14,14 +15,11 @@ class tagCards extends LitElement {
           <h3>
             <strong>TAGS AND LABELS</strong>
           </h3>
-          <p class="buttons tag-buttons">
-            <a class="button is-small is-rounded tag-button-colors">
-              <span class="icon tag-icons">
-                <img src="./../../node_modules/@mdi/svg/svg/tag-text-outline.svg" />
-              </span>
-              <span class="tag-label">class project</span>
-            </a>
-          </p>
+          <section class="tag-list">
+            <tags-button></tags-button>
+            <tags-button></tags-button>
+            <tags-button></tags-button>
+          </section>
         </div>
       </div>
     `;
