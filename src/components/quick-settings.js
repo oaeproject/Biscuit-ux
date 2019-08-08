@@ -15,8 +15,9 @@ class quickSettings extends LitElement {
             <div class="content info-card">
               <p>
                 LAST SIGN IN
+              </p>
               <h3>
-               <strong>TUESDAY APRIL 4 2019</strong>
+                <strong>TUESDAY APRIL 4 2019</strong>
               </h3>
             </div>
           </div>

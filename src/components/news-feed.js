@@ -52,16 +52,12 @@ class newsFeed extends LitElement {
           <nav class="level bottom-nav-news">
             <div class="level-left">
               <div class="level-item">
-                <div class="dropdown is-active">
-                  <div class="dropdown-trigger">
-                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
-                      <span>25 comments</span>
-                      <span class="icon is-small">
-                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                      </span>
-                    </button>
-                  </div>
-                </div>
+                <a class="button is-inverted is-link">
+                  <span>View (25) comments</span>
+                  <span class="icon is-small">
+                    <i class="mdi mdi-alert"></i>
+                  </span>
+                </a>
               </div>
             </div>
             <div class="level-right is-pulled-right">
