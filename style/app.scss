@@ -12,22 +12,67 @@
 @import "../node_modules/bulma/sass/components/navbar.sass";
 @import "../node_modules/bulma/sass/components/dropdown.sass";
 @import "../node_modules/bulma/sass/components/modal.sass";
+@import "../node_modules/bulma/sass/components/level.sass";
 
-//Elements
+// Elements
 @import "../node_modules/bulma/sass/elements/box.sass";
 @import "../node_modules/bulma/sass/elements/button.sass";
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
+@import "../node_modules/bulma/sass/elements/image.sass";
 
-//Layout
-@import "../node_modules/bulma/sass/layout/hero.sass";
-@import "../node_modules/bulma/sass/layout/section.sass";
+// Layout
+@import "../node_modules/bulma/sass/layout/_all.sass";
 
-//Should remake the structure in order to include these imports
-//@import "../node_modules/bulma/sass/elements/_all.sass";
-//@import "../node_modules/bulma/sass/components/_all.sass";
-//@import "../node_modules/bulma/sass/layout/_all.sass";
+// Should remake the structure in order to include these imports
+// @import "../node_modules/bulma/sass/elements/_all.sass";
+// @import "../node_modules/bulma/sass/components/_all.sass";
 
+// Material Design Icons
+// Default Styles
+.alert.mdi::before,
+.breadcrumb .mdi::before,
+.btn.mdi::before,
+.card-title.mdi::before,
+.card-subtitle.mdi::before,
+.card-link.mdi::before,
+.dropdown-item.mdi::before,
+.list-group-item.mdi::before,
+.nav-link.mdi::before {
+	font-size: 1.25em;
+	line-height: initial;
+	position: relative;
+	top: 0.09rem;
+}
+.alert.mdi::before,
+.breadcrumb .mdi:not(:empty)::before,
+.btn.mdi:not(:empty)::before,
+.card-title.mdi:not(:empty)::before,
+.card-subtitle.mdi:not(:empty)::before,
+.card-link.mdi:not(:empty)::before,
+.dropdown-item.mdi:not(:empty)::before,
+.nav-link.mdi:not(:empty)::before {
+	margin-right: 0.25rem;
+}
+.list-group-item.mdi:not(:empty)::before {
+	margin-right: 0.5rem;
+}
+.dropdown-item.mdi:not(:empty)::before {
+	margin-left: -0.75rem;
+}
+.alert.mdi::before,
+.list-group-item.mdi:not(:empty)::before {
+	margin-left: -0.5rem;
+}
+.modal-title.mdi::before {
+	font-size: 1.5em;
+	line-height: 0.5;
+	position: relative;
+	top: 0.26rem;
+	margin-right: 0.5rem;
+}
+
+// Structure
 html,
 body {
 	margin: 0;
@@ -57,6 +102,23 @@ h2 {
 	height: 100%;
 }
 
+.columns.dasboard {
+	margin: 0;
+}
+
+.columns.content-base {
+	background-color: #fafafa;
+	margin: 0;
+}
+
+.columns.main-content {
+	margin: 10px;
+}
+
+.column.content-wrap {
+	padding: 20px;
+}
+
 .column.is-narrow {
 	background-color: white;
 	-moz-box-shadow: 3px 3px 5px 6px #ccc;
@@ -68,12 +130,14 @@ h2 {
 
 .column.top-nav {
 	background-color: transparent;
+	padding: 0.1rem;
 }
 
 .colums.breadcrumbs {
 	background-color: #2962ff;
 }
 
+// Side Menu
 .aside {
 	height: 100%;
 }
@@ -103,10 +167,6 @@ h2 {
 	color: #757575;
 }
 
-.column.content-base {
-	background-color: #fafafa;
-}
-
 img.sidebar {
 	width: 25px;
 	height: 25px;
@@ -121,6 +181,10 @@ img.top-menu {
 	padding-right: 15px;
 	vertical-align: middle;
 	color: #757575;
+}
+
+img.sidebar.dashboard-icon {
+	color: rgba(0, 0, 0, 0.26);
 }
 
 img.avatar {
@@ -160,6 +224,7 @@ img.search_icon {
 	}
 }
 
+// Navbar
 .navbar {
 	background-color: transparent;
 }
@@ -200,6 +265,102 @@ img.search_icon {
 }
 
 .navbar-item.is-hoverable {
-  background-color: white;
+	background-color: white;
 	border-radius: 25px;
+}
+
+// Cards
+.box {
+	margin: 0;
+}
+
+.box-feed {
+	margin-top: 25px;
+	&:hover {
+		border: 5px solid #2962ff;
+	}
+}
+
+.info-card {
+	margin-left: 50px;
+}
+
+.info-card p {
+	margin-top: 10px;
+}
+
+.tags {
+	width: 350px;
+	margin-left: 10px;
+}
+
+.activity-dashboard {
+	height: auto;
+}
+
+.activity-dashboard h3 {
+	color: black;
+	font-weight: bold;
+}
+
+// News Feed - Dashboard
+.tag-activity-dashboard {
+	margin-right: 10px;
+}
+
+.news-feed {
+	padding: 10px;
+}
+.news-feed-message {
+	margin-left: 65px;
+	width: auto;
+	background-color: #fafafa;
+	border-radius: 5px;
+	word-wrap: break-word;
+}
+
+.news-feed-message h4 {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.avatar-news-feed {
+	width: 50px;
+	height: 50px;
+	margin-right: 15px;
+}
+
+.bottom-nav-news {
+	margin-left: 65px;
+}
+
+// Tags
+.tag-structure {
+	margin-right: 5px;
+}
+.tag-buttons {
+	margin-right: 5px;
+}
+
+.tag-button-colors {
+	background-color: #acebd2;
+	border-color: #1b4e3a;
+	color: #1b4e3a;
+	&:hover {
+		background-color: #acebd2;
+		border-color: #acebd2;
+		color: #1b4e3a;
+	}
+}
+
+.tag-buttons {
+	margin-top: 10px;
+}
+
+.tag-icons img {
+	margin-left: 5px;
+}
+
+.tag-label {
+	margin-left: 10px;
 }
