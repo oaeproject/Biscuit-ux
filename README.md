@@ -25,7 +25,7 @@ This project is based on the [Polymer project PWA starter kit](https://pwa-start
 To kickstart development:
 
 1. `git clone https://github.com/oaeproject/Biscuit-ux.git && cd Biscuit-ux` 
-2. `npm install`
+2. `yarn`
 3. `npm run start:webpack`
 
 ## Integration with Hilary

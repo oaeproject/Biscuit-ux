@@ -167,6 +167,15 @@ h2 {
 	color: #757575;
 }
 
+.menu-list a.dashboard {
+	background: url('../node_modules/@mdi/svg/svg/view-dashboard-outline.svg') no-repeat;
+	background-position: 0% 0%;
+}
+
+a.dashboard {
+	padding-left: 3em;
+}
+
 img.sidebar {
 	width: 25px;
 	height: 25px;

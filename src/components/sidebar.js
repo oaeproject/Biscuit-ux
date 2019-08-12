@@ -12,8 +12,7 @@ class Sidebar extends LitElement {
       <aside class="menu">
         <ul class="menu-list">
           <li>
-            <a>
-              <img class="sidebar dashboard-icon" src="./../../node_modules/@mdi/svg/svg/view-dashboard-outline.svg" />
+            <a class="dashboard">
               Dashboard
             </a>
           </li>
