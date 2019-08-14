@@ -17,7 +17,7 @@ module.exports = [
   {
     devServer: {
       historyApiFallback: true,
-      disableHostCheck: true,
+      disableHostCheck: true
     },
     mode: 'production',
     module: {
@@ -27,10 +27,17 @@ module.exports = [
           use: {
             loader: 'babel-loader',
             options: {
-              presets: [['@babel/preset-env', {targets: {ie: '11'}}]],
-              plugins: ['@babel/plugin-syntax-dynamic-import'],
-            },
-          },
+              presets: [['@babel/preset-env', { targets: { ie: '11' } }]],
+              plugins: ['@babel/plugin-syntax-dynamic-import']
+            }
+          }
+        },
+        {
+          test: /\.svg/,
+          use: {
+            loader: 'svg-url-loader',
+            options: {}
+          }
         },
         {
           test: /\.css|\.s(c|a)ss$/,
@@ -38,36 +45,32 @@ module.exports = [
             {
               loader: 'lit-scss-loader',
               options: {
-                minify: true, // defaults to false
-              },
+                minify: true // Defaults to false
+              }
             },
-            {loader: 'extract-loader'},
-            {loader: 'css-loader'},
+            { loader: 'extract-loader' },
+            { loader: 'css-loader' },
             {
               loader: 'postcss-loader',
               options: {
-                plugins: () => [autoprefixer()],
-              },
+                plugins: () => [autoprefixer()]
+              }
             },
             {
               loader: 'sass-loader',
               options: {
-                includePaths: ['./node_modules', '../../node_modules'],
-              },
-            },
-          ],
-        },
-      ],
+                includePaths: ['./node_modules', '../../node_modules']
+              }
+            }
+          ]
+        }
+      ]
     },
     plugins: [
-      new CopyWebpackPlugin([
-        'images/**',
-        'node_modules/@webcomponents/webcomponentsjs/**',
-        'manifest.json',
-      ]),
+      new CopyWebpackPlugin(['images/**', 'node_modules/@webcomponents/webcomponentsjs/**', 'manifest.json']),
       new HtmlWebpackPlugin({
         chunksSortMode: 'none',
-        template: 'index.html',
+        template: 'index.html'
       }),
       new WorkboxWebpackPlugin.GenerateSW({
         include: ['index.html', 'manifest.json', /\.js$/],
@@ -79,14 +82,14 @@ module.exports = [
         runtimeCaching: [
           {
             urlPattern: /\/@webcomponents\/webcomponentsjs\//,
-            handler: 'staleWhileRevalidate',
+            handler: 'staleWhileRevalidate'
           },
           {
             urlPattern: /^https:\/\/fonts.gstatic.com\//,
-            handler: 'staleWhileRevalidate',
-          },
-        ],
-      }),
-    ],
-  },
+            handler: 'staleWhileRevalidate'
+          }
+        ]
+      })
+    ]
+  }
 ];
