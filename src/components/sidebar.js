@@ -12,14 +12,7 @@ class Sidebar extends LitElement {
       <aside class="menu">
         <ul class="menu-list">
           <li>
-<<<<<<< HEAD
-            <a class="dashboard">
-=======
-            <a>
-              <span class="icon">
-                <i class="fas fa-home"></i>
-              </span>
->>>>>>> feat: icons
+          <a class="dashboard">
               Dashboard
             </a>
           </li>

@@ -24,7 +24,6 @@
     "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "svg-url-loader": "^3.0.0",
     "@material/button": "^3.0.0",
     "@mdi/font": "^3.9.96",
     "@mdi/svg": "^3.7.95",
@@ -33,6 +32,7 @@
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "babel-eslint": "^10.0.2",
     "bulma": "^0.7.5",
+    "cool-checkboxes-for-bulma.io": "^1.1.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "js-cookie": "^2.2.0",
     "lit-element": "^2.0.0-rc.2",
@@ -42,7 +42,8 @@
     "regenerator-runtime": "^0.13.2",
     "reselect": "^4.0.0",
     "snyk": "^1.189.0",
-    "style-loader": "^0.23.1"
+    "style-loader": "^0.23.1",
+    "svg-url-loader": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",
