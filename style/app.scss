@@ -1,5 +1,5 @@
-// Import a Google Font 
-// Open Sans - Regular (400) 
+// Import a Google Font
+// Open Sans - Regular (400)
 // Open Sans - Bold (700)
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
@@ -290,6 +290,19 @@ img.search_icon {
 	}
 }
 
+// Right Side Menu
+.tag-activity-dashboard a.dashboard {
+	background: url("../node_modules/@mdi/svg/svg/plus.svg") no-repeat;
+	background-position: 0% 0%;
+}
+
+a.tag-activity-dashboard {
+	padding-left: 2em;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+
 // Navbar
 .navbar {
 	background-color: transparent;
@@ -496,7 +509,3 @@ p.library-checkbox-label-top {
 	opacity: 0;
 	cursor: pointer;
 }
-
-
-
-

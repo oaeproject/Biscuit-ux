@@ -12,15 +12,23 @@ class tagsSide extends LitElement {
       <div class="small-device-tags">
         <section class="is-flex">
           <a class="tag-activity-dashboard">
-            ADD LABEL
+            Add New Label
           </a>
         </section>
         <hr class="navbar-divider" />
         <section>
           <span class="is-inline-flex">
-            <tags-button></tags-button>
+            <nav class="level">
+              <!-- Left side -->
+              <div class="level-left">
+                <div class="level-item">
+                  <p>Redesign</p>
+                </div>
+              </div>
+            </nav>
           </span>
         </section>
+        <tags-button></tags-button>
       </div>
     `;
   }
