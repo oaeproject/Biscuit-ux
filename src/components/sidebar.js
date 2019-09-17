@@ -10,42 +10,42 @@ class Sidebar extends LitElement {
   render() {
     return html`
       <aside class="menu">
+        <div class="navbar-brand sidebar-brand">
+          <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
+          </a>
+        </div>
         <ul class="menu-list">
           <li>
-          <a class="dashboard">
+            <a class="dashboard">
               Dashboard
             </a>
           </li>
           <li>
-            <a>
-              <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/book-open-outline.svg" />
+            <a class="library">
               Library
             </a>
           </li>
           <li>
-            <a>
-              <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/format-list-bulleted-square.svg" />
-              Discussions</a
-            >
+            <a class="discussions">
+              Discussions
+            </a>
           </li>
           <li>
-            <a>
-              <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/account-group-outline.svg" />
-              Groups</a
-            >
+            <a class="groups">
+              Groups
+            </a>
           </li>
           <li>
-            <a>
-              <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/wan.svg" />
-              Network</a
-            >
+            <a class="network">
+              Network
+            </a>
           </li>
           <hr class="navbar-divider" />
           <li>
-            <a>
-              <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/settings-outline.svg" />
-              User Settings</a
-            >
+            <a class="user-settings">
+              User Settings
+            </a>
           </li>
         </ul>
       </aside>

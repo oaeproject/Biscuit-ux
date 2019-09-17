@@ -8,6 +8,7 @@ import './tag-card.js';
 import './news-feed.js';
 import './quick-settings.js';
 import './tags.js';
+import './library-tags-side.js';
 import './library-table.js';
 
 class OAELibrary extends PageViewElement {
@@ -19,7 +20,7 @@ class OAELibrary extends PageViewElement {
     return html`
       <section class="hero is-link is-fullheight">
         <div class="hero-body">
-          <div class="container is-fluid is-fullheight is-mobile">
+          <div class="container is-fluid is-fullheight">
             <div class="columns dasboard">
               <div class="column is-narrow sidebar">
                 <sidebar-nav></sidebar-nav>
@@ -30,7 +31,7 @@ class OAELibrary extends PageViewElement {
                     <top-nav></top-nav>
                   </div>
                   <div class=" columns is-flex main-content">
-                    <div class="column is-two-thirds is-flex-desktop-only">
+                    <div class="column is-three-quarters">
                       <section class="column activity-dashboard">
                         <section class="is-flex">
                           <span class="icon tag-activity-dashboard">
@@ -41,8 +42,8 @@ class OAELibrary extends PageViewElement {
                         <library-table></library-table>
                       </section>
                     </div>
-                    <div class="column">
-                      <quick-settings></quick-settings>
+                    <div class="column is-one-fifth">
+                      <tags-side></tags-side>
                     </div>
                   </div>
                 </div>

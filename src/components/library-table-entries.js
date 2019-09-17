@@ -2,51 +2,15 @@ import { html, LitElement } from 'lit-element';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
 import './tags.js';
-//import './library-table-entries';
 
-class libraryTable extends LitElement {
+class libraryTableEntries extends LitElement {
   static get styles() {
     return [sharedStyles, homepageStyles];
   }
 
   render() {
     return html`
-    <div class="columns is-flex table-wrap">
-        <div class="library-box library-content library-padding ">
-            <table class="table is-fullwidth">
-                <thead>
-                <tr class="library-columns library-top">
-                    <th>
-                    <label class="checkbox checkbox-label is-inline-flex library-top">
-                        <input type="checkbox" class="checkmark"/>
-                            <p class="library-checkbox-label-top">
-                                Select All
-                            </p>
-                    </label>
-                    </th>
-                    <th>
-                        <p>
-                            Name
-                        </p>
-                    </th>
-                    <th>
-                        <p>
-                            Owner
-                        </p
-                    </th>
-                    <th>
-                        <p>
-                            Last Modified
-                        </p>
-                    </th>
-                    <th>
-                        <p>
-                            File Type
-                        </p>
-                    </th>
-                </tr>
-                </thead>
-                <tbody class="library-section">
+    <tbody class="library-section">
                     <tr class="library-designation-label is-size-6">
                         <th>
                             <div class="field">
@@ -96,12 +60,9 @@ class libraryTable extends LitElement {
                             </p>
                         </td>
                     </tr>
-                </tbody>
-            </table>
-        </div>
-      </div>
+     </tbody>
     `;
   }
 }
 
-window.customElements.define('library-table', libraryTable);
+window.customElements.define('library-table-entries', libraryTableEntries);

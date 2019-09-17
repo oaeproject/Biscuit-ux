@@ -1,10 +1,12 @@
-// Import a Google Font
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+// Import a Google Font 
+// Open Sans - Regular (400) 
+// Open Sans - Bold (700)
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
 // Import Material Design
 //@import "../node_modules/material-design-icons/iconfont/";
 
-// Import only what you need from Bulma
+// Bulma *ALL SASS imports
 @import "bulma/sass/utilities/mixins";
 @import "../node_modules/bulma/sass/grid/_all.sass";
 @import "../node_modules/bulma/sass/utilities/_all.sass";
@@ -131,6 +133,7 @@ h2 {
 	box-shadow: 5px 5px 6px #d8d3d3;
 	z-index: 1;
 	width: 250px;
+	padding: 0;
 }
 
 .column.top-nav {
@@ -142,13 +145,18 @@ h2 {
 	background-color: #2962ff;
 }
 
-// Side Menu
+// Sidebar Menu
 .aside {
 	height: 100%;
 }
 
+.sidebar-brand {
+	margin: -50px 0 50px 0;
+}
+
 .menu {
 	padding-left: 50px;
+	position: fixed;
 }
 
 .menu-list {
@@ -177,8 +185,48 @@ h2 {
 	background-position: 0% 0%;
 }
 
-a.dashboard {
+.menu-list a.library {
+	background: url("../node_modules/@mdi/svg/svg/view-dashboard-outline.svg") no-repeat;
+	background-position: 0% 0%;
+}
+
+.menu-list a.discussions {
+	background: url("../node_modules/@mdi/svg/svg/book-open-outline.svg") no-repeat;
+	background-position: 0% 0%;
+}
+
+.menu-list a.groups {
+	background: url("../node_modules/@mdi/svg/svg/format-list-bulleted-square.svg") no-repeat;
+	background-position: 0% 0%;
+}
+
+.menu-list a.network {
+	background: url("../node_modules/@mdi/svg/svg/account-group-outline.svg") no-repeat;
+	background-position: 0% 0%;
+}
+
+.menu-list a.user-settings {
+	background: url("../node_modules/@mdi/svg/svg/wan.svg") no-repeat;
+	background-position: 0% 0%;
+}
+
+.small-device-tags a.tag-activity-dashboard {
+	background: url("../node_modules/@mdi/svg/svg/settings-outline.svg") no-repeat;
+	background-position: 0% 0%;
+	color: black;
+	&:hover {
+		color: #2962ff;
+	}
+}
+
+a.dashboard,
+a.library,
+a.discussions,
+a.groups,
+a.user-settings,
+a.network {
 	padding-left: 3em;
+	vertical-align: middle;
 }
 
 img.sidebar {
@@ -211,6 +259,10 @@ img.search_icon {
 	height: 25px;
 	margin-right: 20px;
 	vertical-align: middle;
+}
+
+.navbar-divider {
+	margin: 20px 0 0 0;
 }
 
 .input {
@@ -383,8 +435,13 @@ img.search_icon {
 // Library
 // Library Table
 
+.table-wrap {
+	width: 100%;
+}
+
 .library-box {
 	margin: 0;
+	width: 100%;
 }
 
 .library-content {
@@ -434,16 +491,12 @@ p.library-checkbox-label-top {
 	background: transparent;
 }
 
-.checkbox-container {
-	font-size: 22px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+.checkbox-label {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
 }
 
-.checkmark {
-	height: 25px;
-	width: 25px;
-	background-color: #eee;
-}
+
+
+
