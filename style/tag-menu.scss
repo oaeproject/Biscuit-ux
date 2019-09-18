@@ -1,0 +1,27 @@
+// Styles for Tag Menu Component
+
+.tag-menu-label {
+	color: #212121;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 0.9em;
+}
+
+// ADD NEW BUTTON
+.tag-menu-add-new-wrap a.tag-menu-add-new {
+    background: url("../node_modules/@mdi/svg/svg/plus.svg") no-repeat;
+	background-position: 0% 0%;
+}
+
+a.tag-menu-add-new {
+	padding-left: 2em;
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+// LABEL 
+.tag-button-wrap a.tag-menu-button-add {
+    background: url("../node_modules/@mdi/svg/svg/plus.svg") no-repeat;
+	background-position: 0% 0%;
+}
+
