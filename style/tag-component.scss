@@ -1,0 +1,31 @@
+// Tags
+.tag-structure {
+	margin-right: 5px;
+}
+.tag-buttons {
+	margin-right: 5px;
+}
+
+.tag-button-colors {
+	background-color: #acebd2;
+	border-color: #1b4e3a;
+	height: 15px;
+	color: #1b4e3a;
+	&:hover {
+		background-color: #acebd2;
+		border-color: #acebd2;
+		color: #1b4e3a;
+	}
+}
+
+.tag-buttons {
+	margin-top: 10px;
+}
+
+.tag-icons img {
+	margin-left: 5px;
+}
+
+.tag-label {
+	margin-left: 10px;
+}

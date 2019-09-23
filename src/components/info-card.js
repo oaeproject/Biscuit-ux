@@ -1,10 +1,11 @@
 import { html, LitElement } from 'lit-element';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
+import infoBox from '../../style/info-box.scss';
 
 class infoCard extends LitElement {
   static get styles() {
-    return [sharedStyles, homepageStyles];
+    return [sharedStyles, homepageStyles, infoBox];
   }
 
   render() {

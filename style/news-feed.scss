@@ -1,0 +1,33 @@
+// News Feed - Dashboard
+.box-feed {
+	margin-top: 25px;
+	&:hover {
+		border: 5px solid #2962ff;
+	}
+}
+
+.news-feed {
+	padding: 10px;
+}
+.news-feed-message {
+	margin-left: 65px;
+	width: auto;
+	background-color: #fafafa;
+	border-radius: 5px;
+	word-wrap: break-word;
+}
+
+.news-feed-message h4 {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.avatar-news-feed {
+	width: 50px;
+	height: 50px;
+	margin-right: 15px;
+}
+
+.bottom-nav-news {
+	margin-left: 65px;
+}

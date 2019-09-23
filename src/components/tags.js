@@ -1,10 +1,11 @@
 import { html, LitElement } from 'lit-element';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
+import tagComponent from '../../style/tag-component.scss';
 
 class tagsButton extends LitElement {
   static get styles() {
-    return [sharedStyles, homepageStyles];
+    return [sharedStyles, homepageStyles, tagComponent];
   }
 
   render() {
