@@ -1,12 +1,12 @@
 import { html, LitElement } from 'lit-element';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
+import libraryTableEntries from '../../style/library-table-entries.scss';
 import './tags.js';
-//import './library-table-entries';
 
 class libraryTable extends LitElement {
   static get styles() {
-    return [sharedStyles, homepageStyles];
+    return [sharedStyles, homepageStyles, libraryTableEntries];
   }
 
   render() {
@@ -47,14 +47,13 @@ class libraryTable extends LitElement {
                 </tr>
                 </thead>
                 <tbody class="library-section">
-                    <tr class="library-designation-label is-size-6">
+                    <tr class="lib-table-row is-size-6">
                         <th>
                             <div class="field">
                                 <p class="control">
                                     <div class="b-checkbox is-warning">
                                         <input id="checkbox" class="styled" checked type="checkbox">
                                         <label for="checkbox">
-                                            Test
                                         </label>
                                     </div>
                                 </p>

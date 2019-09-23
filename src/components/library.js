@@ -1,5 +1,6 @@
 import { html } from 'lit-element';
 import sharedStyles from '../../style/app.scss';
+import library from '../../style/library.scss';
 import { PageViewElement } from './page-view-element.js';
 import './sidebar.js';
 import './top-nav.js';
@@ -13,7 +14,7 @@ import './library-table.js';
 
 class OAELibrary extends PageViewElement {
   static get styles() {
-    return [sharedStyles];
+    return [sharedStyles, library];
   }
 
   render() {
@@ -33,12 +34,22 @@ class OAELibrary extends PageViewElement {
                   <div class=" columns is-flex main-content">
                     <div class="column is-three-quarters">
                       <section class="column activity-dashboard">
-                        <section class="is-flex">
-                          <span class="icon tag-activity-dashboard">
-                            <img src="./../../node_modules/@mdi/svg/svg/book-outline.svg" />
-                          </span>
-                          <h3>My Library</h3>
-                        </section>
+                        <div class="is-inline-flex">
+                          <div>
+                            <a class="button library-button">
+                              <span class="icon is-medium">
+                                <iron-icon icon="delete"></iron-icon>
+                              </span>
+                            </a>
+                          </div>
+                          <div>
+                            <a class="button library-button">
+                              <span class="icon">
+                                <iron-icon icon="list"></iron-icon>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
                         <library-table></library-table>
                       </section>
                     </div>

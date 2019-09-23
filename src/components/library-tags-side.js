@@ -1,4 +1,7 @@
 import { html, LitElement } from 'lit-element';
+import '@polymer/iron-icon/iron-icon.js';
+import '@polymer/iron-icons/iron-icons.js';
+import './library-tags-labels.js';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
 import tagMenu from '../../style/tag-menu.scss';
@@ -17,7 +20,7 @@ class tagsSide extends LitElement {
           </a>
         </section>
         <hr class="navbar-divider" />
-        <nav class="level">
+        <nav class="level tag-menu-label-top">
           <div class="level-left">
             <div class="level-item">
               <p class="tag-menu-label">
@@ -26,12 +29,23 @@ class tagsSide extends LitElement {
             </div>
           </div>
           <div class="level-right">
-            <div class="level-item tag-menu-add-new-wrap">
-              <a class="button tag-menu-add-new"></a>
+            <div class="level-item">
+              <a class="button tag-menu-button">
+                <span class="icon">
+                  <iron-icon icon="add"></iron-icon>
+                </span>
+              </a>
+            </div>
+            <div class="level-item">
+              <a class="button tag-menu-button">
+                <span class="icon">
+                  <iron-icon icon="create"></iron-icon>
+                </span>
+              </a>
             </div>
           </div>
         </nav>
-        <tags-button></tags-button>
+        <tags-side-labels></tags-side-labels>
       </div>
     `;
   }

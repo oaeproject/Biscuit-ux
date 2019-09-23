@@ -9,7 +9,7 @@
 
 // ADD NEW BUTTON
 .tag-menu-add-new-wrap a.tag-menu-add-new {
-    background: url("../node_modules/@mdi/svg/svg/plus.svg") no-repeat;
+	background: url("../node_modules/@mdi/svg/svg/plus.svg") no-repeat;
 	background-position: 0% 0%;
 }
 
@@ -19,9 +19,23 @@ a.tag-menu-add-new {
 	text-transform: uppercase;
 }
 
-// LABEL 
-.tag-button-wrap a.tag-menu-button-add {
-    background: url("../node_modules/@mdi/svg/svg/plus.svg") no-repeat;
-	background-position: 0% 0%;
+.tag-menu-label-top {
+	margin-top: 3%;
 }
 
+// LABEL
+.tag-add-button-wrap a.tag-add-button {
+	background: url("../node_modules/@mdi/svg/svg/plus.svg") no-repeat;
+	background-position: center;
+}
+
+.tag-menu-button {
+	border-radius: 50%;
+	padding:0 13px 0 13px;
+	background: transparent;
+	border-color: transparent;
+	&:hover{
+		background: #E3F2FD;
+		border-color: transparent;
+	}
+}
