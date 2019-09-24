@@ -1,7 +1,12 @@
 // Import a Google Font
-@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+// Open Sans - Regular (400)
+// Open Sans - Bold (700)
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
-// Import only what you need from Bulma
+// Import Material Design
+//@import "../node_modules/material-design-icons/iconfont/";
+
+// Bulma *ALL SASS imports
 @import "bulma/sass/utilities/mixins";
 @import "../node_modules/bulma/sass/grid/_all.sass";
 @import "../node_modules/bulma/sass/utilities/_all.sass";
@@ -20,6 +25,8 @@
 @import "../node_modules/bulma/sass/elements/container.sass";
 @import "../node_modules/bulma/sass/elements/title.sass";
 @import "../node_modules/bulma/sass/elements/image.sass";
+@import "../node_modules/bulma/sass/elements/icon.sass";
+@import "../node_modules/bulma/sass/elements/table.sass";
 
 // Layout
 @import "../node_modules/bulma/sass/layout/_all.sass";
@@ -126,6 +133,7 @@ h2 {
 	box-shadow: 5px 5px 6px #d8d3d3;
 	z-index: 1;
 	width: 250px;
+	padding: 0;
 }
 
 .column.top-nav {
@@ -137,13 +145,18 @@ h2 {
 	background-color: #2962ff;
 }
 
-// Side Menu
+// Sidebar Menu
 .aside {
 	height: 100%;
 }
 
+.sidebar-brand {
+	margin: -50px 0 50px 0;
+}
+
 .menu {
 	padding-left: 50px;
+	position: fixed;
 }
 
 .menu-list {
@@ -168,12 +181,52 @@ h2 {
 }
 
 .menu-list a.dashboard {
-	background: url('../node_modules/@mdi/svg/svg/view-dashboard-outline.svg') no-repeat;
+	background: url("../node_modules/@mdi/svg/svg/view-dashboard-outline.svg") no-repeat;
 	background-position: 0% 0%;
 }
 
-a.dashboard {
+.menu-list a.library {
+	background: url("../node_modules/@mdi/svg/svg/view-dashboard-outline.svg") no-repeat;
+	background-position: 0% 0%;
+}
+
+.menu-list a.discussions {
+	background: url("../node_modules/@mdi/svg/svg/book-open-outline.svg") no-repeat;
+	background-position: 0% 0%;
+}
+
+.menu-list a.groups {
+	background: url("../node_modules/@mdi/svg/svg/format-list-bulleted-square.svg") no-repeat;
+	background-position: 0% 0%;
+}
+
+.menu-list a.network {
+	background: url("../node_modules/@mdi/svg/svg/account-group-outline.svg") no-repeat;
+	background-position: 0% 0%;
+}
+
+.menu-list a.user-settings {
+	background: url("../node_modules/@mdi/svg/svg/wan.svg") no-repeat;
+	background-position: 0% 0%;
+}
+
+.small-device-tags a.tag-activity-dashboard {
+	background: url("../node_modules/@mdi/svg/svg/settings-outline.svg") no-repeat;
+	background-position: 0% 0%;
+	color: black;
+	&:hover {
+		color: #2962ff;
+	}
+}
+
+a.dashboard,
+a.library,
+a.discussions,
+a.groups,
+a.user-settings,
+a.network {
 	padding-left: 3em;
+	vertical-align: middle;
 }
 
 img.sidebar {
@@ -206,6 +259,10 @@ img.search_icon {
 	height: 25px;
 	margin-right: 20px;
 	vertical-align: middle;
+}
+
+.navbar-divider {
+	margin: 20px 0 0 0;
 }
 
 .input {
@@ -278,26 +335,6 @@ img.search_icon {
 	border-radius: 25px;
 }
 
-// Cards
-.box {
-	margin: 0;
-}
-
-.box-feed {
-	margin-top: 25px;
-	&:hover {
-		border: 5px solid #2962ff;
-	}
-}
-
-.info-card {
-	margin-left: 50px;
-}
-
-.info-card p {
-	margin-top: 10px;
-}
-
 .tags {
 	width: 350px;
 	margin-left: 10px;
@@ -312,64 +349,6 @@ img.search_icon {
 	font-weight: bold;
 }
 
-// News Feed - Dashboard
 .tag-activity-dashboard {
 	margin-right: 10px;
-}
-
-.news-feed {
-	padding: 10px;
-}
-.news-feed-message {
-	margin-left: 65px;
-	width: auto;
-	background-color: #fafafa;
-	border-radius: 5px;
-	word-wrap: break-word;
-}
-
-.news-feed-message h4 {
-	font-weight: bold;
-	margin-bottom: 5px;
-}
-
-.avatar-news-feed {
-	width: 50px;
-	height: 50px;
-	margin-right: 15px;
-}
-
-.bottom-nav-news {
-	margin-left: 65px;
-}
-
-// Tags
-.tag-structure {
-	margin-right: 5px;
-}
-.tag-buttons {
-	margin-right: 5px;
-}
-
-.tag-button-colors {
-	background-color: #acebd2;
-	border-color: #1b4e3a;
-	color: #1b4e3a;
-	&:hover {
-		background-color: #acebd2;
-		border-color: #acebd2;
-		color: #1b4e3a;
-	}
-}
-
-.tag-buttons {
-	margin-top: 10px;
-}
-
-.tag-icons img {
-	margin-left: 5px;
-}
-
-.tag-label {
-	margin-left: 10px;
 }

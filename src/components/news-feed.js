@@ -1,11 +1,12 @@
 import { html, LitElement } from 'lit-element';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
+import newsFeedComponent from '../../style/news-feed.scss';
 import './tags.js';
 
 class newsFeed extends LitElement {
   static get styles() {
-    return [sharedStyles, homepageStyles];
+    return [sharedStyles, homepageStyles, newsFeedComponent];
   }
 
   render() {

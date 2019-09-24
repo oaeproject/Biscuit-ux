@@ -1,0 +1,14 @@
+.tag-menu-label {
+    margin-top: -5%;
+}
+
+.tag-menu-button {
+	border-radius: 50%;
+	padding:0 13px 0 13px;
+	background: transparent;
+	border-color: transparent;
+	&:hover{
+		background: #E3F2FD;
+		border-color: transparent;
+	}
+}
