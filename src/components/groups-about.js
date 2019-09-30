@@ -1,7 +1,6 @@
 import { html, LitElement } from 'lit-element';
 import '@polymer/iron-icons/iron-icons.js';
 import '@polymer/iron-icons/social-icons.js';
-import '@polymer/iron-iconset-svg/iron-iconset-svg.js';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
 import newsFeedComponent from '../../style/news-feed.scss';
@@ -28,8 +27,8 @@ class groupsAbout extends LitElement {
           </div>
           <div class="group-join-button">
             <a class="button">
-              <span class="icon is-small">
-                <iron-icon icon="add"></iron-icon>
+              <span class="icon is-small group-join-icon">
+                <iron-icon icon="social:group-add"></iron-icon>
               </span>
               <span>Join Group</span>
             </a>
