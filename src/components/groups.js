@@ -1,11 +1,12 @@
 import { html } from 'lit-element';
-import { PageViewElement } from './page-view-element.js';
 import sharedStyles from '../../style/app.scss';
+import { PageViewElement } from './page-view-element.js';
 import './sidebar.js';
 import './top-nav.js';
 import './info-card.js';
 import './tag-card.js';
 import './groups-feed.js';
+import './groups-about.js';
 import './quick-settings.js';
 import './tags.js';
 
@@ -30,8 +31,7 @@ class OAEGroups extends PageViewElement {
                   </div>
                   <div class=" columns is-flex main-content">
                     <div class="column is-two-thirds">
-                      <section class="column is-inline-flex">
-                      </section>
+                      <section class="column is-inline-flex"></section>
                       <section class="column activity-dashboard">
                         <section class="is-flex">
                           <span class="icon tag-activity-dashboard">
@@ -43,6 +43,7 @@ class OAEGroups extends PageViewElement {
                       </section>
                     </div>
                     <div class="column">
+                      <groups-about></groups-about>
                     </div>
                   </div>
                 </div>

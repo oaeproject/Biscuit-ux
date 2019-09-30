@@ -1,0 +1,52 @@
+.groups-about-box {
+	background-color: white;
+}
+
+.groups-about-box h5 {
+    font-weight: bold;
+    color: black;
+}
+
+.groups-brand {
+    margin-top: 4.5em;
+    margin-bottom: 2.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.group-name {
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+
+.group-about-section h5,
+.group-members h5 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.group-join-button {
+	text-align: center;
+}
+
+.group-join-button a {
+    border-radius: 25px;
+    width: 100px;
+    height: 25px;
+}
+
+.group-about-section p {
+	color: black;
+}
+
+.groups-content-wrapper {
+    width: 80%;
+    margin-left: 2.5em;
+}
+
+.group-members h5{
+    color: black;
+}
+
