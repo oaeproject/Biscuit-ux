@@ -22,11 +22,16 @@ class groupsAbout extends LitElement {
             </a>
           </div>
           <div class="group-name">
-            <iron-icon icon="add"></iron-icon>
-            <h5>Open Apereo</h5>
+            <div class="group-name-tag is-inline-flex">
+              <span class="icon group-name-icon">
+                <iron-icon icon="social:people-outline"></iron-icon>
+              </span>
+              <h5>Open Apereo 2019</h5>
+            </div>
+            <h6>Created by Jen Cummings</h6>
           </div>
           <div class="group-join-button">
-            <a class="button">
+            <a class="button is-info">
               <span class="icon is-small group-join-icon">
                 <iron-icon icon="social:group-add"></iron-icon>
               </span>
