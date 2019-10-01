@@ -1,15 +1,14 @@
 import { html, LitElement } from 'lit-element';
 import '@polymer/iron-icons/iron-icons.js';
 import '@polymer/iron-icons/social-icons.js';
-import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
-import newsFeedComponent from '../../style/news-feed.scss';
-import tagMenu from '../../style/tag-menu.scss';
+import newsFeedComponentStyle from '../../style/news-feed.scss';
+import tagMenuStyle from '../../style/tag-menu.scss';
 import groupsAboutStyle from '../../style/groups-about.scss';
 
 class groupsAbout extends LitElement {
   static get styles() {
-    return [sharedStyles, homepageStyles, newsFeedComponent, tagMenu, groupsAboutStyle];
+    return [sharedStyles, newsFeedComponentStyle, tagMenuStyle, groupsAboutStyle];
   }
 
   render() {

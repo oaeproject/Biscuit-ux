@@ -3,8 +3,6 @@ import sharedStyles from '../../style/app.scss';
 import { PageViewElement } from './page-view-element.js';
 import './sidebar.js';
 import './top-nav.js';
-import './info-card.js';
-import './tag-card.js';
 import './groups-feed.js';
 import './groups-about.js';
 import './quick-settings.js';
