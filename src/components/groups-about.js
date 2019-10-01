@@ -3,12 +3,11 @@ import '@polymer/iron-icons/iron-icons.js';
 import '@polymer/iron-icons/social-icons.js';
 import sharedStyles from '../../style/app.scss';
 import newsFeedComponentStyle from '../../style/news-feed.scss';
-import tagMenuStyle from '../../style/tag-menu.scss';
 import groupsAboutStyle from '../../style/groups-about.scss';
 
 class groupsAbout extends LitElement {
   static get styles() {
-    return [sharedStyles, newsFeedComponentStyle, tagMenuStyle, groupsAboutStyle];
+    return [sharedStyles, newsFeedComponentStyle, groupsAboutStyle];
   }
 
   render() {
