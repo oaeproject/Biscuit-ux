@@ -31,7 +31,7 @@ class groupsAbout extends LitElement {
             <h6>Created by Jen Cummings</h6>
           </div>
           <div class="group-join-button">
-            <a class="button is-info">
+            <a class="button is-link">
               <span class="icon is-small group-join-icon">
                 <iron-icon icon="social:group-add"></iron-icon>
               </span>
