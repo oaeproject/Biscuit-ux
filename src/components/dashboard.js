@@ -42,6 +42,8 @@ class OAEDashboard extends PageViewElement {
                           <h3>RECENT ACTIVITY</h3>
                         </section>
                         <news-feed></news-feed>
+                        <news-feed></news-feed>
+                        <news-feed></news-feed>
                       </section>
                     </div>
                     <div class="column">
