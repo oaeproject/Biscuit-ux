@@ -12,3 +12,14 @@ patch:
         patched: '2019-07-04T02:34:26.801Z'
     - babel-eslint > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
         patched: '2019-07-04T02:34:26.801Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - puppeteer > https-proxy-agent:
+        patched: '2019-10-04T02:35:13.327Z'
+    - snyk > proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T02:35:13.327Z'
+    - snyk > proxy-agent > pac-proxy-agent > https-proxy-agent:
+        patched: '2019-10-04T02:35:13.327Z'
+    - polymer-cli > web-component-tester > wct-sauce > sauce-connect-launcher > https-proxy-agent:
+        patched: '2019-10-04T02:35:13.327Z'
+    - polymer-cli > web-component-tester > wct-local > launchpad > browserstack > https-proxy-agent:
+        patched: '2019-10-04T02:35:13.327Z'
