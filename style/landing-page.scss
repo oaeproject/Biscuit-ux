@@ -1,9 +1,89 @@
+
+.navbar-brand {
+	padding-left: 1.5em;
+}
+
+.home-nav {
+	background: white;
+}
+
+.home-title {
+	font-size: 2em;
+	font-weight: bold;
+	margin-top: 3em;
+	margin-bottom: 0.5em;
+}
+
+.home-right h6 {
+	font-size: 1.3em;
+	width: 25em;
+	margin-bottom: 0.95em;
+}
+.home-search {
+	vertical-align: middle;
+	width: 70%;
+	margin-left: 0;
+}
+
+.home-search input {
+	border-style: solid;
+	border-color: #cfd8dc;
+	border-width: 1px;
+	border-radius: 25px;
+	-webkit-box-shadow: 0px 0px 8px -1px rgba(201, 201, 201, 1);
+	-moz-box-shadow: 0px 0px 8px -1px rgba(201, 201, 201, 1);
+	box-shadow: 0px 0px 8px -1px rgba(201, 201, 201, 1);
+	&:hover {
+		border-style: solid;
+		border-color: #cfd8dc;
+		border-width: 1px;
+		border-radius: 25px;
+		-webkit-box-shadow: 0px 0px 8px -1px rgba(201, 201, 201, 1);
+		-moz-box-shadow: 0px 0px 8px -1px rgba(201, 201, 201, 1);
+		box-shadow: 0px 0px 8px -1px rgba(201, 201, 201, 1);
+	}
+	&:active {
+		border-style: solid;
+		border-color: #cfd8dc;
+		border-width: 1px;
+		border-radius: 25px;
+		-webkit-box-shadow: 0px 0px 8px -1px rgba(201, 201, 201, 1);
+		-moz-box-shadow: 0px 0px 8px -1px rgba(201, 201, 201, 1);
+		box-shadow: 0px 0px 8px -1px rgba(201, 201, 201, 1);
+	}
+}
+
+.home-drop {
+	margin-top: 1.5em;
+}
+
+.iron-icon {
+	color: #cfd8dc;
+	&:hover {
+		color: grey;
+	}
+}
+
 .is-gapless {
 	height: 100%;
+	min-height: 700px;
 	margin-top: 0;
 	margin-bottom: 0;
+	background-color: white;
 }
 
 .is-5 {
-    min-height: 500px;
+	height: 100%;
+}
+
+.home-rightCol {
+	height: 100%;
+}
+
+.home-right {
+	margin-left: 3em;
+}
+
+.home-img {
+	margin-top: 4.5em;
 }
