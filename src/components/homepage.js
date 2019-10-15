@@ -33,22 +33,22 @@ class OAEHomepage extends PageViewElement {
       <div class="columns is-gapless is-flex">
         <div class="column home-leftCol">
           <div class="home-right">
-            <h1 class="home-title">Welcome to the OAE</h1>
+            <h1 class="home-title">Welcome to the OAE.</h1>
             <h6>
               Try searching for tags like "meeting" or "document"
             </h6>
             <div class="field home-search">
-              <div class="control has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="Search for folders, people or documents" />
+              <div class="control has-icons-left">
+                <input class="input is-rounded" type="search" placeholder="Search for folders, people or documents" />
                 <span class="icon is-left home-searchIcon">
                   <iron-icon icon="search"></iron-icon>
                 </span>
               </div>
             </div>
-            <div class="dropdown is-hoverable home-drop">
+            <div class="dropdown is-hoverable">
               <div class="dropdown-trigger">
-                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
-                  <span>Filter by</span>
+                <button class="button home-drop" aria-haspopup="true" aria-controls="dropdown-menu4">
+                  <span>Sort by</span>
                   <span class="icon is-small">
                     <iron-icon icon="arrow-drop-down"></iron-icon>
                   </span>
@@ -57,7 +57,50 @@ class OAEHomepage extends PageViewElement {
               <div class="dropdown-menu" id="dropdown-menu4" role="menu">
                 <div class="dropdown-content">
                   <div class="dropdown-item">
-                    <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                    <p>Recent</p>
+                  </div>
+                  <div class="dropdown-item">
+                    <p>Oldest</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button home-drop" aria-haspopup="true" aria-controls="dropdown-menu4">
+                  <span>Search only</span>
+                  <span class="icon is-small">
+                    <iron-icon icon="arrow-drop-down"></iron-icon>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                <div class="dropdown-content">
+                  <div class="dropdown-item">
+                    <p>Documents</p>
+                  </div>
+                  <div class="dropdown-item">
+                    <p>Groups</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dropdown is-hoverable">
+              <div class="dropdown-trigger">
+                <button class="button home-drop" aria-haspopup="true" aria-controls="dropdown-menu4">
+                  <span>Search in</span>
+                  <span class="icon is-small">
+                    <iron-icon icon="arrow-drop-down"></iron-icon>
+                  </span>
+                </button>
+              </div>
+              <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                <div class="dropdown-content">
+                  <div class="dropdown-item">
+                    <p>Documents</p>
+                  </div>
+                  <div class="dropdown-item">
+                    <p>Groups</p>
                   </div>
                 </div>
               </div>
