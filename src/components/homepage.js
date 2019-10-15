@@ -31,19 +31,11 @@ class OAEHomepage extends PageViewElement {
       </nav>
 
       <div class="columns is-gapless is-flex">
-        <div class="column is-5">
-          <figure class="image home-img is-16by9">
-            <img
-              src="https://images.pexels.com/photos/356086/pexels-photo-356086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            />
-          </figure>
-        </div>
-
-        <div class="column home-rightCol">
+        <div class="column home-leftCol">
           <div class="home-right">
-            <h1 class="home-title">Search the OAE</h1>
+            <h1 class="home-title">Welcome to the OAE</h1>
             <h6>
-              OAE is open source software created by universities for universities. It’s free and simple to get started.
+              Try searching for tags like "meeting" or "document"
             </h6>
             <div class="field home-search">
               <div class="control has-icons-left has-icons-right">
@@ -71,6 +63,13 @@ class OAEHomepage extends PageViewElement {
               </div>
             </div>
           </div>
+        </div>
+        <div class="column is-5">
+          <figure class="image home-img is-16by9">
+            <img
+              src="https://images.pexels.com/photos/356086/pexels-photo-356086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            />
+          </figure>
         </div>
       </div>
     `;

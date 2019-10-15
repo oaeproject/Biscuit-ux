@@ -1,6 +1,16 @@
+// Font Colour
+$fontColour: #212121;
+$secondaryFontColor: #424242;
+
+// Import Roboto Slab for Title
+// Single Use
+@font-face {
+	font-family: titleRobSlab;
+	src: url(https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap);
+}
 
 .navbar-brand {
-	padding-left: 1.5em;
+	padding-left: 3em;
 }
 
 .home-nav {
@@ -8,16 +18,19 @@
 }
 
 .home-title {
+	font-family: titleRobSlab; // Roboto Slab
+	font-weight: 550;
 	font-size: 2em;
-	font-weight: bold;
 	margin-top: 3em;
-	margin-bottom: 0.5em;
+	margin-bottom: 0.3em;
+	color: $fontColour;
 }
 
 .home-right h6 {
-	font-size: 1.3em;
+	font-size: 1.1em;
 	width: 25em;
-	margin-bottom: 0.95em;
+	margin-bottom: 2em;
+	color: $secondaryFontColor;
 }
 .home-search {
 	vertical-align: middle;
@@ -76,7 +89,7 @@
 	height: 100%;
 }
 
-.home-rightCol {
+.home-leftCol {
 	height: 100%;
 }
 
