@@ -30,11 +30,11 @@ class OAEHomepage extends PageViewElement {
             </div>
           </div>
           <div class="column is-5">
-            <figure class="image home-img is-16by9">
+            <div class="image home-img-wrap">
               <img
                 src="https://images.pexels.com/photos/356086/pexels-photo-356086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
               />
-            </figure>
+            </div>
           </div>
         </div>
       </section>

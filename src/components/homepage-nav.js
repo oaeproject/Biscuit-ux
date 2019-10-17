@@ -22,7 +22,13 @@ class homeNav extends LitElement {
               height="28"
             />
           </a>
-          <div class="navbar-burger burger" data-target="navbarExampleTransparentExample"></div>
+        </div>
+        <div class="navbar-end navEnd">
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-round is-link is-outlined signIn-button">Sign In</a>
+            </div>
+          </div>
         </div>
       </nav>
     `;
