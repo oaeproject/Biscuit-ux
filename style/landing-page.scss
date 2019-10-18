@@ -7,18 +7,20 @@ $secondaryFontColor: #424242;
 @import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
 
 .home-title {
-	font-family: "Roboto", serif;
 	font-weight: 600;
-	font-size: 2.2em;
-	margin-top: 4em;
+	font-size: 2.5em;
 	margin-bottom: 0.2em;
-	color: $fontColour;
+	color: #2128bd;
 }
 
 .home-right h6 {
 	font-size: 1.1em;
 	margin-bottom: 2em;
 	color: $secondaryFontColor;
+}
+
+.home-title, .home-right h6 {
+	text-align: center;
 }
 
 .iron-icon {
@@ -33,7 +35,6 @@ $secondaryFontColor: #424242;
 	min-height: 700px;
 	margin-top: 0;
 	margin-bottom: 0;
-	background-color: white;
 }
 
 .is-5 {
@@ -45,10 +46,16 @@ $secondaryFontColor: #424242;
 
 .home-leftCol {
 	height: 100%;
+	background-color: white;
 }
 
 .home-right {
-	margin-left: 7em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	width: 85vh;
 }
 
 .home-img-wrap img {

@@ -21,19 +21,12 @@ class OAEHomepage extends PageViewElement {
         <div class="hero-body is-gapless">
           <div class="column home-leftCol">
             <div class="home-right">
-              <h1 class="home-title">Welcome to the OAE</h1>
+              <h1 class="home-title">Explore the OAE</h1>
               <h6>
                 Try searching for tags like "meeting" or "document"
               </h6>
               <home-search></home-search>
               <home-filters></home-filters>
-            </div>
-          </div>
-          <div class="column is-5">
-            <div class="image home-img-wrap">
-              <img
-                src="https://images.pexels.com/photos/356086/pexels-photo-356086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-              />
             </div>
           </div>
         </div>

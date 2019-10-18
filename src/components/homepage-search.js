@@ -13,9 +13,9 @@ class homeSearch extends LitElement {
   render() {
     return html`
       <div class="field home-search">
-        <div class="control has-icons-left">
+        <div class="control has-icons-left home-searchIcon">
           <input class="input is-rounded" type="search" placeholder="Search for folders, people or documents" />
-          <span class="icon is-left home-searchIcon">
+          <span class="icon is-left ">
             <iron-icon icon="search"></iron-icon>
           </span>
         </div>
