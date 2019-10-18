@@ -1,9 +1,25 @@
+.navbar-brand {
+	padding-left: 7em;
+	padding-right: 7em;
+}
+
+.home-nav {
+	background: white;
+}
+
 .signIn-button {
-    border-radius: 25px;
-    width: 100px;
-    height: 28px;
+	border-radius: 25px;
+	width: 100px;
+	height: 28px;
+	color: #0260ff;
+	background-color: #e5efff;
+	border: none;
+	&:hover {
+		color: white;
+		background-color: #2128bd;
+	}
 }
 
 .navEnd {
-    padding-right: 7em;
+	padding-right: 7em;
 }

@@ -6,15 +6,6 @@ $secondaryFontColor: #424242;
 // Single Use
 @import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
 
-.navbar-brand {
-	padding-left: 7em;
-	padding-right: 7em;
-}
-
-.home-nav {
-	background: white;
-}
-
 .home-title {
 	font-family: "Roboto", serif;
 	font-weight: 600;
@@ -62,6 +53,6 @@ $secondaryFontColor: #424242;
 
 .home-img-wrap img {
 	max-width: 100%;
-    max-height: 100%;
+	max-height: 100%;
 	object-fit: cover;
 }

@@ -26,7 +26,7 @@ class homeNav extends LitElement {
         <div class="navbar-end navEnd">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-round is-link is-outlined signIn-button">Sign In</a>
+              <a class="button is-round signIn-button">Sign In</a>
             </div>
           </div>
         </div>
