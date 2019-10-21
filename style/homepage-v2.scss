@@ -1,0 +1,25 @@
+// Font Colour
+$fontColour: #212121;
+$secondaryFontColor: #424242;
+
+// Import Roboto Slab for Title
+// Single Use
+@import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
+
+.home-rightv2 {
+    transform: translate(0, 80%);
+    margin-left: 7em;
+}
+
+.home-titlev2 {
+	font-weight: 600;
+	font-size: 3em;
+	margin-bottom: 0.2em;
+	color: #2128bd;
+}
+
+.home-h6v2 {
+	font-size: 1.1em;
+	margin-bottom: 1.8em;
+	color: $secondaryFontColor;
+}
