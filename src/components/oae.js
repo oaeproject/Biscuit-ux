@@ -29,10 +29,10 @@ class OAE extends PageViewElement {
 
   render() {
     return html`
+    <home-nav-v2></home-nav-v2>
       <section class="hero is-fullheight">
         <div class="hero-body is-gapless">
           <div class="column home-leftCol">
-            <home-nav-v2></home-nav-v2>
             <div class="home-rightv2">
               <h1 class="home-titlev2">Explore the OAE</h1>
               <h6 class="home-h6v2">
@@ -43,15 +43,17 @@ class OAE extends PageViewElement {
             </div>
           </div>
           <div class="column is-5v2">
-            <figure class="image home-imgv2">
+            <figure class="image home-imgv2 is-pulled-right">
               <img
                 src="../src/imgs/university.jpg"
               />
             </figure>
           </div>
           </div>
+          <home-footer></home-footer>
         </div>
       </section>
+      
     `;
   }
 }

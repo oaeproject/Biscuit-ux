@@ -7,17 +7,16 @@ $secondaryFontColor: #424242;
 @import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
 
 .home-rightv2 {
-    transform: translate(0, 80%);
+	transform: translate(0, 80%);
 	margin-left: 2em;
 }
 
 .is-5v2 {
 	height: 100%;
-	background: black;
+	background: white;
 	margin: 0;
 	padding: 0;
 }
-
 
 .home-titlev2 {
 	font-weight: 600;
@@ -33,8 +32,9 @@ $secondaryFontColor: #424242;
 }
 
 .home-imgv2 {
-	width: 100%;
-	height: 100%;
+	width: 90%;
+	height: 90%;
+	transform: translate(0, 5%);
 	position: relative;
 }
 
@@ -42,5 +42,4 @@ $secondaryFontColor: #424242;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-
 }
