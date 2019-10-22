@@ -17,7 +17,7 @@ import sharedStyles from '../../style/app.scss';
 import landingStyles from '../../style/landing-page.scss';
 import homeV2Styles from '../../style/homepage-v2.scss';
 import { PageViewElement } from './page-view-element.js';
-import './homepage-nav.js';
+import './homepage-navV2.js';
 import './homepage-search';
 import './homepage-filters.js';
 import './homepage-footer.js';
@@ -29,10 +29,10 @@ class OAE extends PageViewElement {
 
   render() {
     return html`
-      <home-nav></home-nav>
       <section class="hero is-fullheight">
         <div class="hero-body is-gapless">
           <div class="column home-leftCol">
+            <home-nav-v2></home-nav-v2>
             <div class="home-rightv2">
               <h1 class="home-titlev2">Explore the OAE</h1>
               <h6 class="home-h6v2">
@@ -42,10 +42,10 @@ class OAE extends PageViewElement {
               <home-filters></home-filters>
             </div>
           </div>
-          <div class="column is-5">
-            <figure class="image home-img is-16by9">
+          <div class="column is-5v2">
+            <figure class="image home-imgv2">
               <img
-                src="https://images.pexels.com/photos/356086/pexels-photo-356086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                src="../src/imgs/university.jpg"
               />
             </figure>
           </div>

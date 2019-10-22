@@ -8,8 +8,16 @@ $secondaryFontColor: #424242;
 
 .home-rightv2 {
     transform: translate(0, 80%);
-    margin-left: 7em;
+	margin-left: 2em;
 }
+
+.is-5v2 {
+	height: 100%;
+	background: black;
+	margin: 0;
+	padding: 0;
+}
+
 
 .home-titlev2 {
 	font-weight: 600;
@@ -22,4 +30,17 @@ $secondaryFontColor: #424242;
 	font-size: 1.1em;
 	margin-bottom: 1.8em;
 	color: $secondaryFontColor;
+}
+
+.home-imgv2 {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.home-imgv2 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
 }
