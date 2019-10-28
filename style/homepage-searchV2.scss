@@ -1,0 +1,35 @@
+.home-search {
+	vertical-align: middle;
+	margin-right: 20em;
+}
+
+.home-search input {
+	height: 2.5em;
+	border-style: solid;
+	border-color: #cfd8dc;
+	background-color: white;
+	border-width: 1px;
+	&:hover :active {
+		border-style: solid;
+		border-color: #cfd8dc;
+		background-color: white;
+		border-width: 1px;
+	}
+}
+
+.input:focus {
+	border-style: solid;
+	border-color: #cfd8dc;
+	border-width: 1px;
+	background-color: white;
+}
+
+.input:focus + .icon {
+	color: blue;
+}
+
+.home-searchIcon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

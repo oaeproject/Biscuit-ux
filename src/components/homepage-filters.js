@@ -23,12 +23,12 @@ class homeFilters extends LitElement {
         </div>
         <div class="dropdown-menu" id="dropdown-menu4" role="menu">
           <div class="dropdown-content">
-            <div class="dropdown-item">
+            <a class="dropdown-item home-item">
               <p>Recent</p>
-            </div>
-            <div class="dropdown-item">
+            </a>
+            <a class="dropdown-item home-item">
               <p>Oldest</p>
-            </div>
+            </a>
           </div>
         </div>
       </div>

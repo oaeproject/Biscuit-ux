@@ -40,6 +40,14 @@ module.exports = [
           }
         },
         {
+          test: /\.(png|jpg)$/,
+          loader: 'url-loader'
+        },
+        {
+          test: /\.(ttf|eot|svg|png|jpg|gif|ico)(\?v=\d\.\d\.\d)?$/,
+          loader: 'file-loader'
+        },
+        {
           test: /\.css|\.s(c|a)ss$/,
           use: [
             {

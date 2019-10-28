@@ -18,7 +18,7 @@ import landingStyles from '../../style/landing-page.scss';
 import homeV2Styles from '../../style/homepage-v2.scss';
 import { PageViewElement } from './page-view-element.js';
 import './homepage-navV2.js';
-import './homepage-search';
+import './homepage-searchV2.js';
 import './homepage-filters.js';
 import './homepage-footer.js';
 
@@ -29,30 +29,26 @@ class OAE extends PageViewElement {
 
   render() {
     return html`
-    <home-nav-v2></home-nav-v2>
+      <home-nav-v2></home-nav-v2>
       <section class="hero is-fullheight">
         <div class="hero-body is-gapless">
           <div class="column home-leftCol">
             <div class="home-rightv2">
-              <h1 class="home-titlev2">Explore the OAE</h1>
+              <h1 class="home-titlev2">Welcome to the OAE</h1>
               <h6 class="home-h6v2">
                 Try searching for tags like "meeting" or "document"
               </h6>
-              <home-search></home-search>
+              <home-search-v2></home-search-v2>
               <home-filters></home-filters>
             </div>
           </div>
-          <div class="column is-5v2">
-            <figure class="image home-imgv2 is-pulled-right">
-              <img
-                src="../src/imgs/university.jpg"
-              />
-            </figure>
+          <div class="column is-5">
           </div>
           </div>
-          <home-footer></home-footer>
         </div>
       </section>
+      <home-footer></home-footer>
+
       
     `;
   }
