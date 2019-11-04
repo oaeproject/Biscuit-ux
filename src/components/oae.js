@@ -34,7 +34,7 @@ class OAE extends PageViewElement {
         <div class="hero-body is-gapless">
           <div class="column home-leftCol">
             <div class="home-rightv2">
-              <h1 class="home-titlev2">Welcome to the OAE</h1>
+              <h1 class="home-titlev2">Explore and work together with the OAE</h1>
               <h6 class="home-h6v2">
                 Try searching for tags like "meeting" or "document"
               </h6>
