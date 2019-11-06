@@ -31,10 +31,10 @@ class OAE extends PageViewElement {
     return html`
       <home-nav-v2></home-nav-v2>
       <section class="hero is-fullheight">
-        <div class="hero-body is-gapless">
+        <div class="hero-body is-gapless bck-filter">
           <div class="column home-leftCol">
             <div class="home-rightv2">
-              <h1 class="home-titlev2">Explore and work together with the OAE</h1>
+              <h1 class="home-titlev2">Explore and work </br> together with the OAE</h1>
               <h6 class="home-h6v2">
                 Try searching for tags like "meeting" or "document"
               </h6>

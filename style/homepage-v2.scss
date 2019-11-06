@@ -7,13 +7,11 @@ $secondaryFontColor: #424242;
 @import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
 
 .is-gapless {
-	background: url("/images/background-2.jpg") no-repeat center fixed;
+	background: url("/images/background_02.jpg") no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	-webkit-filter: grayscale(0.9);
-	filter: grayscale(90%);
 }
 
 .home-rightv2 {

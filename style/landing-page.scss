@@ -10,13 +10,13 @@ $secondaryFontColor: #424242;
 	font-weight: 600;
 	font-size: 3em;
 	margin-bottom: 0.2em;
-	color: #2128bd;
+	color: white;
 }
 
 .home-right h6 {
 	font-size: 1.1em;
 	margin-bottom: 2em;
-	color: $secondaryFontColor;
+	color: white;
 }
 
 .home-title,
@@ -27,7 +27,7 @@ $secondaryFontColor: #424242;
 .iron-icon {
 	color: #cfd8dc;
 	&:hover {
-		color: grey;
+		color: red;
 	}
 }
 
@@ -36,6 +36,11 @@ $secondaryFontColor: #424242;
 	min-height: 700px;
 	margin-top: 0;
 	margin-bottom: 0;
+	background: url("/images/background_02.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .is-5 {
@@ -47,7 +52,6 @@ $secondaryFontColor: #424242;
 
 .home-leftCol {
 	height: 100%;
-	background-color: white;
 }
 
 .home-right {

@@ -3,7 +3,7 @@ import '@polymer/iron-icons/iron-icons.js';
 import '@polymer/iron-icons/social-icons.js';
 import sharedStyles from '../../style/app.scss';
 import landingStyles from '../../style/landing-page.scss';
-import homeSearchStyles from '../../style/homepage-search.scss';
+import homeSearchStyles from '../../style/homepage-searchV2.scss';
 
 class homeSearchV2 extends LitElement {
   static get styles() {
