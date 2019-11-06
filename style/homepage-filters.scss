@@ -5,14 +5,14 @@
 	height: 28px;
 	color: white;
 	background-color: transparent;
-	border-width: 5px;
+	border-width: 3px;
 	border: solid;
 	border-color: white;
 	&:hover {
 		color: white;
 		background-color: #2128bd;
-		border-width: 5px;
+		border-width: 3px;
 		border: solid;
-		border-color: #2128bd;
+		border-color: red;
 	}
 }

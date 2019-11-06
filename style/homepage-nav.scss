@@ -1,10 +1,10 @@
 .navbar-brand {
-	padding-left: 7em;
-	padding-right: 7em;
+	padding-left: 1em;
 }
 
 .home-nav {
 	background: white;
+	box-shadow: 0px 2px 20px 0px rgba(0,0,0,0.08);
 }
 
 .navbar-item img {
@@ -12,33 +12,19 @@
 }
 
 .signIn-button {
+	text-transform: uppercase;
+	font-size: 0.9em;
 	border-radius: 25px;
-	width: 100px;
-	height: 28px;
-	color: #0260ff;
-	background-color: #e5efff;
+	color: #00253D;
+	background-color: white;
 	border: none;
-	transition: 0.8s;
-	-webkit-transition: 0.8s;
-	-moz-transition: 0.8s;
-	-ms-transition: 0.8s;
-	-o-transition: 0.8s;
 	&:hover {
-		color: white;
-		background-color: #2128bd;
-		transition: 0.8s;
-		-webkit-transition: 0.8s;
-		-moz-transition: 0.8s;
-		-ms-transition: 0.8s;
-		-o-transition: 0.8s;
-		-webkit-transform: rotate(10deg);
-		-moz-transform: rotate(10deg);
-		-o-transform: rotate(10deg);
-		-ms-transform: rotate(10deg);
-		transform: rotate(10deg);
+		color: #2E98D5;
+		background-color: transparent;
+		border: none;
 	}
 }
 
 .navEnd {
-	padding-right: 7em;
+	padding-right: 1em;
 }
