@@ -1,5 +1,18 @@
 .home-drop {
-	border: none;
 	margin-right: 0.2em;
 	margin-top: 1em;
+	border-radius: 25px;
+	height: 28px;
+	color: white;
+	background-color: transparent;
+	border-width: 5px;
+	border: solid;
+	border-color: white;
+	&:hover {
+		color: white;
+		background-color: #2128bd;
+		border-width: 5px;
+		border: solid;
+		border-color: #2128bd;
+	}
 }
