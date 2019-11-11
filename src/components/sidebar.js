@@ -1,4 +1,6 @@
 import { html, LitElement } from 'lit-element';
+import '@polymer/iron-icons/iron-icons.js';
+import '@polymer/iron-icons/social-icons.js';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
 

@@ -188,36 +188,6 @@ h2 {
 	color: #757575;
 }
 
-.menu-list a.dashboard {
-	background: url("../node_modules/@mdi/svg/svg/view-dashboard-outline.svg") no-repeat;
-	background-position: 0% 0%;
-}
-
-.menu-list a.library {
-	background: url("../node_modules/@mdi/svg/svg/view-dashboard-outline.svg") no-repeat;
-	background-position: 0% 0%;
-}
-
-.menu-list a.discussions {
-	background: url("../node_modules/@mdi/svg/svg/book-open-outline.svg") no-repeat;
-	background-position: 0% 0%;
-}
-
-.menu-list a.groups {
-	background: url("../node_modules/@mdi/svg/svg/format-list-bulleted-square.svg") no-repeat;
-	background-position: 0% 0%;
-}
-
-.menu-list a.network {
-	background: url("../node_modules/@mdi/svg/svg/account-group-outline.svg") no-repeat;
-	background-position: 0% 0%;
-}
-
-.menu-list a.user-settings {
-	background: url("../node_modules/@mdi/svg/svg/wan.svg") no-repeat;
-	background-position: 0% 0%;
-}
-
 .small-device-tags a.tag-activity-dashboard {
 	background: url("../node_modules/@mdi/svg/svg/settings-outline.svg") no-repeat;
 	background-position: 0% 0%;
@@ -233,7 +203,7 @@ a.discussions,
 a.groups,
 a.user-settings,
 a.network {
-	padding-left: 3em;
+	padding-left: 1em;
 	vertical-align: middle;
 }
 
@@ -345,7 +315,6 @@ img.search_icon {
 
 .tags {
 	width: 350px;
-	margin-left: 10px;
 }
 
 .activity-dashboard {
