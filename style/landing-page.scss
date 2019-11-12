@@ -1,0 +1,79 @@
+// Font Colour
+$fontColour: #212121;
+$secondaryFontColor: #424242;
+
+// Import Roboto Slab for Title
+// Single Use
+@import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
+
+.home-title {
+	font-weight: 600;
+	font-size: 3em;
+	margin-bottom: 0.2em;
+	color: white;
+}
+
+.home-right h6 {
+	font-size: 1.1em;
+	margin-bottom: 2em;
+	color: white;
+}
+
+.home-title,
+.home-right h6 {
+	text-align: center;
+}
+
+.iron-icon {
+	color: #cfd8dc;
+	&:hover {
+		color: red;
+	}
+}
+
+.is-gapless {
+	height: 100%;
+	min-height: 700px;
+	margin-top: 0;
+	margin-bottom: 0;
+	background: url("/images/background_02.jpg") no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.is-5 {
+	height: 100%;
+	background: black;
+	margin: 0;
+	padding: 0;
+}
+
+.home-leftCol {
+	height: 100%;
+}
+
+.home-right {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
+	width: 85vh;
+}
+
+.home-img-wrap img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+}
+
+.home-item {
+	color: $fontColour;
+	&:hover {
+		width: auto;
+		background-color: #e5efff;
+		color: #0260ff;
+	}
+}

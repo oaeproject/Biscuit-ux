@@ -11,22 +11,18 @@ class infoCard extends LitElement {
   render() {
     return html`
       <div class="box info">
-        <article class="media">
-          <div class="media-content">
-            <div class="content info-card">
-              <h3>
-                <strong>USER DASHBOARD</strong>
-              </h3>
-              <p>
-                Welcome to your dashboard. From here, you can access different sections of the OAE.
-              </p>
-              <hr class="navbar-divider" />
-              <a>
-                Open Link
-              </a>
-            </div>
-          </div>
-        </article>
+        <div class="content info-card">
+          <h3>
+            <strong>USER DASHBOARD</strong>
+          </h3>
+          <p>
+            Welcome to your dashboard. From here, you can access different sections of the OAE.
+          </p>
+          <hr class="navbar-divider" />
+          <a>
+            Open Link
+          </a>
+        </div>
       </div>
     `;
   }

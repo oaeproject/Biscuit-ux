@@ -1,62 +1,32 @@
 import { html } from 'lit-element';
-import homepageStyles from '../../style/homepage.scss';
+import '@polymer/iron-icons/iron-icons.js';
+import '@polymer/iron-icons/social-icons.js';
 import sharedStyles from '../../style/app.scss';
+import landingStyles from '../../style/landing-page.scss';
 import { PageViewElement } from './page-view-element.js';
+import './homepage-nav.js';
+import './homepage-search';
+import './homepage-filters.js';
+import './homepage-footer.js';
 
 class OAEHomepage extends PageViewElement {
   static get styles() {
-    return [sharedStyles, homepageStyles];
+    return [sharedStyles, landingStyles];
   }
 
   render() {
     return html`
-      <section class="hero is-link is-fullheight">
-        <div class="hero-body">
-          <div class="container is-fluid is-fullheight is-mobile">
-            <div class="columns test">
-              <div class="column is-2">
-                <aside class="menu">
-                  <ul class="menu-list">
-                    <li>
-                      <a>
-                        <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/view-dashboard-outline.svg" />
-                        Dashboard
-                      </a>
-                    </li>
-                    <li>
-                      <a>
-                        <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/view-dashboard-outline.svg" />
-                        Library</a
-                      >
-                    </li>
-                    <li>
-                      <a>
-                        <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/view-dashboard-outline.svg" />
-                        Discussions</a
-                      >
-                    </li>
-                    <li>
-                      <a>
-                        <img class="sidebar" src="./../../node_modules/@mdi/svg/svg/view-dashboard-outline.svg" />
-                        User Settings</a
-                      >
-                    </li>
-                  </ul>
-                </aside>
-              </div>
-              <div class="column content-base">
-                <div class="column top-nav">
-                  <section>
-                    <button class="button is-primary is-rounded is-pulled-right">Username</button>
-                  </section>
-                  <section>
-                    <button class="button is-primary is-rounded is-pulled-right">Notifications</button>
-                  </section>
-                  <section>
-                    <button class="button is-primary is-rounded is-pulled-right">Context Change</button>
-                  </section>
-                </div>
-              </div>
+      <home-nav></home-nav>
+      <section class="hero is-fullheight">
+        <div class="hero-body is-gapless">
+          <div class="column home-leftCol">
+            <div class="home-right">
+              <h1 class="home-title">Explore and work </br> together with the OAE</h1>
+              <h6>
+                Try searching for tags like "meeting" or "document"
+              </h6>
+              <home-search></home-search>
+              <home-filters></home-filters>
             </div>
           </div>
         </div>

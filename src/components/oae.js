@@ -10,31 +10,46 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 /* eslint-disable import/no-unassigned-import */
 
-import { html, css } from 'lit-element';
+import { html } from 'lit-element';
+import '@polymer/iron-icons/iron-icons.js';
+import '@polymer/iron-icons/social-icons.js';
+import sharedStyles from '../../style/app.scss';
+import landingStyles from '../../style/landing-page.scss';
+import homeV2Styles from '../../style/homepage-v2.scss';
 import { PageViewElement } from './page-view-element.js';
-import './oae-main.js';
-import './oae-header.js';
-import './oae-sidebar.js';
-import homepageStyles from './../../style/homepage.scss';
-import sharedStyles from './../../style/app.scss';
-
-// These are the shared styles needed by this element.
-// import {SharedStyles} from './shared-styles.js';
+import './homepage-navV2.js';
+import './homepage-searchV2.js';
+import './homepage-filters.js';
+import './homepage-footer.js';
 
 class OAE extends PageViewElement {
   static get styles() {
-    return [sharedStyles, homepageStyles];
+    return [sharedStyles, landingStyles, homeV2Styles];
   }
 
   render() {
     return html`
-      <div>
-        <oae-header> </oae-header>
-        <div id="main">
-          <oae-sidebar> </oae-sidebar>
-          <oae-main> </oae-main>
+      <home-nav-v2></home-nav-v2>
+      <section class="hero is-fullheight">
+        <div class="hero-body is-gapless bck-filter">
+          <div class="column home-leftCol">
+            <div class="home-rightv2">
+              <h1 class="home-titlev2">Explore and work </br> together with the OAE</h1>
+              <h6 class="home-h6v2">
+                Try searching for tags like "meeting" or "document"
+              </h6>
+              <home-search-v2></home-search-v2>
+              <home-filters></home-filters>
+            </div>
+          </div>
+          <div class="column is-5">
+          </div>
+          </div>
         </div>
-      </div>
+      </section>
+      <home-footer></home-footer>
+
+      
     `;
   }
 }

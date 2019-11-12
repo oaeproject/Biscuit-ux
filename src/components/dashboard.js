@@ -30,10 +30,6 @@ class OAEDashboard extends PageViewElement {
                   </div>
                   <div class=" columns is-flex main-content">
                     <div class="column is-two-thirds">
-                      <section class="column is-inline-flex">
-                        <info-card></info-card>
-                        <tag-card></tag-card>
-                      </section>
                       <section class="column activity-dashboard">
                         <section class="is-flex">
                           <span class="icon tag-activity-dashboard">
@@ -48,6 +44,8 @@ class OAEDashboard extends PageViewElement {
                     </div>
                     <div class="column">
                       <quick-settings></quick-settings>
+                      <info-card></info-card>
+                      <tag-card></tag-card>
                     </div>
                   </div>
                 </div>
