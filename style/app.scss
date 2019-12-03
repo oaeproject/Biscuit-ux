@@ -156,7 +156,7 @@ h2 {
 }
 
 .sidebar-brand {
-  margin: -50px 0 50px 0;
+  margin: -50px 0 30px 0;
   padding-left: 30px;
 }
 
@@ -177,14 +177,21 @@ h2 {
   padding-left: 35px;
   margin-bottom: 18px;
   border-radius: 0 25px 25px 0;
+  height: 30px;
   color: #000000;
+  display: flex;
+  align-items: center;
   &:hover {
     color: #3273dc;
-    background-color: #e3f2fd;
+    background-color: #f5f7ff;
   }
   &:active {
     color: #3273dc;
-    background-color: #e3f2fd;
+    background-color: #f5f7ff;
+  }
+  &:focus {
+    color: #3273dc;
+    background-color: #f5f7ff;
   }
 }
 
@@ -192,11 +199,11 @@ h2 {
   color: #000000;
   &:hover {
     color: #3273dc;
-    background-color: #e3f2fd;
+    background-color: #f5f7ff;
   }
   &:active {
     color: #3273dc;
-    background-color: #e3f2fd;
+    background-color: #f5f7ff;
   }
 }
 
