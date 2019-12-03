@@ -227,6 +227,8 @@ a.network {
   background-color: transparent;
   box-shadow: none;
   padding-left: 20px;
+  font-size: 14px;
+  width: 350px;
   &:focus {
     -webkit-appearance: none;
     border: none;
@@ -249,46 +251,6 @@ a.network {
 // Navbar
 .navbar {
   background-color: transparent;
-}
-
-.navbar-dropdown {
-  margin-top: 3px;
-}
-
-.navbar-item.has-dropdown {
-  margin-right: 15px;
-  font-size: 15px;
-  background-color: white;
-  border-radius: 25px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  height: 45px;
-  &:hover {
-    background-color: white;
-    border-radius: 25px;
-    height: 45px;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  }
-}
-
-.navbar-item.has-dropdown a {
-  margin-right: 15px;
-}
-
-.navbar-link:not(.is-arrowless)::after {
-  border-color: black;
-  margin-top: -0.5em;
-  margin-left: 15;
-  right: 0.5em;
-}
-
-.navbar-link.avatar {
-  padding-left: 15px;
-}
-
-.navbar-item.is-hoverable {
-  background-color: white;
-  border-radius: 25px;
 }
 
 .tags {
