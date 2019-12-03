@@ -1,6 +1,9 @@
 import { html, LitElement } from 'lit-element';
-import homepageStyles from "../../style/homepage.scss";
-import sharedStyles from "../../style/app.scss";
+import '@polymer/iron-icons/iron-icons.js';
+import '@polymer/iron-icons/social-icons.js';
+import '@polymer/iron-icons/av-icons.js';
+import homepageStyles from '../../style/homepage.scss';
+import sharedStyles from '../../style/app.scss';
 
 class topNav extends LitElement {
   static get styles() {
@@ -14,7 +17,9 @@ class topNav extends LitElement {
             <div class="navbar-item">
             <div class="field has-addons has-addons-centered">
               <p class="control">
-                <img class="search_icon" src="./../../node_modules/@mdi/svg/svg/magnify.svg"/>
+                <span class="icon topbar-search-icon">
+                  <iron-icon icon="search"></iron-icon>
+                </span>
                   <p class="control">
                     <input class="input" type="text" placeholder="Type to search">
                   </p>

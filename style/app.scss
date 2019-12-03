@@ -197,7 +197,6 @@ h2 {
 
 .menu-list a {
   color: #000000;
- 
 }
 
 a.dashboard,
@@ -209,31 +208,16 @@ a.network {
   padding-left: 1em;
 }
 
-.sidebar-icon {
-  vertical-align: middle;
-}
-
-img.top-menu {
-  width: 25px;
-  height: 25px;
-  padding-right: 15px;
-  vertical-align: middle;
-  color: #757575;
-}
-
-img.sidebar.dashboard-icon {
-  color: rgba(0, 0, 0, 0.26);
-}
-
-img.search_icon {
-  width: 25px;
-  height: 25px;
-  margin-right: 20px;
-  vertical-align: middle;
-}
-
 .navbar-divider {
   margin: 20px 0 0 0;
+}
+
+// Top Bar
+.topbar-search-icon {
+  display: flex;
+  align-items: center;
+  color: black;
+  padding-top: 10px;
 }
 
 .input {
@@ -242,6 +226,7 @@ img.search_icon {
   border: none;
   background-color: transparent;
   box-shadow: none;
+  padding-left: 20px;
   &:focus {
     -webkit-appearance: none;
     border: none;
