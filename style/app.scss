@@ -101,7 +101,7 @@ h2 {
 .hero-body {
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
+  background-color: #fcfcfc;
 }
 
 .container.is-fluid {
@@ -156,7 +156,7 @@ h2 {
 }
 
 .sidebar-brand {
-  margin: -50px 0 30px 0;
+  margin: -70px 0 30px 0;
   padding-left: 30px;
 }
 
@@ -182,38 +182,22 @@ h2 {
   display: flex;
   align-items: center;
   &:hover {
-    color: #3273dc;
+    color: #0060df;
     background-color: #f5f7ff;
   }
   &:active {
-    color: #3273dc;
+    color: #0060df;
     background-color: #f5f7ff;
   }
   &:focus {
-    color: #3273dc;
+    color: #0060df;
     background-color: #f5f7ff;
   }
 }
 
 .menu-list a {
   color: #000000;
-  &:hover {
-    color: #3273dc;
-    background-color: #f5f7ff;
-  }
-  &:active {
-    color: #3273dc;
-    background-color: #f5f7ff;
-  }
-}
-
-.small-device-tags a.tag-activity-dashboard {
-  background: url('../node_modules/@mdi/svg/svg/settings-outline.svg') no-repeat;
-  background-position: 0% 0%;
-  color: black;
-  &:hover {
-    color: #2962ff;
-  }
+ 
 }
 
 a.dashboard,
