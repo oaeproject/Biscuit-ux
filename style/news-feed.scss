@@ -31,11 +31,9 @@
   margin-left: 65px;
   margin-top: -15px;
   width: auto;
-  background-color: white;
+  background-color: #FAFAFA;
   border-radius: 5px;
-  border: solid;
-  border-color: #eeeeee;
-  border-width: 1px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   word-wrap: break-word;
 }
 
@@ -83,7 +81,7 @@
 }
 
 .icon-feed {
-  color: #0060df;
+  color: #424242;
 }
 
 .news-pin {
