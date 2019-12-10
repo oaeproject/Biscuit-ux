@@ -42,7 +42,7 @@ class newsFeed extends LitElement {
             <div class="level-right">
               <p class="level-item">
                 <a class="button news-pin">
-                  <iron-icon icon="icons:label"></iron-icon>
+                  <iron-icon icon="icons:label-outline"></iron-icon>
                 </a>
               </p>
             </div>
