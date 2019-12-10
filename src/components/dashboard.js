@@ -29,7 +29,7 @@ class OAEDashboard extends PageViewElement {
                     <top-nav></top-nav>
                   </div>
                   <div class=" columns is-flex main-content">
-                    <div class="column is-two-thirds">
+                    <div class="column is-three-fifths main-left">
                       <section class="column activity-dashboard">
                         <section class="is-flex">
                           <span class="icon tag-activity-dashboard">
