@@ -16,8 +16,15 @@
   font-size: 14px;
   height: 35px;
   border-radius: 25px;
+  border: solid;
+  border-color: #0060df;
+  border-width: 1px;
 }
 
+.notification-icon {
+  color: #0060df;
+  
+}
 .navbar-link {
   border-radius: 25px;
   color: black;

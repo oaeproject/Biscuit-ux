@@ -2,6 +2,10 @@ import { html, LitElement } from 'lit-element';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
 import newsFeedComponent from '../../style/news-feed.scss';
+import '@polymer/iron-icons/iron-icons.js';
+import '@polymer/iron-icons/social-icons.js';
+import '@polymer/iron-icons/av-icons.js';
+import '@polymer/iron-icons/hardware-icons.js';
 import './tags.js';
 
 class newsFeed extends LitElement {
@@ -13,19 +17,19 @@ class newsFeed extends LitElement {
     return html`
       <div class="box box-feed">
         <div class="content news-feed">
-          <nav class="level">
+          <nav class="level news-feed-top">
             <div class="level-left">
               <div class="level-item">
                 <div class="column is-flex news-feed-nav">
                   <figure class="image avatar-news-feed">
-                    <img class="is-rounded avatar-news-feed" src="https://bulma.io/images/placeholders/128x128.png" />
+                    <img class="is-rounded avatar-news-feed" src="/images/avatar.jpg" />
                   </figure>
                   <section>
                     <h4>
-                      <a> Rita Carvalho</a>
+                      <a class="feed-user">Michael Brown</a>
                       uploaded a file
-                      <span class="panel-icon">
-                        <i class="fas fa-book" aria-hidden="true"></i>
+                      <span class="panel-icon icon-feed">
+                        <iron-icon icon="icons:cloud-upload"></iron-icon>
                       </span>
                     </h4>
                     <p>
@@ -36,7 +40,11 @@ class newsFeed extends LitElement {
               </div>
             </div>
             <div class="level-right">
-              <p class="level-item"><a class="button is-info">Pin</a></p>
+              <p class="level-item">
+                <a class="button news-pin">
+                  <iron-icon icon="icons:label"></iron-icon>
+                </a>
+              </p>
             </div>
           </nav>
           <section class="column news-feed-message">
@@ -49,11 +57,10 @@ class newsFeed extends LitElement {
             <tags-button></tags-button>
             <tags-button></tags-button>
           </section>
-          <hr class="news-feed-break" />
           <nav class="level bottom-nav-news">
             <div class="level-left">
               <div class="level-item">
-                <a class="button is-inverted is-link">
+                <a class="button comments-button">
                   <span>View (25) comments</span>
                   <span class="icon is-small">
                     <i class="mdi mdi-alert"></i>
@@ -69,6 +76,7 @@ class newsFeed extends LitElement {
               </div>
             </div>
           </nav>
+          <hr class="news-feed-break" />
         </div>
       </div>
     `;
