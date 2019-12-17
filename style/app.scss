@@ -93,17 +93,10 @@ body {
   font-size: 1em;
 }
 
-h2 {
-  color: green;
-  text-decoration-style: dotted;
-  text-decoration: underline;
-  font-size: 3rem;
-}
-
 .hero-body {
   margin: 0;
   padding: 0;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
 }
 
 .container.is-fluid {
@@ -135,7 +128,7 @@ h2 {
 
 .column.is-narrow {
   background-color: white;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   z-index: 1;
   width: 210px;
   padding: 0;
@@ -263,9 +256,9 @@ a.network {
 }
 
 .activity-dashboard h3 {
-  color: black;
-  font-weight: bold;
-  font-size: 14px;
+  color: #212121;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .main-left {

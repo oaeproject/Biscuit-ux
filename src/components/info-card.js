@@ -12,16 +12,26 @@ class infoCard extends LitElement {
     return html`
       <div class="box info">
         <div class="content info-card">
-          <h3>
-            <strong>USER DASHBOARD</strong>
-          </h3>
-          <p>
-            Welcome to your dashboard. From here, you can access different sections of the OAE.
-          </p>
-          <hr class="navbar-divider" />
-          <a>
-            Open Link
-          </a>
+          <nav class="level news-feed-top">
+            <div class="level-left">
+              <div class="level-item">
+                <div class="column is-flex news-feed-nav">
+                  <figure class="image avatar-news-feed">
+                    <img class="is-rounded avatar-news-feed" src="/images/avatar.jpg" />
+                  </figure>
+                  <section class=infoBox-followers">
+                    <h4>
+                      <a class="feed-user">Michael Brown</a>
+                    </h4>
+                    <p>
+                      Following since October 2019
+                    </p>
+                  </section>
+                </div>
+              </div>
+            </div>
+            </hr>
+          </nav>
         </div>
       </div>
     `;
