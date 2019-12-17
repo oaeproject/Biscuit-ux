@@ -22,16 +22,16 @@
 }
 
 .notification-icon {
-  color: black;
+  color: #212121;
 
 }
 .navbar-link {
   border-radius: 25px;
-  color: black;
+  color: #212121;
 }
 
 .navbar-link:not(.is-arrowless)::after {
-  border-color: black;
+  border-color: #212121;
   margin-top: -0.5em;
   margin-left: 15;
   right: 0.5em;

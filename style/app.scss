@@ -84,6 +84,8 @@ html,
 body {
   margin: 0;
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
 }
 
 * {
@@ -101,7 +103,7 @@ h2 {
 .hero-body {
   margin: 0;
   padding: 0;
-  background-color: #fcfcfc;
+  background-color: #FAFAFA;
 }
 
 .container.is-fluid {
@@ -133,6 +135,7 @@ h2 {
 
 .column.is-narrow {
   background-color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   z-index: 1;
   width: 210px;
   padding: 0;
@@ -168,6 +171,7 @@ h2 {
 
 .menu-list {
   font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .menu-list li {
@@ -175,7 +179,7 @@ h2 {
   margin-bottom: 18px;
   border-radius: 0 25px 25px 0;
   height: 30px;
-  color: #000000;
+  color: #212121;
   display: flex;
   align-items: center;
   &:hover {
@@ -193,7 +197,7 @@ h2 {
 }
 
 .menu-list a {
-  color: #000000;
+  color: #212121;
 }
 
 a.dashboard,
@@ -213,12 +217,12 @@ a.network {
 .topbar-search-icon {
   display: flex;
   align-items: center;
-  color: black;
+  color: #212121;
   padding-top: 10px;
 }
 
 .input {
-  color: black;
+  color: #212121;
   -webkit-appearance: none;
   border: none;
   background-color: transparent;

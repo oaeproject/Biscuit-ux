@@ -6,6 +6,7 @@ import '@polymer/iron-icons/iron-icons.js';
 import '@polymer/iron-icons/social-icons.js';
 import '@polymer/iron-icons/av-icons.js';
 import '@polymer/iron-icons/hardware-icons.js';
+import '@polymer/iron-icons/communication-icons.js';
 import './tags.js';
 
 class newsFeed extends LitElement {
@@ -42,7 +43,7 @@ class newsFeed extends LitElement {
             <div class="level-right">
               <p class="level-item">
                 <a class="button news-pin">
-                  <iron-icon icon="icons:label-outline"></iron-icon>
+                  <iron-icon icon="icons:bookmark-border"></iron-icon>
                 </a>
               </p>
             </div>
@@ -55,28 +56,27 @@ class newsFeed extends LitElement {
               Here is the briefing for that group assignment we talked about.
             </p>
             <tags-button></tags-button>
-            <tags-button></tags-button>
           </section>
           <nav class="level bottom-nav-news">
             <div class="level-left">
               <div class="level-item">
                 <a class="button comments-button">
-                  <span>View (25) comments</span>
-                  <span class="icon is-small">
-                    <i class="mdi mdi-alert"></i>
+                  <span class="comments-icon">
+                    <iron-icon icon="communication:forum"></iron-icon>
                   </span>
+                  <span>View (25) comments</span>
+                </a>
+              </div>
+              <div class="level-item">
+                <a class="button reply-button">
+                  <span class="reply-icon">
+                    <iron-icon icon="communication:import-export"></iron-icon>
+                  </span>
+                  <span>Reply</span>
                 </a>
               </div>
             </div>
-            <div class="level-right is-pulled-right">
-              <div class="level-item">
-                <p>
-                  reply
-                </p>
-              </div>
-            </div>
           </nav>
-          <hr class="news-feed-break" />
         </div>
       </div>
     `;

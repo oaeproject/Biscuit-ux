@@ -1,5 +1,6 @@
 import { html } from 'lit-element';
 import sharedStyles from '../../style/app.scss';
+import dashboardStyles from '../../style/dashboard.scss';
 import { PageViewElement } from './page-view-element.js';
 import './sidebar.js';
 import './top-nav.js';
@@ -11,7 +12,7 @@ import './tags.js';
 
 class OAEDashboard extends PageViewElement {
   static get styles() {
-    return [sharedStyles];
+    return [sharedStyles, dashboardStyles];
   }
 
   render() {
@@ -32,10 +33,7 @@ class OAEDashboard extends PageViewElement {
                     <div class="column is-three-fifths main-left">
                       <section class="column activity-dashboard">
                         <section class="is-flex">
-                          <span class="icon tag-activity-dashboard">
-                            <img src="./../../node_modules/@mdi/svg/svg/tag-text-outline.svg" />
-                          </span>
-                          <h3>RECENT ACTIVITY</h3>
+                          <h3>Recent Activity</h3>
                         </section>
                         <news-feed></news-feed>
                         <news-feed></news-feed>
