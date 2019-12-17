@@ -2,6 +2,7 @@ import { html } from 'lit-element';
 import sharedStyles from '../../style/app.scss';
 import dashboardStyles from '../../style/dashboard.scss';
 import { PageViewElement } from './page-view-element.js';
+import '@polymer/iron-icons/iron-icons.js';
 import './sidebar.js';
 import './top-nav.js';
 import './info-card.js';
@@ -33,6 +34,15 @@ class OAEDashboard extends PageViewElement {
                     <div class="column is-three-fifths main-left">
                       <section class="column activity-dashboard">
                         <section class="is-flex">
+                          <ul class="breadcrumb">
+                            <li><a href="#">User Profile Area</a></li>
+                            <li>Dashboard</li>
+                          </ul>
+                        </section>
+                        <section class="is-flex">
+                          <span class="dashboard-icon">
+                            <iron-icon icon="icons:update"></iron-icon>
+                          </span>
                           <h3>Recent Activity</h3>
                         </section>
                         <news-feed></news-feed>
