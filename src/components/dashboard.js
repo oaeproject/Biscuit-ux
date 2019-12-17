@@ -1,6 +1,7 @@
 import { html } from 'lit-element';
 import sharedStyles from '../../style/app.scss';
 import dashboardStyles from '../../style/dashboard.scss';
+import dashboardButtonsStyles from '../../style/dashboard-filter.scss';
 import { PageViewElement } from './page-view-element.js';
 import '@polymer/iron-icons/iron-icons.js';
 import './sidebar.js';
@@ -13,7 +14,7 @@ import './tags.js';
 
 class OAEDashboard extends PageViewElement {
   static get styles() {
-    return [sharedStyles, dashboardStyles];
+    return [sharedStyles, dashboardStyles, dashboardButtonsStyles];
   }
 
   render() {
@@ -39,12 +40,24 @@ class OAEDashboard extends PageViewElement {
                             <li>Dashboard</li>
                           </ul>
                         </section>
-                        <section class="is-flex">
-                          <span class="dashboard-icon">
-                            <iron-icon icon="icons:update"></iron-icon>
-                          </span>
-                          <h3>Recent Activity</h3>
-                        </section>
+                          <nav class="level">
+                            <!-- Left side -->
+                            <div class="level-left">
+                              <div class="level-item">
+                                <span class="dashboard-icon">
+                                  <iron-icon icon="icons:update"></iron-icon>
+                                </span>
+                                <h3>Recent Activity</h3>
+                              </div>
+                            </div>
+                            <!-- Right side -->
+                            <div class="level-right">
+                              <div class="buttons">
+                                <button class="button filter-feed filter-active-feed">Most Recent</button>
+                                <button class="button filter-feed">Oldest</button>
+                              </div>
+                            </div>
+                          </nav>
                         <news-feed></news-feed>
                         <news-feed></news-feed>
                         <news-feed></news-feed>
