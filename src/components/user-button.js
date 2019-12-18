@@ -17,9 +17,9 @@ class User extends LitElement {
       <div class="navbar-item has-dropdown is-hoverable notifications-button">
         <a class="navbar-link">
           <span class="notifications-label">Hi, Rita Carvalho</span>
-          <span class="icon user-icon">
-            <iron-icon icon="social:person-outline"></iron-icon>
-          </span>
+          <figure class="image user-avatar">
+            <img class="is-rounded" src="/images/user.jpg" />
+          </figure>
         </a>
         <div class="navbar-dropdown">
           <a class="navbar-item">

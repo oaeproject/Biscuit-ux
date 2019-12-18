@@ -3,6 +3,10 @@
 }
 
 .notification-button {
+  background-color: #0060df;
+}
+
+.navbar-item {
   border-color: #0060df;
 }
 
@@ -12,14 +16,22 @@
   font-size: 14px;
   height: 35px;
   border-radius: 25px;
+  border: solid;
+  border-color: #EEEEEE;
+  border-width: 1px;
 }
 
+.notification-icon {
+  color: #212121;
+
+}
 .navbar-link {
   border-radius: 25px;
+  color: #212121;
 }
 
 .navbar-link:not(.is-arrowless)::after {
-  border-color: black;
+  border-color: #212121;
   margin-top: -0.5em;
   margin-left: 15;
   right: 0.5em;

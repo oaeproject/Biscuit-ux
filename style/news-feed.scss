@@ -1,33 +1,133 @@
 // News Feed - Dashboard
+.box {
+  box-shadow: none;
+  background-color: white;
+  //box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
 .box-feed {
-	margin-top: 25px;
-	&:hover {
-		border: 5px solid #2962ff;
-	}
+  margin-top: 25px;
+  padding: 5px;
+  border: none;
+}
+
+* {
+  font-size: 13px;
+}
+
+.avatar-news-feed img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .news-feed {
-	padding: 10px;
+  padding: 10px;
 }
+
+.news-feed-top {
+  margin-bottom: 0;
+}
+
 .news-feed-message {
-	margin-left: 65px;
-	width: auto;
-	background-color: #fafafa;
-	border-radius: 5px;
-	word-wrap: break-word;
+  margin-left: 65px;
+  margin-right: 65px;
+  margin-top: -15px;
+  width: auto;
+  background-color: #fafafa;
+  border-radius: 5px;
+  word-wrap: break-word;
 }
 
 .news-feed-message h4 {
-	font-weight: bold;
-	margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.feed-user {
+  text-decoration: underline;
+  color: #0060df;
+  background-color: #f5f7ff;
+  &:hover {
+    color: #0060df;
+    background-color: #f5f7ff;
+    text-decoration: none;
+  }
 }
 
 .avatar-news-feed {
-	width: 50px;
-	height: 50px;
-	margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  margin-left: 0;
+  margin-right: 15px;
 }
 
 .bottom-nav-news {
-	margin-left: 65px;
+  margin-left: 70px;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.news-feed-break {
+  margin-top: 3em;
+}
+
+.comments-button {
+  border: none;
+  background-color: transparent;
+  height: 5px;
+  color: #424242;
+  width: 0;
+  margin-left: 55px;
+  &:hover {
+    color: #0060df;
+    text-decoration: underline;
+  }
+}
+
+.reply-button {
+  border: none;
+  background-color: transparent;
+  height: 5px;
+  color: #424242;
+  width: 0;
+  margin-left: 90px;
+  &:hover {
+    color: #0060df;
+    text-decoration: underline;
+  }
+}
+
+.comments-icon {
+  color: #0060df;
+  margin-right: 5px;
+  &:hover {
+    color: #0060df;
+  }
+}
+
+.reply-icon {
+  color: #0060df;
+  margin-right: 5px;
+  &:hover {
+    color: #0060df;
+  }
+}
+
+.icon-feed {
+  color: #0060df;
+  margin-left: 5px;
+}
+
+.news-pin {
+  background-color: transparent;
+  margin-right: 15px;
+  border-radius: 25px;
+  border: none;
+  background-color: #fafafa;
+  color: #424242;
+  &:hover {
+    background-color: #0060df;
+    color: white;
+  }
 }

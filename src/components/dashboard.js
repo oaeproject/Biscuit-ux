@@ -1,6 +1,9 @@
 import { html } from 'lit-element';
 import sharedStyles from '../../style/app.scss';
+import dashboardStyles from '../../style/dashboard.scss';
+import dashboardButtonsStyles from '../../style/dashboard-filter.scss';
 import { PageViewElement } from './page-view-element.js';
+import '@polymer/iron-icons/iron-icons.js';
 import './sidebar.js';
 import './top-nav.js';
 import './info-card.js';
@@ -11,7 +14,7 @@ import './tags.js';
 
 class OAEDashboard extends PageViewElement {
   static get styles() {
-    return [sharedStyles];
+    return [sharedStyles, dashboardStyles, dashboardButtonsStyles];
   }
 
   render() {
@@ -29,14 +32,32 @@ class OAEDashboard extends PageViewElement {
                     <top-nav></top-nav>
                   </div>
                   <div class=" columns is-flex main-content">
-                    <div class="column is-two-thirds">
+                    <div class="column is-three-fifths main-left">
                       <section class="column activity-dashboard">
                         <section class="is-flex">
-                          <span class="icon tag-activity-dashboard">
-                            <img src="./../../node_modules/@mdi/svg/svg/tag-text-outline.svg" />
-                          </span>
-                          <h3>RECENT ACTIVITY</h3>
+                          <ul class="breadcrumb">
+                            <li><a href="#">User Profile Area</a></li>
+                            <li>Dashboard</li>
+                          </ul>
                         </section>
+                          <nav class="level">
+                            <!-- Left side -->
+                            <div class="level-left">
+                              <div class="level-item">
+                                <span class="dashboard-icon">
+                                  <iron-icon icon="icons:update"></iron-icon>
+                                </span>
+                                <h3>Recent Activity</h3>
+                              </div>
+                            </div>
+                            <!-- Right side -->
+                            <div class="level-right">
+                              <div class="buttons">
+                                <button class="button filter-feed filter-active-feed">Most Recent</button>
+                                <button class="button filter-feed">Oldest</button>
+                              </div>
+                            </div>
+                          </nav>
                         <news-feed></news-feed>
                         <news-feed></news-feed>
                         <news-feed></news-feed>
