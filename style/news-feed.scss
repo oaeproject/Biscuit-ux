@@ -45,13 +45,13 @@
 }
 
 .feed-user {
-  text-decoration: underline;
+  text-decoration: none;
   color: #0060df;
   background-color: #f5f7ff;
   &:hover {
     color: #0060df;
     background-color: #f5f7ff;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 
@@ -121,6 +121,7 @@
 
 .news-pin {
   background-color: transparent;
+  transform: rotate(-35deg);
   margin-right: 15px;
   border-radius: 25px;
   border: none;

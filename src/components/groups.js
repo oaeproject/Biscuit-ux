@@ -1,16 +1,20 @@
 import { html } from 'lit-element';
+import '@polymer/iron-icons/iron-icons.js';
 import sharedStyles from '../../style/app.scss';
+import groupStyles from '../../style/groups.scss';
+import groupButtonStyles from '../../style/groups-filter.scss';
 import { PageViewElement } from './page-view-element.js';
 import './sidebar.js';
 import './top-nav.js';
 import './groups-feed.js';
 import './groups-about.js';
+import './news-feed.js';
 import './quick-settings.js';
 import './tags.js';
 
 class OAEGroups extends PageViewElement {
   static get styles() {
-    return [sharedStyles];
+    return [sharedStyles, groupStyles, groupButtonStyles];
   }
 
   render() {
@@ -28,17 +32,34 @@ class OAEGroups extends PageViewElement {
                     <top-nav></top-nav>
                   </div>
                   <div class=" columns is-flex main-content">
-                    <div class="column is-two-thirds">
-                      <section class="column is-inline-flex"></section>
-                      <section class="column activity-dashboard">
-                        <section class="is-flex">
-                          <span class="icon tag-activity-dashboard">
-                            <img src="./../../node_modules/@mdi/svg/svg/tag-text-outline.svg" />
-                          </span>
-                          <h3>RECENT ACTIVITY</h3>
-                        </section>
-                        <groups-feed></groups-feed>
+                    <div class="column is-three-fifths">
+                      <section class="is-flex">
+                        <ul class="breadcrumb">
+                          <li><a href="#">Groups</a></li>
+                          <li>Open Apereo 2019</li>
+                        </ul>
                       </section>
+                      <nav class="level">
+                        <!-- Left side -->
+                        <div class="level-left">
+                          <div class="level-item">
+                            <span class="dashboard-icon">
+                              <iron-icon icon="icons:update"></iron-icon>
+                            </span>
+                            <h3>Recent Activity</h3>
+                          </div>
+                        </div>
+                        <!-- Right side -->
+                        <div class="level-right">
+                          <div class="buttons">
+                            <button class="button filter-feed filter-active-feed">Most Recent</button>
+                            <button class="button filter-feed">Oldest</button>
+                          </div>
+                        </div>
+                      </nav>
+                      <news-feed></news-feed>
+                      <news-feed></news-feed>
+                      <news-feed></news-feed>
                     </div>
                     <div class="column">
                       <groups-about></groups-about>
