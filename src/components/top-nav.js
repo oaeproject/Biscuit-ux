@@ -24,7 +24,7 @@ class topNav extends LitElement {
                     <iron-icon icon="search"></iron-icon>
                   </span>
                     <p class="control">
-                      <input class="input" type="text" placeholder="Type to search">
+                      <input class="input top-nav-input" type="text" placeholder="Type to search">
                     </p>
               </div>
             </div>

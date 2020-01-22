@@ -15,8 +15,8 @@ class groupsAbout extends LitElement {
       <div class="groups-about-box">
         <div class="column groups-wrapper-top is-centered">
           <div class="navbar-brand groups-brand">
-            <a class="navbar-item" href="https://bulma.io">
-              <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" />
+            <a class="navbar-item" href="http://0.0.0.0:8080/oae">
+              <img src="/images/logo-oae2.svg" width="112" height="28" />
             </a>
           </div>
           <div class="group-name">

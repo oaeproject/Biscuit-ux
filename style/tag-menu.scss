@@ -4,8 +4,20 @@
 	color: #212121;
 	text-transform: uppercase;
 	font-weight: 500;
-	font-size: 0.9em;
+	font-size: 0.75em;
 }
+
+.add-menu-label {
+	color: #212121;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 0.75em;
+	&:hover {
+		color: #0060df;
+	}
+}
+
+
 
 // ADD NEW BUTTON
 .tag-menu-add-new-wrap a.tag-menu-add-new {

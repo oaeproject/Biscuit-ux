@@ -1,4 +1,6 @@
 import { html, LitElement } from 'lit-element';
+import '@polymer/iron-icon/iron-icon.js';
+import '@polymer/iron-icons/iron-icons.js';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
 import tagComponent from '../../style/tag-component.scss';
@@ -14,7 +16,7 @@ class tagsButton extends LitElement {
         <p class="buttons tag-buttons">
           <a class="button is-small is-rounded tag-button-colors">
             <span class="icon tag-icons">
-              <img src="./../../node_modules/@mdi/svg/svg/tag-text-outline.svg" />
+              <iron-icon icon="label-outline"></iron-icon>
             </span>
             <span class="tag-label">class project</span>
           </a>

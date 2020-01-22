@@ -1,11 +1,12 @@
 import { html, LitElement } from 'lit-element';
-import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
+import libraryEntries from '../../style/library-table-entries.scss';
+import library from '../../style/library.scss';
 import './tags.js';
 
-class libraryTableEntries extends LitElement {
+class LibraryTableEntries extends LitElement {
   static get styles() {
-    return [sharedStyles, homepageStyles];
+    return [sharedStyles, libraryEntries, library];
   }
 
   render() {
@@ -18,7 +19,7 @@ class libraryTableEntries extends LitElement {
                                     <div class="b-checkbox is-warning">
                                         <input id="checkbox" class="styled" checked type="checkbox">
                                         <label for="checkbox">
-                                            Test
+                                            
                                         </label>
                                     </div>
                                 </p>
@@ -38,7 +39,6 @@ class libraryTableEntries extends LitElement {
                                         </p<
                                     </div>
                                     <div class="level-item library-designation-tag">
-                                        <tags-button></tags-button>
                                         <tags-button></tags-button>
                                     </div>
                                 </div>
@@ -65,4 +65,4 @@ class libraryTableEntries extends LitElement {
   }
 }
 
-window.customElements.define('library-table-entries', libraryTableEntries);
+window.customElements.define('library-table-entries', LibraryTableEntries);
