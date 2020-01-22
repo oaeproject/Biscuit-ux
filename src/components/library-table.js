@@ -13,16 +13,13 @@ class libraryTable extends LitElement {
     return html`
     <div class="columns is-flex table-wrap">
         <div class="library-box library-content library-padding ">
-            <table class="table is-fullwidth">
+            <table class="table is-fullwidth lib-table">
                 <thead>
                 <tr class="library-columns library-top">
                     <th>
-                    <label class="checkbox checkbox-label is-inline-flex library-top">
-                        <input type="checkbox" class="checkmark"/>
-                            <p class="library-checkbox-label-top">
-                                Select All
-                            </p>
-                    </label>
+                        <label for="checkbox">
+                        <input type="checkbox">
+                        </label>
                     </th>
                     <th>
                         <p>
