@@ -1,12 +1,12 @@
 import { html, LitElement } from 'lit-element';
-import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
-import libraryTableEntries from '../../style/library-table-entries.scss';
+import libraryEntries from '../../style/library-table-entries.scss';
 import './tags.js';
+import './library-table-entries.js';
 
 class libraryTable extends LitElement {
   static get styles() {
-    return [sharedStyles, homepageStyles, libraryTableEntries];
+    return [sharedStyles, libraryEntries];
   }
 
   render() {
@@ -47,13 +47,13 @@ class libraryTable extends LitElement {
                 </tr>
                 </thead>
                 <tbody class="library-section">
-                    <tr class="lib-table-row is-size-6">
+                    <tr class="library-designation-label is-size-6">
                         <th>
                             <div class="field">
                                 <p class="control">
-                                    <div class="b-checkbox is-warning">
-                                        <input id="checkbox" class="styled" checked type="checkbox">
+                                    <div class="b-checkbox">
                                         <label for="checkbox">
+                                        <input type="checkbox">
                                         </label>
                                     </div>
                                 </p>
@@ -73,29 +73,219 @@ class libraryTable extends LitElement {
                                         </p<
                                     </div>
                                     <div class="level-item library-designation-tag">
-                                        <tags-button></tags-button>
-                                        <tags-button></tags-button>
                                     </div>
                                 </div>
                             </section>
                         </td>
                         <td>
-                            <p class="has-text-weight-bold">
+                            <p class="has-text-weight-medium">
                                 Rita Carvalho
                             </p>
                         </td>
                         <td>
-                            <p class="has-text-weight-bold">
+                            <p class="has-text-weight-medium">
                                 27/10/2018
                             </p>
                         </td>
                         <td>
-                            <p class="has-text-weight-bold">
+                            <p class="has-text-weight-medium">
                                 Folder
                             </p>
                         </td>
                     </tr>
-                </tbody>
+     </tbody>
+                <tbody class="library-section">
+                    <tr class="library-designation-label is-size-6">
+                        <th>
+                            <div class="field">
+                                <p class="control">
+                                    <div class="b-checkbox">
+                                        <label for="checkbox">
+                                        <input type="checkbox">
+                                        </label>
+                                    </div>
+                                </p>
+                            </div>
+                        </th>
+                        <td>
+                            <p class="has-text-weight-bold">
+                                Conference 2020
+                            </p>
+                        <!-- Main container -->
+                            <section class="level library-designation-wrap is-inline-flex">
+                                <!-- Left side -->
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <p class="library-designation-hover">
+                                            Group - Open Apereo 
+                                        </p<
+                                    </div>
+                                    <div class="level-item library-designation-tag">
+                                    </div>
+                                </div>
+                            </section>
+                        </td>
+                        <td>
+                            <p class="has-text-weight-medium">
+                                Miguel Laginha
+                            </p>
+                        </td>
+                        <td>
+                            <p class="has-text-weight-medium">
+                                27/03/2020
+                            </p>
+                        </td>
+                        <td>
+                            <p class="has-text-weight-medium">
+                                Folder
+                            </p>
+                        </td>
+                    </tr>
+     </tbody>   
+     <tbody class="library-section">
+     <tr class="library-designation-label is-size-6">
+         <th>
+             <div class="field">
+                 <p class="control">
+                     <div class="b-checkbox">
+                         <label for="checkbox">
+                         <input type="checkbox">
+                         </label>
+                     </div>
+                 </p>
+             </div>
+         </th>
+         <td>
+             <p class="has-text-weight-bold">
+                 OAE Frontend
+             </p>
+         <!-- Main container -->
+             <section class="level library-designation-wrap is-inline-flex">
+                 <!-- Left side -->
+                 <div class="level-left">
+                     <div class="level-item">
+                         <p class="library-designation-hover">
+                             Group - OAE Development
+                         </p<
+                     </div>
+                     <div class="level-item library-designation-tag">
+                     </div>
+                 </div>
+             </section>
+         </td>
+         <td>
+             <p class="has-text-weight-medium">
+                 Rita Carvalho
+             </p>
+         </td>
+         <td>
+             <p class="has-text-weight-medium">
+                 27/10/2018
+             </p>
+         </td>
+         <td>
+             <p class="has-text-weight-medium">
+                 Folder
+             </p>
+         </td>
+     </tr>
+</tbody>
+<tbody class="library-section">
+     <tr class="library-designation-label is-size-6">
+         <th>
+             <div class="field">
+                 <p class="control">
+                     <div class="b-checkbox">
+                         <label for="checkbox">
+                         <input type="checkbox">
+                         </label>
+                     </div>
+                 </p>
+             </div>
+         </th>
+         <td>
+             <p class="has-text-weight-bold">
+                 Dissertation
+             </p>
+         <!-- Main container -->
+             <section class="level library-designation-wrap is-inline-flex">
+                 <!-- Left side -->
+                 <div class="level-left">
+                     <div class="level-item">
+                         <p class="library-designation-hover">
+                             RC - OAE Dissertation
+                         </p<
+                     </div>
+                     <div class="level-item library-designation-tag">
+                     </div>
+                 </div>
+             </section>
+         </td>
+         <td>
+             <p class="has-text-weight-medium">
+                 Rita Carvalho
+             </p>
+         </td>
+         <td>
+             <p class="has-text-weight-medium">
+                 27/10/2018
+             </p>
+         </td>
+         <td>
+             <p class="has-text-weight-medium">
+                 Folder
+             </p>
+         </td>
+     </tr>
+</tbody>
+<tbody class="library-section">
+                    <tr class="library-designation-label is-size-6">
+                        <th>
+                            <div class="field">
+                                <p class="control">
+                                    <div class="b-checkbox">
+                                        <label for="checkbox">
+                                        <input type="checkbox">
+                                        </label>
+                                    </div>
+                                </p>
+                            </div>
+                        </th>
+                        <td>
+                            <p class="has-text-weight-bold">
+                                Internship Project
+                            </p>
+                        <!-- Main container -->
+                            <section class="level library-designation-wrap is-inline-flex">
+                                <!-- Left side -->
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <p class="library-designation-hover">
+                                            SB - Classes
+                                        </p<
+                                    </div>
+                                    <div class="level-item library-designation-tag">
+                                    <tags-button></tags-button>
+                                    </div>
+                                </div>
+                            </section>
+                        </td>
+                        <td>
+                            <p class="has-text-weight-medium">
+                                Sarah Brightman
+                            </p>
+                        </td>
+                        <td>
+                            <p class="has-text-weight-medium">
+                                07/04/2019
+                            </p>
+                        </td>
+                        <td>
+                            <p class="has-text-weight-medium">
+                                Folder
+                            </p>
+                        </td>
+                    </tr>   
             </table>
         </div>
       </div>

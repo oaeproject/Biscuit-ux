@@ -2,6 +2,7 @@ import { html } from 'lit-element';
 import sharedStyles from '../../style/app.scss';
 import library from '../../style/library.scss';
 import { PageViewElement } from './page-view-element.js';
+import '@polymer/iron-icons/iron-icons.js';
 import './sidebar.js';
 import './top-nav.js';
 import './info-card.js';
@@ -21,7 +22,7 @@ class OAELibrary extends PageViewElement {
     return html`
       <section class="hero is-link is-fullheight">
         <div class="hero-body">
-          <div class="container is-fluid is-fullheight">
+          <div class="container is-fluid is-fullheight is-mobile">
             <div class="columns dasboard">
               <div class="column is-narrow sidebar">
                 <sidebar-nav></sidebar-nav>
@@ -32,8 +33,14 @@ class OAELibrary extends PageViewElement {
                     <top-nav></top-nav>
                   </div>
                   <div class=" columns is-flex main-content">
-                    <div class="column is-three-quarters">
+                    <div class="column is-four-fifths main-left">
                       <section class="column activity-dashboard">
+                        <section class="is-flex">
+                          <ul class="breadcrumb">
+                            <li><a href="#">User Profile Area</a></li>
+                            <li>Library</li>
+                          </ul>
+                        </section>
                         <div class="is-inline-flex">
                           <div>
                             <a class="button library-button">
@@ -53,7 +60,7 @@ class OAELibrary extends PageViewElement {
                         <library-table></library-table>
                       </section>
                     </div>
-                    <div class="column is-one-fifth">
+                    <div class="column is-one-fifth is-pulled-right">
                       <tags-side></tags-side>
                     </div>
                   </div>

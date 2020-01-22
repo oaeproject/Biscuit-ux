@@ -1,31 +1,33 @@
 // Tags
 .tag-structure {
-	margin-right: 5px;
+  margin-right: 5px;
 }
 .tag-buttons {
-	margin-right: 5px;
+  margin-right: 5px;
 }
 
 .tag-button-colors {
-	background-color: #acebd2;
-	border-color: #1b4e3a;
-	height: 15px;
-	color: #1b4e3a;
-	&:hover {
-		background-color: #acebd2;
-		border-color: #acebd2;
-		color: #1b4e3a;
-	}
+  background-color: #0060df;
+  border-color: #01579b;
+  height: 15px;
+  color: #ffffff;
+  font-weight: 600;
+  &:hover {
+    background-color: #bbdefb;
+    border-color: #01579b;
+    color: #01579b;
+  }
 }
 
 .tag-buttons {
-	margin-top: 10px;
+  margin-top: 10px;
 }
 
-.tag-icons img {
-	margin-left: 5px;
+.tag-icons {
+  margin-left: 5px;
+  transform: rotate(225deg);
 }
 
 .tag-label {
-	margin-left: 10px;
+  margin-left: 5px;
 }

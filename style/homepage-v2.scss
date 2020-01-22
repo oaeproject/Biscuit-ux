@@ -7,7 +7,7 @@ $secondaryFontColor: #424242;
 @import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
 
 .is-gapless {
-	background: url("/images/background_02.jpg") no-repeat center fixed;
+	background: url("/images/background.jpg") no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -21,6 +21,7 @@ $secondaryFontColor: #424242;
 
 .home-leftCol {
 	background-color: transparent;
+	margin-top: -35em;
 }
 
 .is-5 {

@@ -15,9 +15,13 @@ class tagsSide extends LitElement {
     return html`
       <div>
         <section class="is-flex tag-menu-add-new-wrap">
-          <a class="tag-menu-add-new">
-            Add New Label
-          </a>
+          <div class="level-left">
+            <div class="level-item">
+              <a class="add-menu-label">
+                Add New Label
+              </a>
+            </div>
+          </div>
         </section>
         <hr class="navbar-divider" />
         <nav class="level tag-menu-label-top">
