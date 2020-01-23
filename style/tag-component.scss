@@ -7,15 +7,15 @@
 }
 
 .tag-button-colors {
-  background-color: #0060df;
-  border-color: #01579b;
+  background-color: #FFEBEE;
+  border-color: #D32F2F;
   height: 15px;
-  color: #ffffff;
+  color: #D32F2F;
   font-weight: 600;
   &:hover {
-    background-color: #bbdefb;
-    border-color: #01579b;
-    color: #01579b;
+    background-color: #FFCDD2;
+    border-color: #D32F2F;
+    color: #D32F2F;
   }
 }
 
