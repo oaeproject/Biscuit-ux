@@ -7,7 +7,7 @@
 	border-style: solid;
 	border-color: white;
 	background-color: white;
-	border-width: 1px;
+	border-width: 0.2px;
 	&:hover, :active {
 		border-style: solid;
 		border-color: white;
@@ -19,7 +19,7 @@
 .input:focus {
 	border-style: solid;
 	border-color: white;
-	border-width: 1px;
+	border-width: 0.75px;
 	background-color: white;
 }
 

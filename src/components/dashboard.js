@@ -66,7 +66,6 @@ class OAEDashboard extends PageViewElement {
                     <div class="column">
                       <quick-settings></quick-settings>
                       <info-card></info-card>
-                      <tag-card></tag-card>
                     </div>
                   </div>
                 </div>

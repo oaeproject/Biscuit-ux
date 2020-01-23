@@ -13,16 +13,13 @@ class libraryTable extends LitElement {
     return html`
     <div class="columns is-flex table-wrap">
         <div class="library-box library-content library-padding ">
-            <table class="table is-fullwidth">
+            <table class="table is-fullwidth lib-table">
                 <thead>
                 <tr class="library-columns library-top">
                     <th>
-                    <label class="checkbox checkbox-label is-inline-flex library-top">
-                        <input type="checkbox" class="checkmark"/>
-                            <p class="library-checkbox-label-top">
-                                Select All
-                            </p>
-                    </label>
+                        <label for="checkbox">
+                        <input type="checkbox">
+                        </label>
                     </th>
                     <th>
                         <p>
@@ -190,6 +187,54 @@ class libraryTable extends LitElement {
          </td>
      </tr>
 </tbody>
+<tbody class="library-section">
+                    <tr class="library-designation-label is-size-6">
+                        <th>
+                            <div class="field">
+                                <p class="control">
+                                    <div class="b-checkbox">
+                                        <label for="checkbox">
+                                        <input type="checkbox">
+                                        </label>
+                                    </div>
+                                </p>
+                            </div>
+                        </th>
+                        <td>
+                            <p class="has-text-weight-bold">
+                                Advertisement
+                            </p>
+                        <!-- Main container -->
+                            <section class="level library-designation-wrap is-inline-flex">
+                                <!-- Left side -->
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <p class="library-designation-hover">
+                                            Group - Marketing 
+                                        </p<
+                                    </div>
+                                    <div class="level-item library-designation-tag">
+                                    </div>
+                                </div>
+                            </section>
+                        </td>
+                        <td>
+                            <p class="has-text-weight-medium">
+                                Michael Brown
+                            </p>
+                        </td>
+                        <td>
+                            <p class="has-text-weight-medium">
+                                27/03/2020
+                            </p>
+                        </td>
+                        <td>
+                            <p class="has-text-weight-medium">
+                                Folder
+                            </p>
+                        </td>
+                    </tr>
+     </tbody>   
 <tbody class="library-section">
      <tr class="library-designation-label is-size-6">
          <th>

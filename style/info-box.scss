@@ -3,6 +3,12 @@
   margin: 0;
 }
 
+.info {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
 * {
   font-size: 13px;
 }
@@ -19,5 +25,9 @@
 }
 
 .info-box p {
-	color: #BDBDBD;
+	color: rgb(216, 197, 197);
+}
+
+.level.followers-top {
+  margin-bottom: 0;
 }

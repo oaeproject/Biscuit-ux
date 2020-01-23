@@ -1,24 +1,34 @@
 import { html, LitElement } from 'lit-element';
-import homepageStyles from '../../style/homepage.scss';
+import '@polymer/iron-icons/iron-icons.js';
+import calendarStyles from '../../style/calendar.scss';
 import sharedStyles from '../../style/app.scss';
 
 class quickSettings extends LitElement {
   static get styles() {
-    return [sharedStyles, homepageStyles];
+    return [sharedStyles, calendarStyles];
   }
 
   render() {
     return html`
-      <div class="box info">
+      <div class="box info calendar-card">
         <article class="media">
           <div class="media-content">
             <div class="content info-card">
-              <p>
-                LAST SIGN IN
-              </p>
-              <h3>
-                <strong>TUESDAY APRIL 4 2019</strong>
-              </h3>
+              <nav class="level">
+                <div class="level-left calendar">
+                  <div class="level-item">
+                    <span class="card-icon">
+                      <iron-icon icon="icons:today"></iron-icon>
+                    </span>
+                  </div>
+                  <div class="level-item calendar-p">
+                    <p>Last Sign In</p>
+                  </div>
+                  <div class="level-item calendar-date">
+                    <p>Thursday 4 April 2019</p>
+                  </div>
+                </div>
+              </nav>
             </div>
           </div>
         </article>

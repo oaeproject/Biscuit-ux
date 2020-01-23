@@ -7,7 +7,7 @@ $secondaryFontColor: #424242;
 @import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
 
 .is-gapless {
-	background: url("/images/background.jpg") no-repeat center fixed;
+	background: url("/images/home-back3.jpg") no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -16,7 +16,7 @@ $secondaryFontColor: #424242;
 
 .home-rightv2 {
 	transform: translate(0, 60%);
-	margin-left: 2em;
+	margin-left: 5em;
 }
 
 .home-leftCol {
@@ -32,9 +32,10 @@ $secondaryFontColor: #424242;
 }
 
 .home-titlev2 {
-	font-weight: 700;
+	font-weight: 600;
+	margin-top: 1em;
 	text-transform: uppercase;
-	font-size: 2.3em;
+	font-size: 2em;
 	margin-bottom: 0.2em;
 	color: white;
 }
