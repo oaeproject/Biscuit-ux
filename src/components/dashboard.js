@@ -19,9 +19,9 @@ class OAEDashboard extends PageViewElement {
 
   render() {
     return html`
-      <section class="hero is-link is-fullheight">
-        <div class="hero-body">
-          <div class="container is-fluid is-fullheight is-mobile">
+      <section class="hero is-primary is-fullheight">
+        <div class="hero-body is-fullheight">
+          <div class="container content-dashboard is-fluid">
             <div class="columns dasboard">
               <div class="column is-narrow sidebar">
                 <sidebar-nav></sidebar-nav>
@@ -40,24 +40,24 @@ class OAEDashboard extends PageViewElement {
                             <li>Dashboard</li>
                           </ul>
                         </section>
-                          <nav class="level">
-                            <!-- Left side -->
-                            <div class="level-left">
-                              <div class="level-item">
-                                <span class="dashboard-icon">
-                                  <iron-icon icon="icons:update"></iron-icon>
-                                </span>
-                                <h3>Recent Activity</h3>
-                              </div>
+                        <nav class="level">
+                          <!-- Left side -->
+                          <div class="level-left">
+                            <div class="level-item">
+                              <span class="dashboard-icon">
+                                <iron-icon icon="icons:update"></iron-icon>
+                              </span>
+                              <h3>Recent Activity</h3>
                             </div>
-                            <!-- Right side -->
-                            <div class="level-right">
-                              <div class="buttons">
-                                <button class="button filter-feed filter-active-feed">Most Recent</button>
-                                <button class="button filter-feed">Oldest</button>
-                              </div>
+                          </div>
+                          <!-- Right side -->
+                          <div class="level-right">
+                            <div class="buttons">
+                              <button class="button filter-feed filter-active-feed">Most Recent</button>
+                              <button class="button filter-feed">Oldest</button>
                             </div>
-                          </nav>
+                          </div>
+                        </nav>
                         <news-feed></news-feed>
                         <news-feed></news-feed>
                         <news-feed></news-feed>
