@@ -21,6 +21,7 @@ $link: #0060df;
 @import '../node_modules/bulma/sass/components/dropdown.sass';
 @import '../node_modules/bulma/sass/components/modal.sass';
 @import '../node_modules/bulma/sass/components/level.sass';
+@import '../node_modules/bulma/sass/components/tabs.sass';
 
 // Elements
 @import '../node_modules/bulma/sass/elements/box.sass';
@@ -96,7 +97,7 @@ body {
 .hero-body {
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
+  //background-color: #fafafa;
 }
 
 .container.is-fluid {
@@ -127,10 +128,10 @@ body {
 }
 
 .column.is-narrow {
-  background-color: white;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  z-index: 1;
-  width: 210px;
+  //background-color: white;
+  //box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  //z-index: 1;
+  width: 200px;
   padding: 0;
 }
 
@@ -149,8 +150,8 @@ body {
 }
 
 .sidebar-brand {
-  margin: -70px 0 30px 0;
-  padding-left: 30px;
+  margin: -10px 0 30px 0;
+  padding-left: 25px;
 }
 
 .navbar-item img {
@@ -159,7 +160,9 @@ body {
 
 .menu {
   width: 185px;
-  position: fixed;
+  //position: fixed;
+  //top: 8.5em;
+  margin-top: 3.5em;
 }
 
 .menu-list {
@@ -168,7 +171,7 @@ body {
 }
 
 .menu-list li {
-  padding-left: 35px;
+  padding-left: 30px;
   margin-bottom: 18px;
   border-radius: 0 25px 25px 0;
   height: 30px;
@@ -207,6 +210,11 @@ a.network {
 }
 
 // Top Bar
+.top-nav {
+  margin: 0.5em;
+  max-width: 97%;
+}
+
 .topbar-search-icon {
   display: flex;
   align-items: center;
@@ -244,7 +252,7 @@ a.network {
 
 // Navbar
 .navbar {
-  background-color: transparent;
+  background-color: #fafafa;
 }
 
 .tags {

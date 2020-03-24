@@ -5,7 +5,7 @@ import '@polymer/iron-icons/av-icons.js';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
 
-class Sidebar extends LitElement {
+class SidebarV2 extends LitElement {
   static get styles() {
     return [sharedStyles, homepageStyles];
   }
@@ -13,6 +13,11 @@ class Sidebar extends LitElement {
   render() {
     return html`
       <aside class="menu">
+        <div class="navbar-brand sidebar-brand">
+          <a class="navbar-item" href="http://0.0.0.0:8080/oae">
+            <img src="/images/logo-oae2.svg" width="112" height="28" />
+          </a>
+        </div>
         <ul class="menu-list">
           <li>
             <span class="icon sidebar-icon">
@@ -60,4 +65,4 @@ class Sidebar extends LitElement {
   }
 }
 
-window.customElements.define('sidebar-nav', Sidebar);
+window.customElements.define('sidebar-nav2', SidebarV2);

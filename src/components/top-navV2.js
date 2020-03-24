@@ -8,7 +8,7 @@ import './notifications.js';
 import './context.js';
 import './user-button.js';
 
-class topNav extends LitElement {
+class topNavV2 extends LitElement {
   static get styles() {
     return [sharedStyles, homepageStyles];
   }
@@ -17,10 +17,6 @@ class topNav extends LitElement {
     return html`
       <header class="navbar">
         <div class="container top-nav">
-          <div class="navbar-brand">
-            <a class="navbar-item" href="http://0.0.0.0:8080/oae">
-              <img src="/images/logo-oae2.svg" width="112" height="28" />
-            </a>
             <div class="navbar-item">
               <div class="field has-addons has-addons-centered">
                 <p class="control">
@@ -52,4 +48,4 @@ class topNav extends LitElement {
   }
 }
 
-window.customElements.define('top-nav', topNav);
+window.customElements.define('top-nav2', topNavV2);

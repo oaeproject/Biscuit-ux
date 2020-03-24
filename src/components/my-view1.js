@@ -1,55 +1,85 @@
-/**
-@license
-Copyright (c) 2018 The Polymer Project Authors. All rights reserved.
-This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
-The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
-The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
-Code distributed by Google as part of the polymer project is also
-subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
-*/
-
 import { html } from 'lit-element';
+import sharedStyles from '../../style/app.scss';
+import dashboardStyles from '../../style/dashboard.scss';
+import dashboardButtonsStyles from '../../style/dashboard-filter.scss';
 import { PageViewElement } from './page-view-element.js';
-
-// These are the shared styles needed by this element.
-import { SharedStyles } from './shared-styles.js';
+import '@polymer/iron-icons/iron-icons.js';
+import './top-nav.js';
+import './sidebar.js';
+import './info-card.js';
+import './tag-card.js';
+import './news-feed.js';
+import './quick-settings.js';
+import './tags.js';
 
 class MyView1 extends PageViewElement {
   static get styles() {
-    return [SharedStyles];
+    return [sharedStyles, dashboardStyles, dashboardButtonsStyles];
   }
 
   render() {
     return html`
-      <section>
-        <h2>Static page</h2>
-        <p>This is a text-only page.</p>
-        <p>It doesn't do anything other than display some static text.</p>
-      </section>
-      <section>
-        <h2>Welcome</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac nisi orci. Maecenas sollicitudin diam in
-          diam efficitur cursus. Morbi sollicitudin in justo tincidunt placerat. Integer tincidunt elementum nisi, eu
-          ornare dolor lacinia eget. Fusce pulvinar massa eget odio placerat, commodo molestie ipsum tempus. Class
-          aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse porttitor id
-          purus eu cursus. Suspendisse arcu nulla, mattis vel hendrerit et, malesuada a elit. Nam at diam ornare,
-          aliquet est sed, malesuada metus. Cras nec enim vel nibh tincidunt euismod ut et enim. Etiam pharetra eros in
-          sodales iaculis. Duis sagittis urna et cursus mollis. Cras tempor rutrum est. Praesent sollicitudin ligula at
-          laoreet placerat. Praesent tortor dui, semper in sapien non, pharetra luctus turpis.
-        </p>
-      </section>
-      <section>
-        <p>
-          Vestibulum at est ex. Aenean id ligula id nibh dictum laoreet. Etiam non semper erat. Pellentesque eu justo
-          rhoncus diam vulputate facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat
-          metus ex, vel fringilla massa tincidunt sit amet. Nunc facilisis bibendum tristique. Mauris commodo, dolor
-          vitae dapibus fermentum, odio nibh viverra lorem, eu cursus diam turpis et sapien. Nunc suscipit tortor a
-          ligula tincidunt, id hendrerit tellus sollicitudin.
-        </p>
+      <section class="hero is-fullheight">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+          <top-nav></top-nav>
+        </div>
+
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container content-dashboard is-fluid">
+            <div class="columns dasboard">
+              <div class="column is-narrow sidebar is-fullheight">
+                <sidebar-nav></sidebar-nav>
+              </div>
+              <div class="column content-base">
+                <div class=" column content-wrap">
+                  <div class=" columns is-flex main-content">
+                    <div class="column is-three-fifths main-left">
+                      <section class="column activity-dashboard">
+                        <section class="is-flex">
+                          <ul class="breadcrumb">
+                            <li><a href="#">User Profile Area</a></li>
+                            <li>Dashboard</li>
+                          </ul>
+                        </section>
+                        <nav class="level">
+                          <!-- Left side -->
+                          <div class="level-left">
+                            <div class="level-item">
+                              <span class="dashboard-icon">
+                                <iron-icon icon="icons:update"></iron-icon>
+                              </span>
+                              <h3>Recent Activity</h3>
+                            </div>
+                          </div>
+                          <!-- Right side -->
+                          <div class="level-right">
+                            <div class="buttons">
+                              <button class="button filter-feed filter-active-feed">Most Recent</button>
+                              <button class="button filter-feed">Oldest</button>
+                            </div>
+                          </div>
+                        </nav>
+                        <news-feed></news-feed>
+                        <news-feed></news-feed>
+                        <news-feed></news-feed>
+                      </section>
+                    </div>
+                    <div class="column">
+                      <quick-settings></quick-settings>
+                      <info-card></info-card>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
       </section>
     `;
   }
 }
-
 window.customElements.define('my-view1', MyView1);
