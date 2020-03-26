@@ -43,4 +43,4 @@ Integration with the backend is still experimental and requires a few changes to
 
 ## Help
 
-Find us on [discord](https://discord.gg/99kAgRn).
+Find us on [discord](https://discord.gg/CcNnbGk).
