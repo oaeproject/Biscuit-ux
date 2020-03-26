@@ -102,10 +102,11 @@ body {
 
 .content-wrapResponsive {
   position: absolute;
+  width: 100%;
 }
 
 .container.is-fluid {
-  margin: 0;
+  margin: 0.5em 5.5em 0 5.5em;
   padding: 0;
   height: 100%;
 }
@@ -215,7 +216,7 @@ a.network {
 
 // Top Bar
 .top-nav {
-  margin: 0.5em;
+  margin: 0.5em 5.5em 0.5em 5.5em;
   max-width: 97%;
 }
 

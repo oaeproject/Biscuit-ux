@@ -27,7 +27,7 @@ class MyView1 extends PageViewElement {
 
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
-          <div class="container content-dashboard is-fluid">
+          <div class="container content-wrapResponsive is-fluid">
             <div class="columns dasboard">
               <div class="column is-narrow sidebar is-fullheight">
                 <sidebar-nav></sidebar-nav>
@@ -67,7 +67,6 @@ class MyView1 extends PageViewElement {
                       </section>
                     </div>
                     <div class="column">
-                      <quick-settings></quick-settings>
                       <info-card></info-card>
                     </div>
                   </div>
