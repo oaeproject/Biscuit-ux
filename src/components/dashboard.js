@@ -21,7 +21,7 @@ class OAEDashboard extends PageViewElement {
     return html`
       <section class="hero is-fullheight">
         <div class="hero-body is-fullheight">
-          <div class="container content-dashboard is-fluid">
+          <div class="container content-wrapResponsive is-fluid">
             <div class="columns dasboard">
               <div class="column is-narrow sidebar is-fullheight">
                 <sidebar-nav2></sidebar-nav2>
