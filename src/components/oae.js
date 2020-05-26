@@ -34,13 +34,13 @@ class OAE extends PageViewElement {
       <div class="hero-body">
       <div class="container">
           <div class="columns is-vcentered">
-              <div class="column is-5 is-offset-1 landing-caption">
-                  <h1 class="title is-2 is-bold is-spaced ">
+              <div class="column is-5 landing-caption left-landing">
+                  <h1 class="title is-2 is-bold is-spaced bold-title">
                     Explore and work together with the OAE</h1>
                   </h1>
                   <h2 class="subtitle is-5 is-muted">Try searching for tags like "meeting" or "document"</h2>
                   <home-search-v2></home-search-v2>
-                  <div class="button-wrap">
+                  <div class="button-wrap buttons-landing">
                       <a class="button cta is-rounded primary-btn raised">
                           Get Started
                       </a>
@@ -49,8 +49,8 @@ class OAE extends PageViewElement {
                       </a>
                   </div>
               </div>
-              <div class="column is-5">
-                  <figure class="image is-3by4 cover">
+              <div class="column is-5 landing-image">
+                  <figure class="image is-4by5 cover">
                       <img src="images/landing-img.jpg" alt="Description">
                   </figure>
               </div>

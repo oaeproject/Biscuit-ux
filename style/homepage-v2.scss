@@ -5,28 +5,7 @@ $secondaryFontColor: #424242;
 // Import Roboto Slab for Title
 // Single Use
 @import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
-
-.hero-body {
-  background: white;
-}
-
-.is-gapless {
-  background: url('/images/home-back3.jpg') no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.home-rightv2 {
-  transform: translate(0, 60%);
-  margin-left: 5em;
-}
-
-.home-leftCol {
-  background-color: transparent;
-  margin-top: -35em;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
 
 .is-5 {
   height: 100%;
@@ -35,39 +14,27 @@ $secondaryFontColor: #424242;
   background-color: transparent;
 }
 
-.home-titlev2 {
-  font-weight: 600;
-  margin-top: 1em;
-  text-transform: uppercase;
-  font-size: 2em;
-  margin-bottom: 0.2em;
-  color: white;
+.bold-title {
+  font-family: 'Roboto Slab', serif;
+  }
+
+.left-landing {
+  margin-left: 3em;
 }
 
-.home-h6v2 {
-  font-size: 1.1em;
-  margin-bottom: 1.8em;
-  color: $secondaryFontColor;
-  color: white;
+.buttons-landing {
+  margin-top: 3%;
 }
 
-.home-imgv2 {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.home-imgv2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.landing-image {
+  padding-left: 10%;
 }
 
 .cover {
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 15px rgba(0, 0, 0, 0.22);
-  transition: all 1.5s cubic-bezier(.23,1,.32,1);
+  transition: all 1.5s cubic-bezier(0.23, 1, 0.32, 1);
   &:hover {
-    transform: rotate(15deg);
+    transform: rotate(5deg);
   }
 }
 

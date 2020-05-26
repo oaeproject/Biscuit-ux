@@ -1,32 +1,32 @@
 .navbar-brand {
-	padding-left: 5em;
-}
-
-.navbar-item img {
-    max-height: 2.5rem;
-}
-
-.home-nav {
-	background: white;
-	border-bottom: solid;
-	border-bottom-width: thin;
-	border-color: #EEEEEE;
-}
-
-.signIn-button {
-	text-transform: uppercase;
-	font-size: 0.9em;
-	border-radius: 25px;
-	color: #00253D;
-	background-color: white;
-	border: none;
-	&:hover {
-		color: #2E98D5;
-		background-color: transparent;
-		border: none;
-	}
+  padding-left: 3em;
 }
 
 .navEnd {
-	padding-right: 5em;
+  padding-right: 3em;
+}
+
+.navbar-item img {
+  max-height: 3rem;
+}
+
+.home-nav {
+  background: white;
+  border-bottom: solid;
+  border-bottom-width: thin;
+  border-color: #eeeeee;
+}
+
+.signIn-button {
+  text-transform: uppercase;
+  font-size: 1em;
+  border-radius: 25px;
+  color: #00253d;
+  background-color: white;
+  border: none;
+  &:hover {
+    color: #2e98d5;
+    background-color: transparent;
+    border: none;
+  }
 }
