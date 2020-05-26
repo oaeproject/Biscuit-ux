@@ -31,23 +31,37 @@ class OAE extends PageViewElement {
     return html`
       <home-nav-v2></home-nav-v2>
       <section class="hero is-fullheight">
-        <div class="hero-body is-gapless bck-filter">
-          <div class="column home-leftCol">
-            <div class="home-rightv2">
-              <h1 class="home-titlev2">Explore and work </br> together with the OAE</h1>
-              <h6 class="home-h6v2">
-                Try searching for tags like "meeting" or "document"
-              </h6>
-              <home-search-v2></home-search-v2>
-              <home-filters></home-filters>
-            </div>
+      <div class="hero-body">
+      <div class="container">
+          <div class="columns is-vcentered">
+              <div class="column is-5 is-offset-1 landing-caption">
+                  <h1 class="title is-2 is-bold is-spaced ">
+                    Explore and work together with the OAE</h1>
+                  </h1>
+                  <h2 class="subtitle is-5 is-muted">Try searching for tags like "meeting" or "document"</h2>
+                  <home-search-v2></home-search-v2>
+                  <div class="button-wrap">
+                      <a class="button cta is-rounded primary-btn raised">
+                          Get Started
+                      </a>
+                      <a class="button cta is-rounded">
+                          Filter Results
+                      </a>
+                  </div>
+              </div>
+              <div class="column is-5">
+                  <figure class="image is-3by4 cover">
+                      <img src="images/landing-img.jpg" alt="Description">
+                  </figure>
+              </div>
+
           </div>
-          <div class="column is-5">
-          </div>
-          </div>
-        </div>
-      </section>
-      <home-footer></home-footer>
+      </div>
+  </div>
+
+ 
+</section>
+
 
       
     `;
