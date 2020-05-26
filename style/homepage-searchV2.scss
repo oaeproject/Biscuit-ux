@@ -6,12 +6,12 @@
 	height: 2.5em;
 	border-style: solid;
 	border-color: white;
-	background-color: white;
+	background-color: #E9EFF5;
 	border-width: 1px;
-	&:hover, :active {
+	&:hover, :active :focus {
 		border-style: solid;
 		border-color: white;
-		background-color: white;
+		background-color: #E9EFF5;
 		border-width: 1px;
 	}
 }

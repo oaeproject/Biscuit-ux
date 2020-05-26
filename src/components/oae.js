@@ -35,23 +35,23 @@ class OAE extends PageViewElement {
       <div class="container">
           <div class="columns is-vcentered">
               <div class="column is-5 landing-caption left-landing">
-                  <h1 class="title is-2 is-bold is-spaced bold-title">
-                    Explore and work together with the OAE</h1>
+                  <h1 class="title is-2 is-bold is-spaced bold-title ">
+                    A new way to share, explore and connect</h1>
                   </h1>
-                  <h2 class="subtitle is-5 is-muted">Try searching for tags like "meeting" or "document"</h2>
+                  <h2 class="subtitle is-5"><strong>The Open Academic Environment</strong> is the easiest way to communicate and share files with your classmates. Whether you're a student, investigator or professor, <strong>join us for free!</strong></h2>
                   <home-search-v2></home-search-v2>
                   <div class="button-wrap buttons-landing">
-                      <a class="button cta is-rounded primary-btn raised">
+                      <a class="button cta is-rounded primary-btn button-start">
                           Get Started
                       </a>
-                      <a class="button cta is-rounded">
+                      <a class="button cta is-rounded button-filter">
                           Filter Results
                       </a>
                   </div>
               </div>
               <div class="column is-5 landing-image">
                   <figure class="image is-4by5 cover">
-                      <img src="images/landing-img.jpg" alt="Description">
+                      <img src="images/illustration.svg" alt="Description">
                   </figure>
               </div>
 

@@ -14,7 +14,7 @@ class homeSearchV2 extends LitElement {
     return html`
       <div class="field home-search">
         <div class="control has-icons-left home-searchIcon">
-          <input class="input is-rounded" type="search" placeholder="Hint: press ENTER to search" />
+          <input class="input is-rounded" type="search" placeholder="Search for keywords like 'open apereo' " />
           <span class="icon is-left ">
             <iron-icon icon="search"></iron-icon>
           </span>
