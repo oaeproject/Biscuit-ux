@@ -1,3 +1,6 @@
+// Code in the comments belongs to a previous iteration of the project that might need to be returned to
+
+
 // Import a Google Font
 // Open Sans - Regular (400)
 // Open Sans - Bold (700)
@@ -6,7 +9,7 @@
 $link: #0060df;
 
 // Import Material Design
-//@import "../node_modules/material-design-icons/iconfont/";
+// @import "../node_modules/material-design-icons/iconfont/";
 
 // Bulma *ALL SASS imports
 @import 'bulma/sass/utilities/mixins';
@@ -132,6 +135,8 @@ body {
 }
 
 .column.is-narrow {
+  // Menu side bar white background and box shadow
+  // Code is commented in case we need to use this approach again
   //background-color: white;
   //box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   //z-index: 1;
@@ -164,6 +169,8 @@ body {
 
 .menu {
   width: 185px;
+  // Previous menu position, might be useful once we remove the top tabs bar from the default polymer project 
+  // Code is commented in case we need to use this approach again
   //position: fixed;
   //top: 8.5em;
   margin-top: 3.5em;

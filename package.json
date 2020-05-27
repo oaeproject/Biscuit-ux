@@ -24,7 +24,6 @@
     "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.13.0",
     "@material/button": "^3.0.0",
     "@mdi/font": "^3.9.96",
     "@mdi/svg": "^3.7.95",
