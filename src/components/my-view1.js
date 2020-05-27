@@ -75,8 +75,6 @@ class MyView1 extends PageViewElement {
             </div>
           </div>
         </div>
-
-        
       </section>
     `;
   }

@@ -21,19 +21,21 @@ class OAELibrary extends PageViewElement {
   render() {
     return html`
       <section class="hero is-fullheight">
-        <div class="hero-body is-fullheight">
+        <div class="hero-head">
+          <top-nav></top-nav>
+        </div>
+
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-body">
           <div class="container content-wrapResponsive is-fluid">
             <div class="columns dasboard">
               <div class="column is-narrow sidebar">
-                <sidebar-nav2></sidebar-nav2>
+                <sidebar-nav></sidebar-nav>
               </div>
               <div class="column content-base">
                 <div class=" column content-wrap">
-                  <div class="column top-nav">
-                    <top-nav2></top-nav2>
-                  </div>
                   <div class=" columns is-flex main-content">
-                    <div class="column is-four-fifths main-left">
+                    <div class="column is-two-thirds main-left">
                       <section class="column activity-dashboard">
                         <section class="is-flex">
                           <ul class="breadcrumb">

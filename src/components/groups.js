@@ -20,17 +20,18 @@ class OAEGroups extends PageViewElement {
   render() {
     return html`
       <section class="hero is-fullheight">
-        <div class="hero-body is-fullheight">
+        <div class="hero-head">
+          <top-nav></top-nav>
+        </div>
+
+        <div class="hero-body">
           <div class="container content-wrapResponsive is-fluid">
             <div class="columns dasboard">
               <div class="column is-narrow sidebar">
-                <sidebar-nav2></sidebar-nav2>
+                <sidebar-nav></sidebar-nav>
               </div>
               <div class="column content-base">
                 <div class=" column content-wrap">
-                  <div class="column top-nav">
-                    <top-nav2></top-nav2>
-                  </div>
                   <div class=" columns is-flex main-content">
                     <div class="column is-three-fifths">
                       <section class="is-flex">
@@ -61,7 +62,7 @@ class OAEGroups extends PageViewElement {
                       <news-feed></news-feed>
                       <news-feed></news-feed>
                     </div>
-                    <div class="column">
+                    <div class="column is-one-fifth">
                       <groups-about></groups-about>
                     </div>
                   </div>
