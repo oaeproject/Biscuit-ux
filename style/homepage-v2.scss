@@ -33,6 +33,8 @@ $secondaryFontColor: #424242;
 
 .button.button-start {
   background-color: #e9eff5;
+  width: 80px;
+  height: 30px;
   color: #2274ff;
   border: none;
   &:hover {
@@ -43,6 +45,8 @@ $secondaryFontColor: #424242;
 
 .button.button-filter {
   background-color: transparent;
+  width: 80px;
+  height: 30px;
   color: $fontColour;
   border: none;
   &:hover {

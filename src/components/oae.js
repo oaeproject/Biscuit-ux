@@ -42,10 +42,10 @@ class OAE extends PageViewElement {
                   <home-search-v2></home-search-v2>
                   <div class="button-wrap buttons-landing">
                       <a class="button cta is-rounded primary-btn button-start">
-                          Get Started
+                          Search
                       </a>
                       <a class="button cta is-rounded button-filter">
-                          Filter Results
+                          Filter 
                       </a>
                   </div>
               </div>

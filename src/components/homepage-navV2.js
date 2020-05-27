@@ -21,8 +21,8 @@ class homeNavV2 extends LitElement {
         <div class="navbar-end navEnd">
           <div class="navbar-item">
             <div class="buttons">
-              <a class="button is-round signIn-button">Website</a>
-              <a class="button is-round website-button">Sign Up</a>
+              <a class="button is-round register-button">Register</a>
+              <a class="button is-round signIn-button">Sign In</a>
             </div>
           </div>
         </div>
