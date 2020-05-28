@@ -1,3 +1,6 @@
+// Code in the comments belongs to a previous iteration of the project that might need to be returned to
+
+
 .navbar-item {
   background-color: transparent;
 }
@@ -12,13 +15,16 @@
 
 .navbar-item.has-dropdown {
   color: #0060df;
-  margin-right: 15px;
+  margin-top: 18px;
+  margin-right: 10px;
   font-size: 14px;
   height: 35px;
-  border-radius: 25px;
-  border: solid;
-  border-color: #EEEEEE;
-  border-width: 1px;
+  // Original top navbar styling
+  // Code is commented in case we need to use this approach again
+  //border-radius: 25px;
+  //border: solid;
+  //border-color: #EEEEEE;
+  //border-width: 1px;
 }
 
 .notification-icon {
@@ -43,7 +49,7 @@
 }
 
 .navbar-item.is-hoverable {
-  background-color: white;
+  background-color: transparent;
 }
 
 .notification-icon {

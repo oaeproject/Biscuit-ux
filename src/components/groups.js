@@ -4,8 +4,8 @@ import sharedStyles from '../../style/app.scss';
 import groupStyles from '../../style/groups.scss';
 import groupButtonStyles from '../../style/groups-filter.scss';
 import { PageViewElement } from './page-view-element.js';
-import './sidebar.js';
-import './top-nav.js';
+import './sidebarV2.js';
+import './top-navV2.js';
 import './groups-feed.js';
 import './groups-about.js';
 import './news-feed.js';
@@ -19,18 +19,19 @@ class OAEGroups extends PageViewElement {
 
   render() {
     return html`
-      <section class="hero is-link is-fullheight">
+      <section class="hero is-fullheight">
+        <div class="hero-head">
+          <top-nav></top-nav>
+        </div>
+
         <div class="hero-body">
-          <div class="container is-fluid is-fullheight is-mobile">
+          <div class="container content-wrapResponsive is-fluid">
             <div class="columns dasboard">
               <div class="column is-narrow sidebar">
                 <sidebar-nav></sidebar-nav>
               </div>
               <div class="column content-base">
                 <div class=" column content-wrap">
-                  <div class="column top-nav">
-                    <top-nav></top-nav>
-                  </div>
                   <div class=" columns is-flex main-content">
                     <div class="column is-three-fifths">
                       <section class="is-flex">
@@ -61,7 +62,7 @@ class OAEGroups extends PageViewElement {
                       <news-feed></news-feed>
                       <news-feed></news-feed>
                     </div>
-                    <div class="column">
+                    <div class="column is-one-fifth">
                       <groups-about></groups-about>
                     </div>
                   </div>

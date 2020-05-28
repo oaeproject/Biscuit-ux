@@ -1,3 +1,6 @@
+// Code in the comments belongs to a previous iteration of the project that might need to be returned to
+
+
 // Import a Google Font
 // Open Sans - Regular (400)
 // Open Sans - Bold (700)
@@ -6,7 +9,7 @@
 $link: #0060df;
 
 // Import Material Design
-//@import "../node_modules/material-design-icons/iconfont/";
+// @import "../node_modules/material-design-icons/iconfont/";
 
 // Bulma *ALL SASS imports
 @import 'bulma/sass/utilities/mixins';
@@ -21,6 +24,7 @@ $link: #0060df;
 @import '../node_modules/bulma/sass/components/dropdown.sass';
 @import '../node_modules/bulma/sass/components/modal.sass';
 @import '../node_modules/bulma/sass/components/level.sass';
+@import '../node_modules/bulma/sass/components/tabs.sass';
 
 // Elements
 @import '../node_modules/bulma/sass/elements/box.sass';
@@ -96,11 +100,15 @@ body {
 .hero-body {
   margin: 0;
   padding: 0;
-  background-color: #fafafa;
+}
+
+.content-wrapResponsive {
+  position: absolute;
+  width: 100%;
 }
 
 .container.is-fluid {
-  margin: 0;
+  margin: 0.5em 5.5em 0 5.5em;
   padding: 0;
   height: 100%;
 }
@@ -127,10 +135,12 @@ body {
 }
 
 .column.is-narrow {
-  background-color: white;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  z-index: 1;
-  width: 210px;
+  // Menu side bar white background and box shadow
+  // Code is commented in case we need to use this approach again
+  //background-color: white;
+  //box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  //z-index: 1;
+  width: 200px;
   padding: 0;
 }
 
@@ -149,8 +159,8 @@ body {
 }
 
 .sidebar-brand {
-  margin: -70px 0 30px 0;
-  padding-left: 30px;
+  margin: -10px 0 30px 0;
+  padding-left: 25px;
 }
 
 .navbar-item img {
@@ -159,7 +169,11 @@ body {
 
 .menu {
   width: 185px;
-  position: fixed;
+  // Previous menu position, might be useful once we remove the top tabs bar from the default polymer project 
+  // Code is commented in case we need to use this approach again
+  //position: fixed;
+  //top: 8.5em;
+  margin-top: 3.5em;
 }
 
 .menu-list {
@@ -168,7 +182,7 @@ body {
 }
 
 .menu-list li {
-  padding-left: 35px;
+  padding-left: 30px;
   margin-bottom: 18px;
   border-radius: 0 25px 25px 0;
   height: 30px;
@@ -207,6 +221,11 @@ a.network {
 }
 
 // Top Bar
+.top-nav {
+  margin: 0.5em 5.5em 0.5em 5.5em;
+  max-width: 97%;
+}
+
 .topbar-search-icon {
   display: flex;
   align-items: center;
@@ -244,7 +263,7 @@ a.network {
 
 // Navbar
 .navbar {
-  background-color: transparent;
+  background-color: #fafafa;
 }
 
 .tags {

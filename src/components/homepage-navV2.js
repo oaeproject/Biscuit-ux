@@ -15,12 +15,13 @@ class homeNavV2 extends LitElement {
       <nav class="navbar home-nav">
         <div class="navbar-brand">
           <a class="navbar-item logo" href="http://0.0.0.0:8080/oae">
-            <img src="/images/logo-oae2.svg" />
+            <img src="/images/logo-oae9.svg" />
           </a>
         </div>
         <div class="navbar-end navEnd">
           <div class="navbar-item">
             <div class="buttons">
+              <a class="button is-round register-button">Register</a>
               <a class="button is-round signIn-button">Sign In</a>
             </div>
           </div>

@@ -4,57 +4,70 @@ $secondaryFontColor: #424242;
 
 // Import Roboto Slab for Title
 // Single Use
-@import url("https://fonts.googleapis.com/css?family=Roboto:700&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
 
-.is-gapless {
-	background: url("/images/home-back3.jpg") no-repeat center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+.hero-body {
+  background-color: white;
 }
-
-.home-rightv2 {
-	transform: translate(0, 60%);
-	margin-left: 5em;
-}
-
-.home-leftCol {
-	background-color: transparent;
-	margin-top: -35em;
-}
-
 .is-5 {
-	height: 100%;
-	margin: 0;
-	padding: 0;
-	background-color: transparent;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
 }
 
-.home-titlev2 {
-	font-weight: 600;
-	margin-top: 1em;
-	text-transform: uppercase;
-	font-size: 2em;
-	margin-bottom: 0.2em;
-	color: white;
+.bold-title {
+  font-family: 'Roboto Slab', serif;
+  text-transform: uppercase;
+  color: $fontColour;
 }
 
-.home-h6v2 {
-	font-size: 1.1em;
-	margin-bottom: 1.8em;
-	color: $secondaryFontColor;
-	color: white;
+.left-landing {
+  margin-left: 3em;
 }
 
-.home-imgv2 {
-	width: 100%;
-	height: 100%;
-	position: relative;
+.buttons-landing {
+  margin-top: 3%;
 }
 
-.home-imgv2 img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
+.button.button-start {
+  background-color: #e9eff5;
+  width: 80px;
+  height: 30px;
+  color: #2274ff;
+  border: none;
+  &:hover {
+    background-color: #2274ff;
+    color: #e9eff5;
+  }
 }
+
+.button.button-filter {
+  background-color: transparent;
+  width: 80px;
+  height: 30px;
+  color: $fontColour;
+  border: none;
+  &:hover {
+    color: #2274ff;
+  }
+}
+
+.landing-image {
+  padding-left: 10%;
+}
+
+/*.cover {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 15px rgba(0, 0, 0, 0.22);
+  transition: all 1.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transform: rotate(5deg);
+  &:hover {
+    transform: rotate(-5deg);
+  }
+}
+
+.cover img {
+  object-fit: cover;
+}
+*/

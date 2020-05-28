@@ -37,9 +37,6 @@ const loadPage = page => dispatch => {
     case 'view2':
       import('../components/my-view2.js');
       break;
-    case 'view3':
-      import('../components/my-view3.js');
-      break;
     case 'oae':
       import('../components/oae.js');
       break;

@@ -4,8 +4,8 @@ import dashboardStyles from '../../style/dashboard.scss';
 import dashboardButtonsStyles from '../../style/dashboard-filter.scss';
 import { PageViewElement } from './page-view-element.js';
 import '@polymer/iron-icons/iron-icons.js';
-import './sidebar.js';
-import './top-nav.js';
+import './sidebarV2.js';
+import './top-navV2.js';
 import './info-card.js';
 import './tag-card.js';
 import './news-feed.js';
@@ -19,18 +19,21 @@ class OAEDashboard extends PageViewElement {
 
   render() {
     return html`
-      <section class="hero is-link is-fullheight">
+      <section class="hero is-fullheight">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+          <top-nav></top-nav>
+        </div>
+
+        <!-- Hero content: will be in the middle -->
         <div class="hero-body">
-          <div class="container is-fluid is-fullheight is-mobile">
+          <div class="container content-wrapResponsive is-fluid">
             <div class="columns dasboard">
-              <div class="column is-narrow sidebar">
+              <div class="column is-narrow sidebar is-fullheight">
                 <sidebar-nav></sidebar-nav>
               </div>
               <div class="column content-base">
                 <div class=" column content-wrap">
-                  <div class="column top-nav">
-                    <top-nav></top-nav>
-                  </div>
                   <div class=" columns is-flex main-content">
                     <div class="column is-three-fifths main-left">
                       <section class="column activity-dashboard">
@@ -40,31 +43,30 @@ class OAEDashboard extends PageViewElement {
                             <li>Dashboard</li>
                           </ul>
                         </section>
-                          <nav class="level">
-                            <!-- Left side -->
-                            <div class="level-left">
-                              <div class="level-item">
-                                <span class="dashboard-icon">
-                                  <iron-icon icon="icons:update"></iron-icon>
-                                </span>
-                                <h3>Recent Activity</h3>
-                              </div>
+                        <nav class="level">
+                          <!-- Left side -->
+                          <div class="level-left">
+                            <div class="level-item">
+                              <span class="dashboard-icon">
+                                <iron-icon icon="icons:update"></iron-icon>
+                              </span>
+                              <h3>Recent Activity</h3>
                             </div>
-                            <!-- Right side -->
-                            <div class="level-right">
-                              <div class="buttons">
-                                <button class="button filter-feed filter-active-feed">Most Recent</button>
-                                <button class="button filter-feed">Oldest</button>
-                              </div>
+                          </div>
+                          <!-- Right side -->
+                          <div class="level-right">
+                            <div class="buttons">
+                              <button class="button filter-feed filter-active-feed">Most Recent</button>
+                              <button class="button filter-feed">Oldest</button>
                             </div>
-                          </nav>
+                          </div>
+                        </nav>
                         <news-feed></news-feed>
                         <news-feed></news-feed>
                         <news-feed></news-feed>
                       </section>
                     </div>
                     <div class="column">
-                      <quick-settings></quick-settings>
                       <info-card></info-card>
                     </div>
                   </div>

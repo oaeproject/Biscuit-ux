@@ -31,23 +31,37 @@ class OAE extends PageViewElement {
     return html`
       <home-nav-v2></home-nav-v2>
       <section class="hero is-fullheight">
-        <div class="hero-body is-gapless bck-filter">
-          <div class="column home-leftCol">
-            <div class="home-rightv2">
-              <h1 class="home-titlev2">Explore and work </br> together with the OAE</h1>
-              <h6 class="home-h6v2">
-                Try searching for tags like "meeting" or "document"
-              </h6>
-              <home-search-v2></home-search-v2>
-              <home-filters></home-filters>
-            </div>
+      <div class="hero-body">
+      <div class="container">
+          <div class="columns is-vcentered">
+              <div class="column is-5 landing-caption left-landing">
+                  <h1 class="title is-2 is-bold is-spaced bold-title ">
+                    A new way to share, explore and connect</h1>
+                  </h1>
+                  <h2 class="subtitle is-5"><strong>The Open Academic Environment</strong> is the easiest way to communicate and share files with your classmates. Whether you're a student, investigator or professor, <strong>join us for free!</strong></h2>
+                  <home-search-v2></home-search-v2>
+                  <div class="button-wrap buttons-landing">
+                      <a class="button cta is-rounded primary-btn button-start">
+                          Search
+                      </a>
+                      <a class="button cta is-rounded button-filter">
+                          Filter 
+                      </a>
+                  </div>
+              </div>
+              <div class="column is-5 landing-image">
+                  <figure class="image is-4by5 cover">
+                      <img src="images/illustration.svg" alt="Description">
+                  </figure>
+              </div>
+
           </div>
-          <div class="column is-5">
-          </div>
-          </div>
-        </div>
-      </section>
-      <home-footer></home-footer>
+      </div>
+  </div>
+
+ 
+</section>
+
 
       
     `;
