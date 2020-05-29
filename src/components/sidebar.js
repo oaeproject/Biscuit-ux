@@ -11,7 +11,59 @@ class Sidebar extends LitElement {
   }
 
   render() {
-    return html`
+    let version2 = html`
+      <aside class="menu">
+        <div class="navbar-brand sidebar-brand">
+          <a class="navbar-item" href="http://0.0.0.0:8080/oae">
+            <img src="/images/logo-oae2.svg" width="112" height="28" />
+          </a>
+        </div>
+        <ul class="menu-list">
+          <li>
+            <span class="icon sidebar-icon">
+              <iron-icon icon="dashboard"></iron-icon>
+            </span>
+            <a class="dashboard">
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <span class="icon sidebar-icon">
+              <iron-icon icon="av:library-books"></iron-icon>
+            </span>
+            <a class="library">
+              Library
+            </a>
+          </li>
+          <li>
+            <span class="icon sidebar-icon">
+              <iron-icon icon="content-paste"></iron-icon>
+            </span>
+            <a class="discussions">
+              Discussions
+            </a>
+          </li>
+          <li>
+            <span class="icon sidebar-icon">
+              <iron-icon icon="social:people-outline"></iron-icon>
+            </span>
+            <a class="groups">
+              Groups
+            </a>
+          </li>
+          <li>
+            <span class="icon sidebar-icon">
+              <iron-icon icon="social:public"></iron-icon>
+            </span>
+            <a class="network">
+              Network
+            </a>
+          </li>
+        </ul>
+      </aside>
+    `;
+
+    let version1 = html`
       <aside class="menu">
         <ul class="menu-list">
           <li>
@@ -57,6 +109,8 @@ class Sidebar extends LitElement {
         </ul>
       </aside>
     `;
+
+    return version2;
   }
 }
 
