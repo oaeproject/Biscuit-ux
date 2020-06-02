@@ -1,5 +1,4 @@
 import { html, LitElement } from 'lit-element';
-import '@polymer/iron-icons/iron-icons.js';
 import bannerStyles from '../../style/groups-banner.scss';
 
 class bannerGroups extends LitElement {

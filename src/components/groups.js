@@ -7,6 +7,8 @@ import { PageViewElement } from './page-view-element.js';
 import './top-nav.js';
 import './sidebar.js';
 import './groups-banner.js';
+import './groups-avatar.js';
+import './groups-tabs.js';
 import './groups-feed.js';
 import './groups-about.js';
 import './news-feed.js';
@@ -43,6 +45,7 @@ class OAEGroups extends PageViewElement {
                       </section>
 
                       <groups-banner></groups-banner>
+                      <groups-tabs></groups-tabs>
 
                       <nav class="level">
                         <!-- Left side -->
