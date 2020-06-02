@@ -1,8 +1,9 @@
 /* Style the tab */
 .tab {
   overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  border: none;
+  background-color: transparent;
+  padding: 10px 0 10px 0;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -12,18 +13,19 @@
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
+  padding: 15px 25px 15px 0;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  border-bottom: 2px solid #2962ff;
+  color: #2962ff;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: transparent;
+  border-bottom: 2px solid #2962ff;
 }
 
 /* Style the tab content */
@@ -32,4 +34,13 @@
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
+}
+
+.button-icon {
+  padding-right: 5px;
+}
+
+.section-divider {
+  margin-bottom: 30px;
+  border: 1px solid #EEEEEE;
 }

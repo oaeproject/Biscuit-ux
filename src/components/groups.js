@@ -47,24 +47,27 @@ class OAEGroups extends PageViewElement {
                       <groups-banner></groups-banner>
                       <groups-tabs></groups-tabs>
 
-                      <nav class="level">
-                        <!-- Left side -->
-                        <div class="level-left">
-                          <div class="level-item">
-                            <span class="dashboard-icon">
-                              <iron-icon icon="icons:update"></iron-icon>
-                            </span>
-                            <h3>Recent Activity</h3>
+                      <section>
+                        <div class="level">
+                          <!-- Left side -->
+                          <div class="level-left">
+                            <div class="level-item activity">
+                              <span class="dashboard-icon">
+                                <iron-icon icon="icons:update"></iron-icon>
+                              </span>
+                              <h3>Recent Activity</h3>
+                            </div>
+                          </div>
+                          <!-- Right side -->
+                          <div class="level-right">
+                            <div class="buttons">
+                              <button class="button filter-feed filter-active-feed">Most Recent</button>
+                              <button class="button filter-feed">Oldest</button>
+                            </div>
                           </div>
                         </div>
-                        <!-- Right side -->
-                        <div class="level-right">
-                          <div class="buttons">
-                            <button class="button filter-feed filter-active-feed">Most Recent</button>
-                            <button class="button filter-feed">Oldest</button>
-                          </div>
-                        </div>
-                      </nav>
+                      </section>
+                      
                       <news-feed></news-feed>
                       <news-feed></news-feed>
                       <news-feed></news-feed>
