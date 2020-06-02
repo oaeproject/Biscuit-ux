@@ -45,6 +45,7 @@ class OAEGroups extends PageViewElement {
                       </section>
 
                       <groups-banner></groups-banner>
+                      <groups-avatar></groups-avatar>
                       <groups-tabs></groups-tabs>
 
                       <section>
