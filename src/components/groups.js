@@ -6,6 +6,7 @@ import groupButtonStyles from '../../style/groups-filter.scss';
 import { PageViewElement } from './page-view-element.js';
 import './top-nav.js';
 import './sidebar.js';
+import './groups-banner.js';
 import './groups-feed.js';
 import './groups-about.js';
 import './news-feed.js';
@@ -40,6 +41,9 @@ class OAEGroups extends PageViewElement {
                           <li>Open Apereo 2019</li>
                         </ul>
                       </section>
+
+                      <groups-banner></groups-banner>
+
                       <nav class="level">
                         <!-- Left side -->
                         <div class="level-left">
