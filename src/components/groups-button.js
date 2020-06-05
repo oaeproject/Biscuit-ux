@@ -17,7 +17,6 @@ class buttonGroups extends LitElement {
         </span>
         <span>Join Group</span>
       </button>
-      <hr class="section-divider">
     `;
   }
 }
