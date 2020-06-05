@@ -63,7 +63,7 @@ $link: #0060df;
   margin-left: -0.5rem;
 }
 .modal-title.mdi::before {
-  font-size: 1.5em;
+  font-size: 1em;
   line-height: 0.5;
   position: relative;
   top: 0.26rem;
@@ -164,7 +164,7 @@ body {
 }
 
 .menu-list {
-  font-size: 14px;
+  font-size: 1em;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -227,7 +227,7 @@ a.network {
   background-color: transparent;
   box-shadow: none;
   padding-left: 20px;
-  font-size: 14px;
+  font-size: 1em;
   width: 350px;
   &:focus {
     -webkit-appearance: none;
@@ -284,7 +284,7 @@ ul.breadcrumb {
 
 ul.breadcrumb li {
   display: inline;
-  font-size: 13px;
+  font-size: 1em;
   color: #424242;
   font-weight: 500;
 }

@@ -26,13 +26,13 @@ class newsFeed extends LitElement {
                     <img class="is-rounded avatar-news-feed" src="/images/avatar.jpg" />
                   </figure>
                   <section>
-                    <h4>
+                    <p class="user-info" style="margin-bottom: 0;">
                       <a class="feed-user">Michael Brown</a>
                       uploaded a file
                       <span class="panel-icon icon-feed">
                         <iron-icon icon="icons:cloud-upload"></iron-icon>
                       </span>
-                    </h4>
+                    </p>
                     <p>
                       23 March 2017
                     </p>
@@ -42,16 +42,16 @@ class newsFeed extends LitElement {
             </div>
             <div class="level-right">
               <p class="level-item">
-                <a class="button news-pin">
-                  <iron-icon icon="icons:bookmark-border"></iron-icon>
-                </a>
+                <button class="button news-pin">
+                  <iron-icon icon="icons:more-vert"></iron-icon>
+                </button>
               </p>
             </div>
           </nav>
           <section class="column news-feed-message">
-            <h4>
+            <h5>
               Group assignment briefing
-            </h4>
+            </h5>
             <p>
               Here is the briefing for that group assignment we talked about.
             </p>
