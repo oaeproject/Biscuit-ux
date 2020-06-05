@@ -76,7 +76,6 @@ class OAEGroups extends PageViewElement {
                       <news-feed></news-feed>
                     </div>
                     <div class="column is-one-fifth">
-                      <groups-button></groups-button>
                     </div>
                   </div>
                 </div>
