@@ -8,9 +8,10 @@ import './top-nav.js';
 import './sidebar.js';
 import './groups-banner.js';
 import './groups-avatar.js';
+import './groups-header.js';
 import './groups-tabs.js';
 import './groups-feed.js';
-import './groups-about.js';
+import './groups-button.js';
 import './news-feed.js';
 import './quick-settings.js';
 import './tags.js';
@@ -46,6 +47,7 @@ class OAEGroups extends PageViewElement {
 
                       <groups-banner></groups-banner>
                       <groups-avatar></groups-avatar>
+                      <groups-header></groups-header>
                       <groups-tabs></groups-tabs>
 
                       <section>
@@ -68,13 +70,13 @@ class OAEGroups extends PageViewElement {
                           </div>
                         </div>
                       </section>
-                      
+
                       <news-feed></news-feed>
                       <news-feed></news-feed>
                       <news-feed></news-feed>
                     </div>
                     <div class="column is-one-fifth">
-                      <groups-about></groups-about>
+                      <groups-button></groups-button>
                     </div>
                   </div>
                 </div>

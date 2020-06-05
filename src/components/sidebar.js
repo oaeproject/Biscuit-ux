@@ -13,11 +13,6 @@ class Sidebar extends LitElement {
   render() {
     let version2 = html`
       <aside class="menu">
-        <div class="navbar-brand sidebar-brand">
-          <a class="navbar-item" href="http://0.0.0.0:8080/oae">
-            <img src="/images/logo-oae2.svg" width="112" height="28" />
-          </a>
-        </div>
         <ul class="menu-list">
           <li>
             <span class="icon sidebar-icon">
