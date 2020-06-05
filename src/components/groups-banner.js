@@ -10,7 +10,7 @@ class bannerGroups extends LitElement {
     return html`
       <section>
         <figure class="image is-1by3 is-fullwidth banner">
-          <img src="https://www.apereo.org/sites/default/files/styles/slider_large/public/OA2020%20Logo%20Flat%20w1200.jpg?itok=qTI6Np7z" />
+          <img src="https://images.pexels.com/photos/3184660/pexels-photo-3184660.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
         </figure>
       </section>
     `;
