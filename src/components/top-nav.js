@@ -81,7 +81,7 @@ class topNav extends LitElement {
         </div>
       </header>
     `;
-    return version2;
+    return version1;
   }
 }
 

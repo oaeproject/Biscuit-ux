@@ -1,7 +1,6 @@
 import { html, LitElement } from 'lit-element';
 import avatarStyles from '../../style/groups-avatar.scss';
 
-
 class avatarGroups extends LitElement {
   static get styles() {
     return [avatarStyles];
