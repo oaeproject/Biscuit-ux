@@ -4,6 +4,7 @@ import '@polymer/iron-icons/social-icons.js';
 import '@polymer/iron-icons/av-icons.js';
 import homepageStyles from '../../style/homepage.scss';
 import sharedStyles from '../../style/app.scss';
+import './library-tags-side.js';
 
 class Sidebar extends LitElement {
   static get styles() {
@@ -55,6 +56,9 @@ class Sidebar extends LitElement {
             </a>
           </li>
         </ul>
+        <section>
+          <tags-side></tags-side>
+        </section>
       </aside>
     `;
 

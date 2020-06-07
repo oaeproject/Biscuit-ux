@@ -66,7 +66,7 @@ class libraryTable extends LitElement {
                                 <div class="level-left">
                                     <div class="level-item">
                                         <p class="library-designation-hover">
-                                            Group - Design Matters
+                                            Design Matters
                                         </p<
                                     </div>
                                     <div class="level-item library-designation-tag">
@@ -114,7 +114,7 @@ class libraryTable extends LitElement {
                                 <div class="level-left">
                                     <div class="level-item">
                                         <p class="library-designation-hover">
-                                            Group - Open Apereo 
+                                            Open Apereo 
                                         </p<
                                     </div>
                                     <div class="level-item library-designation-tag">
@@ -162,7 +162,7 @@ class libraryTable extends LitElement {
                  <div class="level-left">
                      <div class="level-item">
                          <p class="library-designation-hover">
-                             Group - OAE Development
+                            OAE Development
                          </p<
                      </div>
                      <div class="level-item library-designation-tag">
@@ -210,7 +210,7 @@ class libraryTable extends LitElement {
                                 <div class="level-left">
                                     <div class="level-item">
                                         <p class="library-designation-hover">
-                                            Group - Marketing 
+                                            Marketing 
                                         </p<
                                     </div>
                                     <div class="level-item library-designation-tag">
@@ -258,7 +258,7 @@ class libraryTable extends LitElement {
                  <div class="level-left">
                      <div class="level-item">
                          <p class="library-designation-hover">
-                             RC - OAE Dissertation
+                             OAE Dissertation
                          </p<
                      </div>
                      <div class="level-item library-designation-tag">
@@ -306,7 +306,7 @@ class libraryTable extends LitElement {
                                 <div class="level-left">
                                     <div class="level-item">
                                         <p class="library-designation-hover">
-                                            SB - Classes
+                                            Classes
                                         </p<
                                     </div>
                                     <div class="level-item library-designation-tag">

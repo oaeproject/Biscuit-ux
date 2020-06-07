@@ -9,8 +9,11 @@
 
 .add-menu-label {
 	color: #212121;
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 1em;
+	background: transparent;
+	border: none;
+	padding: 0;
 	&:hover {
 		color: #0060df;
 	}
