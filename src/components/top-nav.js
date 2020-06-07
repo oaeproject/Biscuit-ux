@@ -19,7 +19,7 @@ class topNav extends LitElement {
         <div class="container top-nav">
           <div class="navbar-brand">
             <a class="navbar-item" href="http://0.0.0.0:8080/oae">
-              <img src="/images/logo-oae2.svg" width="112" height="28" />
+              <img src="/images/logo-01.svg" width="112" height="28" />
             </a>
             <div class="navbar-item">
               <div class="field has-addons has-addons-centered">

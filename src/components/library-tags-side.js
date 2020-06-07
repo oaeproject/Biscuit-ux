@@ -18,7 +18,7 @@ class tagsSide extends LitElement {
           <div class="level-left">
             <div class="level-item">
               <a class="add-menu-label">
-                Add New Label
+                New Label
               </a>
             </div>
           </div>

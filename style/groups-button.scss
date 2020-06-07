@@ -3,11 +3,15 @@
   border-radius: 25px;
   width: 150px;
   height: 20px;
-  background-color: #2962ff;
-  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border: 2px solid #2962ff;
+  color: #2962ff;
   &:hover {
-    background-color: #0d47a1;
-    color: white;
+    background-color: #ededf0;
+    color: #2962ff;
+    border: 2px solid #2962ff;
+    color: #2962ff;
   }
 }
 
@@ -22,5 +26,5 @@
 
 .group-join-icon {
   padding-right: 10px;
-  color: white;
+  color: #2962ff;
 }
