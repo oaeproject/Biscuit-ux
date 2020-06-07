@@ -35,7 +35,7 @@ class OAELibrary extends PageViewElement {
               <div class="column content-base">
                 <div class=" column content-wrap">
                   <div class=" columns is-flex main-content">
-                    <div class="column is-two-thirds main-left">
+                    <div class="column is-four-fifths main-left">
                       <section class="column activity-dashboard">
                         <section class="is-flex">
                           <ul class="breadcrumb">
@@ -61,9 +61,6 @@ class OAELibrary extends PageViewElement {
                         </div>
                         <library-table></library-table>
                       </section>
-                    </div>
-                    <div class="column is-one-fifth is-pulled-right">
-                      <tags-side></tags-side>
                     </div>
                   </div>
                 </div>

@@ -14,12 +14,16 @@ class tagsSide extends LitElement {
   render() {
     return html`
       <div>
+        <hr class="top-divider" />
         <section class="is-flex tag-menu-add-new-wrap">
           <div class="level-left">
             <div class="level-item">
-              <a class="add-menu-label">
-                Add New Label
-              </a>
+              <button class="add-menu-label button">
+                <span class="icon">
+                  <iron-icon icon="add"></iron-icon>
+                </span>
+                <span>New Label</span>
+              </button>
             </div>
           </div>
         </section>

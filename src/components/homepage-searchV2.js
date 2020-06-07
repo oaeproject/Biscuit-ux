@@ -20,6 +20,7 @@ class homeSearchV2 extends LitElement {
           </span>
         </div>
       </div>
+      
     `;
   }
 }

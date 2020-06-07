@@ -15,7 +15,7 @@ class homeNavV2 extends LitElement {
       <nav class="navbar home-nav">
         <div class="navbar-brand">
           <a class="navbar-item logo" href="http://0.0.0.0:8080/oae">
-            <img src="/images/logo-oae9.svg" />
+            <img src="/images/logo-01.svg" />
           </a>
         </div>
         <div class="navbar-end navEnd">

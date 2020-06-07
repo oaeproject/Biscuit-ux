@@ -1,6 +1,5 @@
 // Code in the comments belongs to a previous iteration of the project that might need to be returned to
 
-
 .navbar-item {
   background-color: transparent;
 }
@@ -17,7 +16,7 @@
   color: #0060df;
   margin-top: 18px;
   margin-right: 10px;
-  font-size: 14px;
+  font-size: 1em;
   height: 35px;
   // Original top navbar styling
   // Code is commented in case we need to use this approach again
@@ -29,7 +28,6 @@
 
 .notification-icon {
   color: #212121;
-
 }
 .navbar-link {
   border-radius: 25px;

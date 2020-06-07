@@ -6,8 +6,12 @@ import groupButtonStyles from '../../style/groups-filter.scss';
 import { PageViewElement } from './page-view-element.js';
 import './top-nav.js';
 import './sidebar.js';
+import './groups-banner.js';
+import './groups-avatar.js';
+import './groups-header.js';
+import './groups-tabs.js';
 import './groups-feed.js';
-import './groups-about.js';
+import './groups-button.js';
 import './news-feed.js';
 import './quick-settings.js';
 import './tags.js';
@@ -40,30 +44,38 @@ class OAEGroups extends PageViewElement {
                           <li>Open Apereo 2019</li>
                         </ul>
                       </section>
-                      <nav class="level">
-                        <!-- Left side -->
-                        <div class="level-left">
-                          <div class="level-item">
-                            <span class="dashboard-icon">
-                              <iron-icon icon="icons:update"></iron-icon>
-                            </span>
-                            <h3>Recent Activity</h3>
+
+                      <groups-banner></groups-banner>
+                      <groups-avatar></groups-avatar>
+                      <groups-header></groups-header>
+                      <groups-tabs></groups-tabs>
+
+                      <section>
+                        <div class="level">
+                          <!-- Left side -->
+                          <div class="level-left">
+                            <div class="level-item activity">
+                              <span class="dashboard-icon">
+                                <iron-icon icon="icons:update"></iron-icon>
+                              </span>
+                              <h3>Recent Activity</h3>
+                            </div>
+                          </div>
+                          <!-- Right side -->
+                          <div class="level-right">
+                            <div class="buttons">
+                              <button class="button filter-feed filter-active-feed">Most Recent</button>
+                              <button class="button filter-feed">Oldest</button>
+                            </div>
                           </div>
                         </div>
-                        <!-- Right side -->
-                        <div class="level-right">
-                          <div class="buttons">
-                            <button class="button filter-feed filter-active-feed">Most Recent</button>
-                            <button class="button filter-feed">Oldest</button>
-                          </div>
-                        </div>
-                      </nav>
+                      </section>
+
                       <news-feed></news-feed>
                       <news-feed></news-feed>
                       <news-feed></news-feed>
                     </div>
                     <div class="column is-one-fifth">
-                      <groups-about></groups-about>
                     </div>
                   </div>
                 </div>
