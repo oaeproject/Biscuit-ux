@@ -111,6 +111,15 @@ body {
   margin: 3%;
 }
 
+// Dropdown
+button.button.dropdown-sidebar {
+  background-color: brown;
+}
+
+.level.sidebar-dropdown {
+  margin-bottom: 0;
+}
+
 // Main content
 .main-content {
   height: 100%;

@@ -25,7 +25,7 @@ class Sidebar extends LitElement {
             <div class="level-item">
               <div class="dropdown is-hoverable">
                 <div class="dropdown-trigger">
-                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                  <button class="button dropdown-sidebar" aria-haspopup="true" aria-controls="dropdown-menu4">
                     <span>Home</span>
                     <span class="icon is-small">
                       <i class="fas fa-angle-down" aria-hidden="true"></i>
