@@ -14,56 +14,63 @@ class Sidebar extends LitElement {
   render() {
     let version2 = html`
       <aside class="menu">
+        <nav class="level sidebar-dropdown">
+          <!-- Left side -->
+          <div class="level-left">
+            <div class="level-item">
+              <figure class="image is-64x64">
+                <img class="is-rounded" src="/images/logo-01.svg" />
+              </figure>
+            </div>
+            <div class="level-item">
+              <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                  <button class="button" aria-haspopup="true" aria-controls="dropdown-menu4">
+                    <span>Home</span>
+                    <span class="icon is-small">
+                      <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                  </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                  <div class="dropdown-content">
+                    <div class="dropdown-item">
+                      <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
         <ul class="menu-list">
           <li>
             <span class="icon sidebar-icon">
-              <iron-icon icon="dashboard"></iron-icon>
+              <iron-icon icon="cloud-upload"></iron-icon>
             </span>
             <a class="dashboard">
-              Dashboard
+              New File
             </a>
           </li>
           <li>
             <span class="icon sidebar-icon">
-              <iron-icon icon="av:library-books"></iron-icon>
+              <iron-icon icon="create"></iron-icon>
             </span>
             <a class="library">
-              Library
+              Create
             </a>
           </li>
           <li>
             <span class="icon sidebar-icon">
-              <iron-icon icon="content-paste"></iron-icon>
-            </span>
-            <a class="discussions">
-              Discussions
-            </a>
-          </li>
-          <li>
-            <span class="icon sidebar-icon">
-              <iron-icon icon="social:people-outline"></iron-icon>
+              <iron-icon icon="settings"></iron-icon>
             </span>
             <a class="groups">
-              Groups
-            </a>
-          </li>
-          <li>
-            <span class="icon sidebar-icon">
-              <iron-icon icon="social:public"></iron-icon>
-            </span>
-            <a class="network">
-              Network
+              Settings
             </a>
           </li>
         </ul>
-        <section>
-          <tags-side></tags-side>
-        </section>
-      </aside>
-    `;
-
-    let version1 = html`
-      <aside class="menu">
+        <hr class="navbar-divider sidebar-divider" />
         <ul class="menu-list">
           <li>
             <span class="icon sidebar-icon">
@@ -95,14 +102,6 @@ class Sidebar extends LitElement {
             </span>
             <a class="groups">
               Groups
-            </a>
-          </li>
-          <li>
-            <span class="icon sidebar-icon">
-              <iron-icon icon="social:public"></iron-icon>
-            </span>
-            <a class="network">
-              Network
             </a>
           </li>
         </ul>

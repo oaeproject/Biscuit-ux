@@ -20,22 +20,18 @@ class OAEDashboard extends PageViewElement {
   render() {
     return html`
       <section class="hero is-fullheight">
-        <!-- Hero head: will stick at the top -->
-        <div class="hero-head">
-          <top-nav></top-nav>
-        </div>
-
+  
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
           <div class="container content-wrapResponsive is-fluid">
             <div class="columns dasboard">
-              <div class="column is-narrow sidebar is-fullheight">
+              <div class="column is-one-fifth sidebar is-fullheight">
                 <sidebar-nav></sidebar-nav>
               </div>
               <div class="column content-base">
                 <div class=" column content-wrap">
                   <div class=" columns is-flex main-content">
-                    <div class="column is-three-fifths main-left">
+                    <div class="column is-three-quarters main-left">
                       <section class="column activity-dashboard">
                         <section class="is-flex">
                           <ul class="breadcrumb">
