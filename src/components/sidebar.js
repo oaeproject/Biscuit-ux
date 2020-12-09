@@ -105,6 +105,37 @@ class Sidebar extends LitElement {
             </a>
           </li>
         </ul>
+        <footer class="footer sidebar-footer">
+          <nav class="level sidebar-avatar-logout">
+            <!-- Left side -->
+            <div class="level-left">
+              <div class="level-item">
+                <figure class="image is-48x48">
+                  <img class="is-rounded" src="/images/user.jpg" />
+                </figure>
+              </div>
+              <div class="level-item">
+                <div class="dropdown is-hoverable dropdown is-up">
+                  <div class="dropdown-trigger">
+                    <button class="button dropdown-sidebar" aria-haspopup="true" aria-controls="dropdown-menu4">
+                      <span>Sarah Jones</span>
+                      <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                      </span>
+                    </button>
+                  </div>
+                  <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                    <div class="dropdown-content">
+                      <div class="dropdown-item">
+                        <button>Logout</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </footer>
       </aside>
     `;
 

@@ -163,6 +163,7 @@ body {
   //position: fixed;
   //top: 8.5em;
   margin-top: 1em;
+  min-height: 90vh;
 }
 
 .menu-list {
@@ -237,6 +238,19 @@ a.network {
 button.button.dropdown-sidebar {
   background-color: transparent;
   border: none;
+}
+
+// Footer
+.footer.sidebar-footer {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+// Sidebar Avatar
+.sidebar-avatar-logout {
+  padding-left: 2%;
 }
 
 // Top Bar
