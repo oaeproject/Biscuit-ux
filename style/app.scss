@@ -1,6 +1,5 @@
 // Code in the comments belongs to a previous iteration of the project that might need to be returned to
 
-
 // Import a Google Font
 // Open Sans - Regular (400)
 // Open Sans - Bold (700)
@@ -87,6 +86,7 @@ body {
 .hero-body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .content-wrapResponsive {
@@ -95,12 +95,15 @@ body {
 }
 
 .container.is-fluid {
-  margin: 0.5em 5.5em 0 5em;
   padding: 0;
   height: 100%;
 }
 
 .columns {
+  height: 100%;
+}
+
+.dashboard {
   height: 100%;
 }
 
@@ -141,6 +144,10 @@ body {
 }
 
 // Sidebar Menu
+.sidebar {
+  background-color: white;
+}
+
 .aside {
   height: 100%;
 }
@@ -150,12 +157,13 @@ body {
 }
 
 .menu {
-  width: 185px;
-  // Previous menu position, might be useful once we remove the top tabs bar from the default polymer project 
+  width: 100%;
+  // Previous menu position, might be useful once we remove the top tabs bar from the default polymer project
   // Code is commented in case we need to use this approach again
   //position: fixed;
   //top: 8.5em;
-  margin-top: 3.5em;
+  margin-top: 1em;
+  min-height: 90vh;
 }
 
 .menu-list {
@@ -164,29 +172,40 @@ body {
 }
 
 .menu-list li {
-  padding-left: 0;
-  margin-bottom: 18px;
-  border-radius: 0 25px 25px 0;
+  padding: 2%;
+  margin-left: 2%;
+  margin-bottom: 1%;
+  border-radius: 5px;
   height: 30px;
   color: #212121;
   display: flex;
   align-items: center;
   &:hover {
     color: #0060df;
-    background-color: #EDEDF0;
+    background-color: #f6f8f7;
   }
   &:active {
     color: #0060df;
-    background-color: #EDEDF0;
+    background-color: #f6f8f7;
   }
   &:focus {
     color: #0060df;
-    background-color: #EDEDF0;
+    background-color: #f6f8f7;
+  }
+}
+
+.menu-list li a {
+  &:hover {
+    color: #0060df;
   }
 }
 
 .menu-list a {
   color: #212121;
+}
+
+.menu-list span {
+  padding-left: 1%;
 }
 
 a.dashboard,
@@ -195,15 +214,43 @@ a.discussions,
 a.groups,
 a.user-settings,
 a.network {
-  padding-left: 1em;
+  padding-left: 0.8em;
+  &:hover {
+    color: #0060df;
+  }
 }
 
-.navbar-divider {
-  margin: 5px 0 5px 0;
+.sidebar-divider {
+  margin: 2%;
+}
+
+.sidebar-dropdown {
+  padding: 1%;
+  margin-left: 1%;
 }
 
 .top-divider {
   margin: 30px 0 5px 0;
+}
+
+// Sidebar Dropdown
+
+button.button.dropdown-sidebar {
+  background-color: transparent;
+  border: none;
+}
+
+// Footer
+.footer.sidebar-footer {
+  position: absolute;
+  bottom: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+// Sidebar Avatar
+.sidebar-avatar-logout {
+  padding-left: 2%;
 }
 
 // Top Bar

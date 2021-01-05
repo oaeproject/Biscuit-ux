@@ -46,6 +46,9 @@ const loadPage = page => dispatch => {
     case 'groups':
       import('../components/groups.js');
       break;
+    case 'testing':
+      import('../components/testing-ground.js');
+      break;
     default:
       import('../components/homepage.js');
   }
