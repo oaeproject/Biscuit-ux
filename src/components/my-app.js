@@ -201,6 +201,7 @@ class MyApp extends connect(store)(LitElement) {
         <user-library class="page" ?active="${this._page === 'library'}"></user-library>
         <user-discussions class="page" ?active="${this._page === 'discussions'}"></user-discussions>
         <user-groups class="page" ?active="${this._page === 'groups'}"></user-groups>
+        <dev-testing class="page" ?active="${this._page === 'testing'}"></dev-testing>
       </main>
 
       <snack-bar ?active="${this._snackbarOpened}">
