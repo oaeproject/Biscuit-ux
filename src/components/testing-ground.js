@@ -14,7 +14,7 @@ class Test extends PageViewElement {
     return html`
       <div class="container main-container">
         <div class="columns columns-container">
-          <div class="column is-one-quarter sidebar">
+          <div class="column is-one-fifth sidebar">
             <div class="menu sticky">
             <sidebar-nav></sidebar-nav>
             </div>

@@ -127,7 +127,12 @@ class Sidebar extends LitElement {
                   <div class="dropdown-menu" id="dropdown-menu4" role="menu">
                     <div class="dropdown-content">
                       <div class="dropdown-item">
-                        <button>Logout</button>
+                        <button class="button logout-button">
+                          <span class="icon">
+                            <iron-icon icon="power-settings-new"></iron-icon>
+                          </span>
+                          <span class="logout-button-text">Logout</span>
+                        </button>
                       </div>
                     </div>
                   </div>
