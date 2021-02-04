@@ -11,59 +11,81 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 /* eslint-disable import/no-unassigned-import */
 
 import { html } from 'lit-element';
-import '@polymer/iron-icons/iron-icons.js';
-import '@polymer/iron-icons/social-icons.js';
 import sharedStyles from '../../style/app.scss';
-import landingStyles from '../../style/landing-page.scss';
-import homeV2Styles from '../../style/homepage-v2.scss';
-import { PageViewElement } from './page-view-element.js';
+import homepageStyles from '../../style/homepage-v2.scss';
 import './homepage-navV2.js';
-import './homepage-searchV2.js';
-import './homepage-filters.js';
-import './homepage-footer.js';
+import { PageViewElement } from './page-view-element.js';
 
 class OAE extends PageViewElement {
   static get styles() {
-    return [sharedStyles, landingStyles, homeV2Styles];
+    return [sharedStyles, homepageStyles];
   }
 
   render() {
     return html`
-      <home-nav-v2></home-nav-v2>
-      <section class="hero is-fullheight">
-      <div class="hero-body">
-      <div class="container">
-          <div class="columns is-vcentered">
-              <div class="column is-5 landing-caption left-landing">
-                  <h1 class="title is-2 is-bold is-spaced bold-title ">
-                    A new way to share, explore and connect</h1>
-                  </h1>
-                  <h2 class="subtitle is-5"><strong>The Open Academic Environment</strong> is the easiest way to communicate and share files with your classmates. Whether you're a student, investigator or professor, <strong>join us for free!</strong></h2>
-                  <home-search-v2></home-search-v2>
-                  <div class="button-wrap buttons-landing">
-                      <a class="button cta is-rounded primary-btn button-start">
-                          Search
-                      </a>
-                      <a class="button cta is-rounded button-filter">
-                          Filter 
-                      </a>
-                  </div>
+      <section class="hero is-primary is-medium">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand">
+                <a class="navbar-item">
+                  <img src="/images/logo-01.svg" alt="Logo" />
+                </a>
+                <span class="navbar-burger" data-target="navbarMenuHeroA">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
               </div>
-              <div class="column is-5 landing-image">
-                  <figure class="image is-4by5 cover">
-                      <img src="images/illustration.svg" alt="Description">
-                  </figure>
+              <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end">
+                  <a class="navbar-item is-active">
+                    Home
+                  </a>
+                  <a class="navbar-item">
+                    Examples
+                  </a>
+                  <a class="navbar-item">
+                    Documentation
+                  </a>
+                  <span class="navbar-item">
+                    <a class="button is-primary is-inverted">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Download</span>
+                    </a>
+                  </span>
+                </div>
               </div>
+            </div>
+          </nav>
+        </div>
 
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <p class="title homepage-title">
+              A new way to share, explore and connect
+            </p>
+            <p class="subtitle">
+              The Open Academic Environment is the easiest way to communicate and share files with your classmates.
+              Whether you're a student, investigator or professor, join us for free!
+            </p>
           </div>
-      </div>
-  </div>
+        </div>
 
- 
-</section>
-
-
-      
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <p class="subtitle">
+              The Open Academic Environment is the easiest way to communicate and share files with your classmates.
+              Whether you're a student, investigator or professor, join us for free!
+            </p>
+          </div>
+        </div>
+      </section>
     `;
   }
 }
