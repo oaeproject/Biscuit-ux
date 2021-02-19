@@ -30,7 +30,7 @@ class homeNavV2 extends LitElement {
                 Register
               </a>
               <span class="navbar-item">
-                <a class="button sign-in">
+                <a href="#modal-one" class="button sign-in btn btn-big" ">
                   <span class="icon account-icon">
                     <iron-icon icon="account-circle"></iron-icon>
                   </span>
