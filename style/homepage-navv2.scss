@@ -1,3 +1,7 @@
+.navbar {
+  background-color: white;
+}
+
 .navbar-brand {
   padding-left: 3em;
 }
@@ -11,34 +15,16 @@
   height: 400px;
 }
 
-.home-nav {
-  background: white;
-}
-
-.register-button {
-  font-size: 1em;
-  border-radius: 25px;
-  color: #00253d;
-  background-color: white;
-  border: none;
-  &:hover {
-    color: #2e98d5;
-    background-color: transparent;
-    border: none;
-  }
-}
-
-.signIn-button {
-  font-size: 1em;
-  border-radius: 25px;
-  width: 80px;
+.sign-in {
+  border-width: medium;
+  font-weight: bold;
+  border-color: #3A71ED;
+  color: #3A71ED;
   height: 30px;
-  color: white;
-  background-color: #2274ff;
-  border: none;
+  width: 80px;
   &:hover {
-    color: #2e98d5;
-    background-color: transparent;
-    border: none;
+    background-color: #3A71ED;
+    border-color: #3A71ED;
+    color: white;
   }
 }

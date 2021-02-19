@@ -1,28 +1,40 @@
 import { html, LitElement } from 'lit-element';
 import '@polymer/iron-icons/iron-icons.js';
-import '@polymer/iron-icons/social-icons.js';
 import sharedStyles from '../../style/app.scss';
-import landingStyles from '../../style/landing-page.scss';
 import homeNavStyles from '../../style/homepage-navv2.scss';
 
 class homeNavV2 extends LitElement {
   static get styles() {
-    return [sharedStyles, landingStyles, homeNavStyles];
+    return [sharedStyles, homeNavStyles];
   }
 
   render() {
     return html`
-      <nav class="navbar home-nav">
-        <div class="navbar-brand">
-          <a class="navbar-item logo" href="http://0.0.0.0:8080/oae">
-            <img src="/images/logo-01.svg" />
-          </a>
-        </div>
-        <div class="navbar-end navEnd">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a class="button is-round register-button">Register</a>
-              <a class="button is-round signIn-button">Sign In</a>
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item logo" href="http://0.0.0.0:8080/oae">
+              <img src="/images/logo-01.svg" />
+            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroA" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                Register
+              </a>
+              <span class="navbar-item">
+                <a class="button sign-in">
+                  <span class="icon account-icon">
+                    <iron-icon icon="account-circle"></iron-icon>
+                  </span>
+                  <span>Sign In</span>
+                </a>
+              </span>
             </div>
           </div>
         </div>

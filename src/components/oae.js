@@ -26,58 +26,23 @@ class OAE extends PageViewElement {
       <section class="hero is-primary is-medium">
         <!-- Hero head: will stick at the top -->
         <div class="hero-head">
-          <nav class="navbar">
-            <div class="container">
-              <div class="navbar-brand">
-                <a class="navbar-item">
-                  <img src="/images/logo-01.svg" alt="Logo" />
-                </a>
-                <span class="navbar-burger" data-target="navbarMenuHeroA">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </span>
-              </div>
-              <div id="navbarMenuHeroA" class="navbar-menu">
-                <div class="navbar-end">
-                  <a class="navbar-item is-active">
-                    Home
-                  </a>
-                  <a class="navbar-item">
-                    Examples
-                  </a>
-                  <a class="navbar-item">
-                    Documentation
-                  </a>
-                  <span class="navbar-item">
-                    <a class="button is-primary is-inverted">
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>Download</span>
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </nav>
+          <home-nav-v2></home-nav-v2>
         </div>
 
         <!-- Hero content: will be in the middle -->
-        <div class="hero-body">
+        <div class="hero-body main-area">
           <div class="container has-text-centered">
             <p class="title homepage-title">
               A new way to share, explore and connect
             </p>
-            <p class="subtitle">
-              The Open Academic Environment is the easiest way to communicate and share files with your classmates.
-              Whether you're a student, investigator or professor, join us for free!
-            </p>
+            <div class="search-input is-centered">
+              <input class="input" type="text" placeholder="Search Here" />
+            </div>
           </div>
         </div>
 
-        <!-- Hero content: will be in the middle -->
-        <div class="hero-body">
+        <!-- Hero content: will be in the middle 
+        <div class="hero-body section1-area">
           <div class="container has-text-centered">
             <p class="subtitle">
               The Open Academic Environment is the easiest way to communicate and share files with your classmates.
@@ -86,6 +51,7 @@ class OAE extends PageViewElement {
           </div>
         </div>
       </section>
+      -->
     `;
   }
 }
