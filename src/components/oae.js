@@ -31,7 +31,7 @@ class OAE extends PageViewElement {
 
         <!-- Hero content: will be in the middle -->
         <div class="hero-body main-area">
-          <div class="container has-text-centered">
+          <div class="container has-text-centered is-centered">
             <p class="title homepage-title">
               A new way to share, explore and connect
             </p>
@@ -43,7 +43,7 @@ class OAE extends PageViewElement {
 
         <!-- Hero content: will be in the middle 
         <div class="hero-body section1-area">
-          <div class="container has-text-centered">
+          <div class="container has-text-centered is-centered">
             <p class="subtitle">
               The Open Academic Environment is the easiest way to communicate and share files with your classmates.
               Whether you're a student, investigator or professor, join us for free!

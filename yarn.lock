@@ -646,6 +646,13 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@dannymoerkerke/material-webcomponents@^1.2.15":
+  version "1.2.15"
+  resolved "https://registry.yarnpkg.com/@dannymoerkerke/material-webcomponents/-/material-webcomponents-1.2.15.tgz#44beb74fc4cc5c0ecbad56cb51241b49a272c31e"
+  integrity sha512-OmENG31ekOJ7c4ouoGHt+z+RX+UJKz8LVg6em30LE51oxSuZLck2YLJz20mtSVQ8mV87daF3xQDX7Pf8aOy4Vg==
+  dependencies:
+    "@webcomponents/webcomponentsjs" "^1.0.17"
+
 "@material/animation@^3.0.0":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@material/animation/-/animation-3.0.0.tgz#bbea365f961204a499dcaf04c5c60548af45d03f"
@@ -1711,7 +1718,7 @@
   resolved "https://registry.yarnpkg.com/@webcomponents/shadycss/-/shadycss-1.9.1.tgz#d769fbadfa504f11b84caeef26701f89070ec49a"
   integrity sha512-IaZOnWOKXHghqk/WfPNDRIgDBi3RsVPY2IFAw6tYiL9UBGvQRy5R6uC+Fk7qTZsReTJ0xh5MTT8yAcb3MUR4mQ==
 
-"@webcomponents/webcomponentsjs@^1.0.7":
+"@webcomponents/webcomponentsjs@^1.0.17", "@webcomponents/webcomponentsjs@^1.0.7":
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/@webcomponents/webcomponentsjs/-/webcomponentsjs-1.3.3.tgz#5bb82a0d3210c836bd4623e13a4a93145cb9dc27"
   integrity sha512-eLH04VBMpuZGzBIhOnUjECcQPEPcmfhWEijW9u1B5I+2PPYdWf3vWUExdDxu4Y3GljRSTCOlWnGtS9tpzmXMyQ==

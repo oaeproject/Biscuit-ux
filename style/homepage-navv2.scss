@@ -2,10 +2,6 @@
   background-color: white;
 }
 
-.navbar-brand {
-  padding-left: 3em;
-}
-
 .navEnd {
   padding-right: 3em;
 }
@@ -18,13 +14,13 @@
 .sign-in {
   border-width: medium;
   font-weight: bold;
-  border-color: #3A71ED;
-  color: #3A71ED;
+  border-color: #3a71ed;
+  color: #3a71ed;
   height: 30px;
   width: 80px;
   &:hover {
-    background-color: #3A71ED;
-    border-color: #3A71ED;
+    background-color: #3a71ed;
+    border-color: #3a71ed;
     color: white;
   }
 }
