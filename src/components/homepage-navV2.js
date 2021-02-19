@@ -26,7 +26,7 @@ class homeNavV2 extends LitElement {
           </div>
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item is-active">
+              <a class="navbar-item is-active register">
                 Register
               </a>
               <span class="navbar-item">

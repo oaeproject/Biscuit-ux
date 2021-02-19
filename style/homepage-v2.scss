@@ -9,11 +9,10 @@ $secondaryFontColor: #424242;
 
 .hero-body.main-area {
   background-color: white;
-  background-image: url('/images/home-background.jpg');
-  height: 200px; /* You must set a specified height */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: url('/images/home-back9.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
 }
 
 .hero-body.section1-area {
@@ -22,10 +21,30 @@ $secondaryFontColor: #424242;
 
 .hero.is-primary .title {
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
+}
+
+.input {
+  width: 70%;
+  border-color: black;
+  border-width: medium;
+  box-shadow: none;
+  font-weight: bold;
+}
+
+.input.input:hover {
+  border-color: black;
+  border-width: medium;
+  box-shadow: none;
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.52);
+  -moz-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.52);
+  box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.52);
 }
 
 .input.input:focus {
-  border-color:#1D3557;
-  box-shadow: none;
+  border-color: black;
+  border-width: medium;
+  -webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.52);
+  -moz-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.52);
+  box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.52);
 }
