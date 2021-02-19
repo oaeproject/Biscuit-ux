@@ -31,28 +31,6 @@ class OAE extends PageViewElement {
 
         <!-- Hero content: will be in the middle -->
         <div class="hero-body main-area">
-
-
-          <input type="checkbox" id="toggle" />
-          <label for="toggle">Sign In</label>
-          <dialog>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil dolore similique quis qui ad
-              blanditiis ex eum! Enim maiores ipsam fugiat officiis earum distinctio natus reprehenderit aliquam est
-              iusto!
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil dolore similique quis qui ad
-              blanditiis ex eum! Enim maiores ipsam fugiat officiis earum distinctio natus reprehenderit aliquam est
-              iusto!
-            </p>
-            <label for="toggle" class="close-dialog pull-right">Close</label>
-          </dialog>
-
-
-
-
-
-          
-
           <div class="container has-text-centered is-centered">
             <p class="title homepage-title">
               A new way to share, explore and connect

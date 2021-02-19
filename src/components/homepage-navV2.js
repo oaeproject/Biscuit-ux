@@ -2,9 +2,18 @@ import { html, LitElement } from 'lit-element';
 import '@polymer/iron-icons/iron-icons.js';
 import sharedStyles from '../../style/app.scss';
 import homeNavStyles from '../../style/homepage-navv2.scss';
-//import '../../node_modules/@dannymoerkerke/material-webcomponents/src/material-button.js';
+import '../../node_modules/@dannymoerkerke/material-webcomponents/src/material-dialog.js';
 
 class homeNavV2 extends LitElement {
+
+  open_modal(e){
+    this.shadowRoot.querySelector('#modal').open();
+  }
+
+  close_modal(e){
+    this.shadowRoot.querySelector('#modal').close();
+  }
+
   static get styles() {
     return [sharedStyles, homeNavStyles];
   }
@@ -14,7 +23,7 @@ class homeNavV2 extends LitElement {
       <nav class="navbar">
         <div class="container">
           <div class="navbar-brand">
-            <a class="navbar-item logo" href="http://0.0.0.0:8080/oae">
+            <a class="navbar-item logo" href="/oae">
               <img src="/images/logo-01.svg" />
             </a>
             <span class="navbar-burger" data-target="navbarMenuHeroA">
@@ -29,44 +38,28 @@ class homeNavV2 extends LitElement {
                 Register
               </a>
               <span class="navbar-item">
-              <input type="checkbox" id="toggle" />
-                <label for="toggle" class="button sign-in" ">
+                <a id="open-modal-id" class="button sign-in" @click="${this.open_modal}" ">
                   <span class="icon account-icon">
                     <iron-icon icon="account-circle"></iron-icon>
                   </span>
                   <span>Sign In</span>
-                </label>
+                </a>
               </span>
-
-              <dialog>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil dolore similique quis qui ad
-                blanditiis ex eum! Enim maiores ipsam fugiat officiis earum distinctio natus reprehenderit aliquam est
-                iusto!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil dolore similique quis qui ad
-                blanditiis ex eum! Enim maiores ipsam fugiat officiis earum distinctio natus reprehenderit aliquam est
-                iusto!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil dolore similique quis qui ad
-                blanditiis ex eum! Enim maiores ipsam fugiat officiis earum distinctio natus reprehenderit aliquam est
-                iusto!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil dolore similique quis qui ad
-                blanditiis ex eum! Enim maiores ipsam fugiat officiis earum distinctio natus reprehenderit aliquam est
-                iusto!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil dolore similique quis qui ad
-                blanditiis ex eum! Enim maiores ipsam fugiat officiis earum distinctio natus reprehenderit aliquam est
-                iusto!
-              
-  
-              </p>
-              <label for="toggle" class="close-dialog pull-right" >close overlay</label>
-            </dialog>
-
             </div>
           </div>
         </div>
       </nav>
+      <material-dialog id="modal">
+      <h1 slot="header">Sign In</h1>
+      <p slot="body">Sign In here</p>
+      <div slot="footer">
+        <button id="close-modal-id" @click="${this.close_modal}">close</button>
+      </div>
+    </material-dialog>
+
     `;
   }
 }
 
 window.customElements.define('home-nav-v2', homeNavV2);
+
