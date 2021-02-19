@@ -4,7 +4,6 @@ import sharedStyles from '../../style/app.scss';
 import homeNavStyles from '../../style/homepage-navv2.scss';
 //import '../../node_modules/@dannymoerkerke/material-webcomponents/src/material-button.js';
 
-
 class homeNavV2 extends LitElement {
   static get styles() {
     return [sharedStyles, homeNavStyles];
@@ -30,13 +29,38 @@ class homeNavV2 extends LitElement {
                 Register
               </a>
               <span class="navbar-item">
-                <a href="#modal-one" class="button sign-in btn btn-big" ">
+              <input type="checkbox" id="toggle" />
+                <label for="toggle" class="button sign-in" ">
                   <span class="icon account-icon">
                     <iron-icon icon="account-circle"></iron-icon>
                   </span>
                   <span>Sign In</span>
-                </a>
+                </label>
               </span>
+
+              <dialog>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil dolore similique quis qui ad
+                blanditiis ex eum! Enim maiores ipsam fugiat officiis earum distinctio natus reprehenderit aliquam est
+                iusto!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil dolore similique quis qui ad
+                blanditiis ex eum! Enim maiores ipsam fugiat officiis earum distinctio natus reprehenderit aliquam est
+                iusto!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil dolore similique quis qui ad
+                blanditiis ex eum! Enim maiores ipsam fugiat officiis earum distinctio natus reprehenderit aliquam est
+                iusto!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil dolore similique quis qui ad
+                blanditiis ex eum! Enim maiores ipsam fugiat officiis earum distinctio natus reprehenderit aliquam est
+                iusto!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nihil dolore similique quis qui ad
+                blanditiis ex eum! Enim maiores ipsam fugiat officiis earum distinctio natus reprehenderit aliquam est
+                iusto!
+              
+  
+              </p>
+              <label for="toggle" class="close-dialog pull-right" >close overlay</label>
+            </dialog>
+
             </div>
           </div>
         </div>
