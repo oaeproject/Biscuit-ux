@@ -1,6 +1,6 @@
 .navbar {
   background-color: white;
-  box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
 }
 
 .navEnd {
@@ -20,6 +20,7 @@
   border-width: medium;
   font-weight: bold;
   border-color: #3a71ed;
+  border-radius: 2px;
   color: #3a71ed;
   height: 30px;
   width: 80px;
@@ -30,39 +31,63 @@
   }
 }
 
-
-//Dialog Window
-#toggle {
-  visibility: hidden;
-  opacity: 0;
-  position: relative;
-  z-index: 3;
+// Modal for Sign In
+#modal h1 {
+  color: black;
+  margin-left: 2%;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
-#toggle:checked ~ dialog {
-  display: block;
-}
-
-label {
-  background: skyblue;
-  color: white;
-  padding: 0.5em 1em;
-  border-radius: 4px;
-}
-@keyframes appear {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
+.input {
+  background-color: #f5f5f5;
+  width: 95%;
+  border: none;
+  box-shadow: none;
+  font-weight: medium;
+  border-radius: 2px;
+  margin-top: 20px;
+  &:hover {
+    border: none;
+    color: black;
+  }
+  &:focus {
+    border: none;
+    box-shadow: none;
+    color: black;
+  }
+  &:active {
+    border: none;
+    box-shadow: none;
+    color: black;
   }
 }
 
-dialog {
-  animation: appear 350ms ease-in 1;
-  max-width: 500px;
-  z-index: 3;
+//Footer buttons
+
+div.footer-buttons {
+  width: 93%;
+  display: block;
 }
 
-label.close-dialog {
-  margin-top: 100px;
-  float: right;
+.footer-buttons button {
+  width: 100%;
 }
+
+.button-close-modal {
+  background-color: #3a71ed; /* Green */
+  border: none;
+  color: white;
+  height: 40px;
+  width: 80px;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: bold;
+  border-radius: 2px;
+  &:hover {
+    background-color: #1D3557;
+    color: white;
+  }
+}
+
+// Modal for Register

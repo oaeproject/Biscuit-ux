@@ -1,5 +1,6 @@
 import { html, LitElement } from 'lit-element';
 import '@polymer/iron-icons/iron-icons.js';
+import '@polymer/iron-icons/communication-icons.js';
 import sharedStyles from '../../style/app.scss';
 import homeNavStyles from '../../style/homepage-navv2.scss';
 import '../../node_modules/@dannymoerkerke/material-webcomponents/src/material-dialog.js';
@@ -35,7 +36,7 @@ class homeNavV2 extends LitElement {
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
               <a class="navbar-item is-active register">
-                Register
+                Create account
               </a>
               <span class="navbar-item">
                 <a id="open-modal-id" class="button sign-in" @click="${this.open_modal}" ">
@@ -49,14 +50,17 @@ class homeNavV2 extends LitElement {
           </div>
         </div>
       </nav>
-      <material-dialog id="modal">
-      <h1 slot="header">Sign In</h1>
-      <p slot="body">Sign In here</p>
-      <div slot="footer">
-        <button id="close-modal-id" @click="${this.close_modal}">close</button>
-      </div>
-    </material-dialog>
 
+      <material-dialog id="modal">
+        <h1 slot="header">Sign In</h1>
+        <p slot="body">
+          <input class="input" type="text" placeholder="Email">
+          <input class="input" type="password" placeholder="Password">
+        </p>
+        <div slot="footer" class="footer-buttons">
+          <button id="close-modal-id" class="button-close-modal is-right" @click="${this.close_modal}">Sign In</button>
+        </div>
+      </material-dialog>
     `;
   }
 }
