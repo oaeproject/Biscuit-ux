@@ -55,7 +55,7 @@ class homeNavV2 extends LitElement {
         <h1 slot="header">Sign In</h1>
         <p slot="body">
           <input class="input" type="text" placeholder="Email">
-          <input class="input" type="password" placeholder="Password">
+          <input class="input" type="password" placeholder="Password" minlength="8" maxlength="12" required>
         </p>
         <div slot="footer" class="footer-buttons">
           <button id="close-modal-id" class="button-close-modal is-right" @click="${this.close_modal}">Sign In</button>
