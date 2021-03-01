@@ -62,7 +62,7 @@ class newsFeed extends LitElement {
               <div class="level-item">
                 <a class="button comments-button">
                   <span class="comments-icon">
-                    <iron-icon icon="communication:forum"></iron-icon>
+                    <iron-icon icon="account-circle"></iron-icon>
                   </span>
                   <span>View (25) comments</span>
                 </a>
